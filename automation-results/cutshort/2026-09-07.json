@@ -3,86 +3,29 @@
   "source": "home-local",
   "date": "2026-09-07",
   "startedAt": null,
-  "finishedAt": "2026-09-07T10:49:57.251Z",
+  "finishedAt": "2026-09-07T06:56:10.069Z",
   "host": "NEM01-GBGR234",
-  "ok": true,
+  "ok": false,
   "counts": {
-    "applied": 4,
+    "applied": 0,
     "external": 0,
     "rejected": 0,
-    "blocked": 0,
+    "blocked": 1,
     "skipped": 0,
-    "seen": 3227
+    "seen": 0
   },
-  "applied": [
-    {
-      "id": "6a9e61d2a530510fb6e6e7f5",
-      "title": "AI/ML Architect",
-      "company": "Gravity Engineering Services Pvt Ltd",
-      "tier": 1,
-      "ctc": 60
-    },
-    {
-      "id": "6a9a9531010e86fcc55a0263",
-      "title": "Solution Architect",
-      "company": "Michael Page",
-      "tier": 1,
-      "ctc": 45
-    },
-    {
-      "id": "6a9a99fdc19052325805c774",
-      "title": "Solution Architect",
-      "company": "Michael Page",
-      "tier": 1,
-      "ctc": 45
-    },
-    {
-      "id": "6a9e5782496b47c30432c1a3",
-      "title": "Senior Data Scientist",
-      "company": "Auxo AI",
-      "tier": 3,
-      "ctc": 40
-    }
-  ],
+  "applied": [],
   "external": [],
   "rejected": [],
-  "blocked": [],
-  "skipped": [],
-  "seen": [
+  "blocked": [
     {
-      "id": "6a9e61d2a530510fb6e6e7f5",
-      "title": "AI/ML Architect",
-      "company": "Gravity Engineering Services Pvt Ltd",
-      "tier": 1
-    },
-    {
-      "id": "6a9a9531010e86fcc55a0263",
-      "title": "Solution Architect",
-      "company": "Michael Page",
-      "tier": 1
-    },
-    {
-      "id": "6a9a99fdc19052325805c774",
-      "title": "Solution Architect",
-      "company": "Michael Page",
-      "tier": 1
-    },
-    {
-      "id": "6a9e5782496b47c30432c1a3",
-      "title": "Senior Data Scientist",
-      "company": "Auxo AI",
-      "tier": 3
+      "reason": "agent_finished_without_same_day_report_exit_1"
     }
   ],
-  "blockerSummary": null,
-  "notes": [
-    "qualifying=4",
-    "q_answered=4",
-    "q_locked_empty=316",
-    "q_already_submitted=58",
-    "tailored_built=4",
-    "tailored_uploaded=4"
-  ],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "agent_finished_without_same_day_report_exit_1",
+  "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/MohammedAhmed/Downloads/MyRepo-local-no-cursor-v2/MyRepo/artifacts/home-runs/cutshort/cutshort-20260907T100638Z.log"
+  "logPath": "C:/Users/MohammedAhmed/.cursor/portal-home-logs/cutshort/cutshort-20260907T065543Z.log"
 }
