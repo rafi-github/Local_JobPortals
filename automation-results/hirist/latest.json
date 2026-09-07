@@ -1,0 +1,31 @@
+{
+  "portal": "hirist",
+  "source": "home-local",
+  "date": "2026-09-07",
+  "startedAt": null,
+  "finishedAt": "2026-09-07T07:20:43.244Z",
+  "host": "NEM01-GBGR234",
+  "ok": false,
+  "counts": {
+    "applied": 0,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 1,
+    "skipped": 0,
+    "seen": 0
+  },
+  "applied": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [
+    {
+      "reason": "agent_finished_without_same_day_report_exit_1"
+    }
+  ],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "agent_finished_without_same_day_report_exit_1",
+  "notes": [],
+  "preflight": null,
+  "logPath": "C:/Users/MohammedAhmed/.cursor/portal-home-logs/hirist/hirist-20260907T072013Z.log"
+}
