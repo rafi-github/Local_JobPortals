@@ -3,38 +3,24 @@
   "source": "cloud",
   "date": "2026-09-07",
   "startedAt": null,
-  "finishedAt": "2026-09-07T10:00:53.365Z",
+  "finishedAt": "2026-09-07T11:20:04.514Z",
   "host": "NEM01-GBGR234",
   "ok": true,
   "counts": {
-    "applied": 5,
+    "applied": 2,
     "external": 0,
     "rejected": 0,
     "blocked": 0,
-    "skipped": 444,
-    "seen": 449
+    "skipped": 443,
+    "seen": 445
   },
   "applied": [
     {
-      "id": 1668652,
-      "title": "Engineering Manager - Backend Architecture",
-      "company": "Whitetable",
+      "id": 1669214,
+      "title": "ARAS PLM Architect",
+      "company": "Task Staffing Solutions",
       "path": "hirist_apply",
-      "url": "https://www.hirist.tech/j/engineering-manager-backend-architecture-6-12-yrs-1668652"
-    },
-    {
-      "id": 1668857,
-      "title": "Principal/Senior Principal/Design Architect - Analog Circuit Design",
-      "company": "QuickHire",
-      "path": "hirist_apply",
-      "url": "https://www.hirist.tech/j/principalsenior-principaldesign-architect-analog-circuit-design-1668857"
-    },
-    {
-      "id": 1668960,
-      "title": "Cloud Automation Architect - AWS/Terraform",
-      "company": "Urgent Requirement : IT Recruiter",
-      "path": "hirist_apply",
-      "url": "https://www.hirist.tech/j/cloud-automation-architect-awsterraform-1668960"
+      "url": "https://www.hirist.tech/j/aras-plm-architect-1669214"
     },
     {
       "id": 1668842,
@@ -42,13 +28,6 @@
       "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
       "path": "hirist_apply",
       "url": "https://www.hirist.tech/j/principal-power-bi-developer-1668842"
-    },
-    {
-      "id": 1669023,
-      "title": "Principal Power BI Developer - Business Intelligence",
-      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
-      "path": "hirist_apply",
-      "url": "https://www.hirist.tech/j/principal-power-bi-developer-business-intelligence-1669023"
     }
   ],
   "external": [],
@@ -122,27 +101,27 @@
       "reason": "pure_ai_data_without_dotnet"
     },
     {
-      "id": 1667068,
-      "title": "Solution Architect - Datacenter",
-      "company": "Infinium Associates",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1667075,
       "title": "Enterprise Solution Architect",
       "company": "Live Connections",
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1666591,
-      "title": "Salesforce Solution Architect",
-      "company": "SK HR Consultants",
-      "reason": "wrong_stack_title"
+      "id": 1667068,
+      "title": "Solution Architect - Datacenter",
+      "company": "Infinium Associates",
+      "reason": "location_not_hyd_remote"
     },
     {
       "id": 1666672,
       "title": "Salesforce Solution Architect",
       "company": "Career Infosystem",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1666591,
+      "title": "Salesforce Solution Architect",
+      "company": "SK HR Consultants",
       "reason": "wrong_stack_title"
     },
     {
@@ -368,6 +347,12 @@
       "reason": "location_not_hyd_remote"
     },
     {
+      "id": 1661292,
+      "title": "Senior .Net Technical Lead/Architect",
+      "company": "Delphie Consulting services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
       "id": 1664836,
       "title": "Azure Security Architect",
       "company": "Acme Services",
@@ -378,12 +363,6 @@
       "title": "Azure AI Architect",
       "company": "The Glove",
       "reason": "pure_ai_data_without_dotnet"
-    },
-    {
-      "id": 1661292,
-      "title": "Senior .Net Technical Lead/Architect",
-      "company": "Delphie Consulting services",
-      "reason": "location_not_hyd_remote"
     },
     {
       "id": 1665210,
@@ -404,15 +383,15 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1665705,
-      "title": "Technical Architect - Spring Boot",
-      "company": "BinaryStar SearchX",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1666354,
       "title": "Senior Developer - .Net/Azure",
       "company": "Job Delights",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665705,
+      "title": "Technical Architect - Spring Boot",
+      "company": "BinaryStar SearchX",
       "reason": "location_not_hyd_remote"
     },
     {
@@ -422,15 +401,15 @@
       "reason": "wrong_stack_title"
     },
     {
-      "id": 1656790,
-      "title": "Technical Architect - .Net Core Frameworks",
-      "company": "Trailblaze Careerpaths Global",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1664563,
       "title": ".Net Technical Manager",
       "company": "Sampoorna Computer People",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656790,
+      "title": "Technical Architect - .Net Core Frameworks",
+      "company": "Trailblaze Careerpaths Global",
       "reason": "location_not_hyd_remote"
     },
     {
@@ -482,15 +461,15 @@
       "reason": "ctc_max_28"
     },
     {
-      "id": 1658780,
-      "title": "Technical Architect - Full Stack Development",
-      "company": "Benchire",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1658641,
       "title": "Technical Architect - Loan Origination System",
       "company": "HriZen",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658780,
+      "title": "Technical Architect - Full Stack Development",
+      "company": "Benchire",
       "reason": "location_not_hyd_remote"
     },
     {
@@ -530,12 +509,6 @@
       "reason": "wrong_stack_title"
     },
     {
-      "id": 1662030,
-      "title": "Technical Lead - Azure Data Engineering",
-      "company": "Hyrhub",
-      "reason": "pure_ai_data_without_dotnet"
-    },
-    {
       "id": 1659284,
       "title": "Salesforce Technical Architect - Apex/Visual Force",
       "company": "Cloud Talent Search",
@@ -546,6 +519,12 @@
       "title": "ServiceNow Technical Architect - ITSM/ITBM Modules",
       "company": "Shashwath Solution",
       "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1662030,
+      "title": "Technical Lead - Azure Data Engineering",
+      "company": "Hyrhub",
+      "reason": "pure_ai_data_without_dotnet"
     },
     {
       "id": 1655135,
@@ -572,6 +551,12 @@
       "reason": "location_not_hyd_remote"
     },
     {
+      "id": 1664390,
+      "title": "Technical Lead/Voice AI Architect - Conversational AI",
+      "company": "Peoplelab Advisory",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
       "id": 1646810,
       "title": "Azure Solution Architect",
       "company": "Thinkaloud Consulting Private Limited",
@@ -582,12 +567,6 @@
       "title": "Azure Cloud Architect",
       "company": "Next Gen Digital Technology",
       "reason": "location_not_hyd_remote"
-    },
-    {
-      "id": 1664390,
-      "title": "Technical Lead/Voice AI Architect - Conversational AI",
-      "company": "Peoplelab Advisory",
-      "reason": "pure_ai_data_without_dotnet"
     },
     {
       "id": 1655528,
@@ -680,15 +659,15 @@
       "reason": "exp_max_5"
     },
     {
-      "id": 1668206,
-      "title": "Senior C++ Developer - Trading Systems",
-      "company": "Break into bfsi",
-      "reason": "generic_engineering_without_dotnet_cloud"
-    },
-    {
       "id": 1665440,
       "title": "Embedded Software Engineer - C/C++/Linux",
       "company": "Akshaya Business IT solutions",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1668206,
+      "title": "Senior C++ Developer - Trading Systems",
+      "company": "Break into bfsi",
       "reason": "generic_engineering_without_dotnet_cloud"
     },
     {
@@ -836,15 +815,21 @@
       "reason": "generic_engineering_without_dotnet_cloud"
     },
     {
+      "id": 1653202,
+      "title": "C++ Developer",
+      "company": "The Growth Hive",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
       "id": 1668180,
       "title": "Cloud Architect - AIOps",
       "company": "SK HR Consultants",
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1653202,
-      "title": "C++ Developer",
-      "company": "The Growth Hive",
+      "id": 1659529,
+      "title": "Software Developer - Autosar/Embedded C",
+      "company": "Orcapod Consulting Services",
       "reason": "generic_engineering_without_dotnet_cloud"
     },
     {
@@ -860,15 +845,15 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1659529,
-      "title": "Software Developer - Autosar/Embedded C",
-      "company": "Orcapod Consulting Services",
-      "reason": "generic_engineering_without_dotnet_cloud"
-    },
-    {
       "id": 1665984,
       "title": "Databricks Architect",
       "company": "Laksh Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660896,
+      "title": "Software Engineer - C#/.Net - Industrial/Manufacturing Domain",
+      "company": "HR Works Consultancy",
       "reason": "location_not_hyd_remote"
     },
     {
@@ -882,12 +867,6 @@
       "title": "AI  Architect",
       "company": "Grassik Search",
       "reason": "pure_ai_data_without_dotnet"
-    },
-    {
-      "id": 1657591,
-      "title": "C#/WPF Developer - WinForms",
-      "company": "Sunsign Hiring",
-      "reason": "location_not_hyd_remote"
     },
     {
       "id": 1655350,
@@ -1154,6 +1133,12 @@
       "reason": "java_primary"
     },
     {
+      "id": 1657210,
+      "title": "ETHICS Infotech - Engineering Manager - Microservices Architecture",
+      "company": "Ethics Infotech",
+      "reason": "location_not_hyd_remote"
+    },
+    {
       "id": 1645715,
       "title": ".Net Tech Lead - Cloud Native Applications",
       "company": "Gokool Software Labs",
@@ -1412,12 +1397,6 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1653144,
-      "title": "Technical Lead - .Net Full Stack Applications",
-      "company": "Precision Staffers",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1669021,
       "title": "Delivery Lead - SAP MDG",
       "company": "Nupay",
@@ -1430,16 +1409,16 @@
       "reason": "generic_engineering_without_dotnet_cloud"
     },
     {
-      "id": 1656372,
-      "title": "Xeedo Technologies - .Net Developer",
-      "company": "Xeedo Technologies",
+      "id": 1653144,
+      "title": "Technical Lead - .Net Full Stack Applications",
+      "company": "Precision Staffers",
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1656599,
-      "title": ".Net Developer - AWS Services",
-      "company": "Wroots Global",
-      "reason": "location_not_hyd_remote"
+      "id": 1667498,
+      "title": "Team lead - GenAI",
+      "company": "WSNE Consulting",
+      "reason": "pure_ai_data_without_dotnet"
     },
     {
       "id": 1658587,
@@ -1610,15 +1589,15 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1668812,
-      "title": "Principal Data Scientist - Generative AI",
-      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
-      "reason": "pure_ai_data_without_dotnet"
-    },
-    {
       "id": 1661640,
       "title": "Ekfrazo Technologies - Principal Data Engineer - Big Data & Spark Streaming",
       "company": "EKFRAZO TECHNOLOGIES PRIVATE LIMITED",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668812,
+      "title": "Principal Data Scientist - Generative AI",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
       "reason": "pure_ai_data_without_dotnet"
     },
     {
@@ -1676,12 +1655,6 @@
       "reason": "pure_ai_data_without_dotnet"
     },
     {
-      "id": 1663812,
-      "title": "Principal Firmware Architect",
-      "company": "Connectpro Management Consultants",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1659835,
       "title": "Principal Physical Design Engineer - Embedded System",
       "company": "Mindsharp Consulting India",
@@ -1694,21 +1667,27 @@
       "reason": "location_not_hyd_remote"
     },
     {
+      "id": 1663812,
+      "title": "Principal Firmware Architect",
+      "company": "Connectpro Management Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
       "id": 1667185,
       "title": "Principal AI Product Manager",
       "company": "Hireginie",
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1665399,
-      "title": "Principal Product Manager - AI Platform",
-      "company": "olifer",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1655729,
       "title": "Principal Software Engineer - System Design & Architecture",
       "company": "HyrMe",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665399,
+      "title": "Principal Product Manager - AI Platform",
+      "company": "olifer",
       "reason": "location_not_hyd_remote"
     },
     {
@@ -1724,9 +1703,9 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1666832,
-      "title": "Principal Data Scientist - Generative AI",
-      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "id": 1651085,
+      "title": "Principal AI Engineer",
+      "company": "Talentiser",
       "reason": "pure_ai_data_without_dotnet"
     },
     {
@@ -1736,9 +1715,9 @@
       "reason": "pure_ai_data_without_dotnet"
     },
     {
-      "id": 1651085,
-      "title": "Principal AI Engineer",
-      "company": "Talentiser",
+      "id": 1666832,
+      "title": "Principal Data Scientist - Generative AI",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
       "reason": "pure_ai_data_without_dotnet"
     },
     {
@@ -1758,6 +1737,12 @@
       "title": "Principal Data Scientist - AI/ML",
       "company": "Good Co",
       "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1663148,
+      "title": "Principal Consultant - AI Presales",
+      "company": "Sonyo Management Consultants",
+      "reason": "location_not_hyd_remote"
     },
     {
       "id": 1667127,
@@ -1814,10 +1799,10 @@
       "reason": "pure_ai_data_without_dotnet"
     },
     {
-      "id": 1667026,
-      "title": "Staff Full Stack Engineer - Node.js/AngularJS",
-      "company": "Petals Careers",
-      "reason": "non_dotnet_primary"
+      "id": 1668073,
+      "title": "Azure DevOps Engineer",
+      "company": "SP Staffing Services",
+      "reason": "location_not_hyd_remote"
     },
     {
       "id": 1667876,
@@ -1826,10 +1811,10 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1668073,
-      "title": "Azure DevOps Engineer",
-      "company": "SP Staffing Services",
-      "reason": "location_not_hyd_remote"
+      "id": 1667026,
+      "title": "Staff Full Stack Engineer - Node.js/AngularJS",
+      "company": "Petals Careers",
+      "reason": "non_dotnet_primary"
     },
     {
       "id": 1668893,
@@ -1910,16 +1895,16 @@
       "reason": "java_primary"
     },
     {
-      "id": 1656078,
-      "title": "Staff Software Engineer - SaaS Platform",
-      "company": "HyrMe",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1667672,
       "title": "Senior Azure Data Engineer - Python/PySpark",
       "company": "Hirezy.ai",
       "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1656078,
+      "title": "Staff Software Engineer - SaaS Platform",
+      "company": "HyrMe",
+      "reason": "location_not_hyd_remote"
     },
     {
       "id": 1663108,
@@ -2000,28 +1985,28 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1657899,
-      "title": "Azure Databricks Engineer - Anti-Money Laundry",
-      "company": "WowJobs",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1650309,
       "title": "Staff Software Engineer - Java/Python",
       "company": "TELL Jobs",
       "reason": "java_primary"
     },
     {
-      "id": 1654356,
-      "title": "Azure Data Engineer",
-      "company": "Burgeon IT Services",
-      "reason": "pure_ai_data_without_dotnet"
-    },
-    {
       "id": 1654872,
       "title": "Lead/Staff Software Engineer - Full Stack Development",
       "company": "Pylon Management Consulting",
       "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1657899,
+      "title": "Azure Databricks Engineer - Anti-Money Laundry",
+      "company": "WowJobs",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1654356,
+      "title": "Azure Data Engineer",
+      "company": "Burgeon IT Services",
+      "reason": "pure_ai_data_without_dotnet"
     },
     {
       "id": 1656357,
@@ -2063,6 +2048,12 @@
       "id": 1652742,
       "title": "Azure Data Engineer - PySpark",
       "company": "TeamPlus Staffing Solution",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1653315,
+      "title": "Staff Data Scientist",
+      "company": "Bean HR Consulting",
       "reason": "pure_ai_data_without_dotnet"
     },
     {
@@ -2246,12 +2237,6 @@
       "reason": "wrong_stack_title"
     },
     {
-      "id": 1655535,
-      "title": "Willware Technologies - Salesforce Communications Cloud Architect",
-      "company": "Willware Technologies",
-      "reason": "wrong_stack_title"
-    },
-    {
       "id": 1645769,
       "title": "Azure Data Architect",
       "company": "Mount Talent Consulting",
@@ -2276,10 +2261,10 @@
       "reason": "pure_ai_data_without_dotnet"
     },
     {
-      "id": 1664957,
-      "title": "ServiceNow Architect",
-      "company": "Volto Consulting",
-      "reason": "wrong_stack_title"
+      "id": 1668529,
+      "title": "AI Architect - Python/Machine Learning",
+      "company": "Vashistha Consulting Group (VCG)",
+      "reason": "pure_ai_data_without_dotnet"
     },
     {
       "id": 1668819,
@@ -2288,10 +2273,10 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1668529,
-      "title": "AI Architect - Python/Machine Learning",
-      "company": "Vashistha Consulting Group (VCG)",
-      "reason": "pure_ai_data_without_dotnet"
+      "id": 1664957,
+      "title": "ServiceNow Architect",
+      "company": "Volto Consulting",
+      "reason": "wrong_stack_title"
     },
     {
       "id": 1669031,
@@ -2366,16 +2351,16 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1663585,
-      "title": "Security Architect",
-      "company": "Talent Potential Consulting",
-      "reason": "location_not_hyd_remote"
-    },
-    {
       "id": 1663826,
       "title": "ServiceNow Architect",
       "company": "Ushta Te Consultancy Services",
       "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1663585,
+      "title": "Security Architect",
+      "company": "Talent Potential Consulting",
+      "reason": "location_not_hyd_remote"
     },
     {
       "id": 1666100,
@@ -2394,12 +2379,6 @@
       "title": "Quality Engineering Architect",
       "company": "Mount Talent Consulting",
       "reason": "qa_quality_engineering"
-    },
-    {
-      "id": 1666490,
-      "title": "Senior Architect - AI/ML Systems",
-      "company": "BIZ STAFFING COMRADE",
-      "reason": "pure_ai_data_without_dotnet"
     },
     {
       "id": 1652260,
@@ -2540,6 +2519,12 @@
       "reason": "location_not_hyd_remote"
     },
     {
+      "id": 1653841,
+      "title": "Java Full Stack Architect - Distributed Systems",
+      "company": "Aari Consultants",
+      "reason": "java_primary"
+    },
+    {
       "id": 1652354,
       "title": "Somani Technologies - .Net Full Stack Developer",
       "company": "Somani Technologies",
@@ -2550,12 +2535,6 @@
       "title": "Full Stack Developer",
       "company": "RiverForest Connections",
       "reason": "location_not_hyd_remote"
-    },
-    {
-      "id": 1653841,
-      "title": "Java Full Stack Architect - Distributed Systems",
-      "company": "Aari Consultants",
-      "reason": "java_primary"
     },
     {
       "id": 1650087,
@@ -2576,16 +2555,16 @@
       "reason": "non_dotnet_primary"
     },
     {
-      "id": 1668175,
-      "title": "Full Stack Developer - Java/React.js",
-      "company": "SK HR Consultants",
-      "reason": "java_primary"
-    },
-    {
       "id": 1668167,
       "title": "Full Stack Developer - Java/React.js",
       "company": "Starvoke Consultancy Services",
       "reason": "java_primary"
+    },
+    {
+      "id": 1668356,
+      "title": "Full Stack Engineer - Python/React.js",
+      "company": "QuickHire",
+      "reason": "non_dotnet_primary"
     },
     {
       "id": 1668526,
@@ -2594,10 +2573,10 @@
       "reason": "java_primary"
     },
     {
-      "id": 1668356,
-      "title": "Full Stack Engineer - Python/React.js",
-      "company": "QuickHire",
-      "reason": "non_dotnet_primary"
+      "id": 1668175,
+      "title": "Full Stack Developer - Java/React.js",
+      "company": "SK HR Consultants",
+      "reason": "java_primary"
     },
     {
       "id": 1657697,
@@ -2618,16 +2597,16 @@
       "reason": "location_not_hyd_remote"
     },
     {
-      "id": 1667254,
-      "title": "Full Stack Developer - Java/React.js",
-      "company": "Hawk Sense Business Solution pvt. ltd.",
-      "reason": "java_primary"
-    },
-    {
       "id": 1667210,
       "title": "Full Stack Developer - React Native",
       "company": "WowJobs",
       "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667254,
+      "title": "Full Stack Developer - Java/React.js",
+      "company": "Hawk Sense Business Solution pvt. ltd.",
+      "reason": "java_primary"
     },
     {
       "id": 1648869,
@@ -2666,6 +2645,12 @@
       "reason": "generic_engineering_without_dotnet_cloud"
     },
     {
+      "id": 1648116,
+      "title": ".Net Full Stack Developer",
+      "company": "NS Global Corporation",
+      "reason": "location_not_hyd_remote"
+    },
+    {
       "id": 1647852,
       "title": ".Net Full Stack Developer",
       "company": "First Career Center",
@@ -2676,12 +2661,6 @@
       "title": ".Net Full Stack Developer",
       "company": "Hirezy.ai",
       "reason": "exp_max_5"
-    },
-    {
-      "id": 1648116,
-      "title": ".Net Full Stack Developer",
-      "company": "NS Global Corporation",
-      "reason": "location_not_hyd_remote"
     },
     {
       "id": 1667611,
@@ -2712,12 +2691,6 @@
       "title": ".Net Full Stack Developer - C#/AngularJS",
       "company": "Talentxo",
       "reason": "location_not_hyd_remote"
-    },
-    {
-      "id": 1667215,
-      "title": "Full Stack Developer - Claude/Cursor Code",
-      "company": "Mesitus",
-      "reason": "generic_engineering_without_dotnet_cloud"
     }
   ],
   "seen": [
@@ -2799,13 +2772,6 @@
       "score": 45
     },
     {
-      "id": 1667068,
-      "title": "Solution Architect - Datacenter",
-      "company": "Infinium Associates",
-      "location": "Mumbai",
-      "score": 45
-    },
-    {
       "id": 1667075,
       "title": "Enterprise Solution Architect",
       "company": "Live Connections",
@@ -2813,16 +2779,23 @@
       "score": 45
     },
     {
-      "id": 1666591,
-      "title": "Salesforce Solution Architect",
-      "company": "SK HR Consultants",
-      "location": "Noida",
+      "id": 1667068,
+      "title": "Solution Architect - Datacenter",
+      "company": "Infinium Associates",
+      "location": "Mumbai",
       "score": 45
     },
     {
       "id": 1666672,
       "title": "Salesforce Solution Architect",
       "company": "Career Infosystem",
+      "location": "Noida",
+      "score": 45
+    },
+    {
+      "id": 1666591,
+      "title": "Salesforce Solution Architect",
+      "company": "SK HR Consultants",
       "location": "Noida",
       "score": 45
     },
@@ -3086,6 +3059,13 @@
       "score": 30
     },
     {
+      "id": 1661292,
+      "title": "Senior .Net Technical Lead/Architect",
+      "company": "Delphie Consulting services",
+      "location": "Chennai, Tamil Nadu, Others",
+      "score": 95
+    },
+    {
       "id": 1664836,
       "title": "Azure Security Architect",
       "company": "Acme Services",
@@ -3098,13 +3078,6 @@
       "company": "The Glove",
       "location": "Bangalore",
       "score": 45
-    },
-    {
-      "id": 1661292,
-      "title": "Senior .Net Technical Lead/Architect",
-      "company": "Delphie Consulting services",
-      "location": "Chennai, Tamil Nadu, Others",
-      "score": 95
     },
     {
       "id": 1665210,
@@ -3128,18 +3101,18 @@
       "score": 40
     },
     {
-      "id": 1665705,
-      "title": "Technical Architect - Spring Boot",
-      "company": "BinaryStar SearchX",
-      "location": "Bangalore",
-      "score": 45
-    },
-    {
       "id": 1666354,
       "title": "Senior Developer - .Net/Azure",
       "company": "Job Delights",
       "location": "Bangalore",
       "score": 40
+    },
+    {
+      "id": 1665705,
+      "title": "Technical Architect - Spring Boot",
+      "company": "BinaryStar SearchX",
+      "location": "Bangalore",
+      "score": 45
     },
     {
       "id": 1667559,
@@ -3149,18 +3122,18 @@
       "score": 40
     },
     {
-      "id": 1656790,
-      "title": "Technical Architect - .Net Core Frameworks",
-      "company": "Trailblaze Careerpaths Global",
-      "location": "Jaipur",
-      "score": 65
-    },
-    {
       "id": 1664563,
       "title": ".Net Technical Manager",
       "company": "Sampoorna Computer People",
       "location": "Chennai",
       "score": 45
+    },
+    {
+      "id": 1656790,
+      "title": "Technical Architect - .Net Core Frameworks",
+      "company": "Trailblaze Careerpaths Global",
+      "location": "Jaipur",
+      "score": 65
     },
     {
       "id": 1662595,
@@ -3219,17 +3192,17 @@
       "score": 30
     },
     {
-      "id": 1658780,
-      "title": "Technical Architect - Full Stack Development",
-      "company": "Benchire",
-      "location": "Gurgaon/Gurugram",
-      "score": 40
-    },
-    {
       "id": 1658641,
       "title": "Technical Architect - Loan Origination System",
       "company": "HriZen",
       "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1658780,
+      "title": "Technical Architect - Full Stack Development",
+      "company": "Benchire",
+      "location": "Gurgaon/Gurugram",
       "score": 40
     },
     {
@@ -3275,13 +3248,6 @@
       "score": 40
     },
     {
-      "id": 1662030,
-      "title": "Technical Lead - Azure Data Engineering",
-      "company": "Hyrhub",
-      "location": "Bangalore, Mangalore",
-      "score": 65
-    },
-    {
       "id": 1659284,
       "title": "Salesforce Technical Architect - Apex/Visual Force",
       "company": "Cloud Talent Search",
@@ -3294,6 +3260,13 @@
       "company": "Shashwath Solution",
       "location": "Bangalore, Pune, Chennai, Hyderabad",
       "score": 40
+    },
+    {
+      "id": 1662030,
+      "title": "Technical Lead - Azure Data Engineering",
+      "company": "Hyrhub",
+      "location": "Bangalore, Mangalore",
+      "score": 65
     },
     {
       "id": 1655135,
@@ -3324,6 +3297,13 @@
       "score": 40
     },
     {
+      "id": 1664390,
+      "title": "Technical Lead/Voice AI Architect - Conversational AI",
+      "company": "Peoplelab Advisory",
+      "location": "Hyderabad",
+      "score": 60
+    },
+    {
       "id": 1646810,
       "title": "Azure Solution Architect",
       "company": "Thinkaloud Consulting Private Limited",
@@ -3336,13 +3316,6 @@
       "company": "Next Gen Digital Technology",
       "location": "Indore",
       "score": 45
-    },
-    {
-      "id": 1664390,
-      "title": "Technical Lead/Voice AI Architect - Conversational AI",
-      "company": "Peoplelab Advisory",
-      "location": "Hyderabad",
-      "score": 60
     },
     {
       "id": 1655528,
@@ -3427,8 +3400,8 @@
     "resume=C:\\Users\\MohammedAhmed\\Downloads\\MyRepo-local-no-cursor-v2\\MyRepo\\resumes\\Rafi_Resume.docx",
     "ctc=52->65",
     "login_ok url=https://www.hirist.tech/jobfeed",
-    "candidates=5 seen=449"
+    "candidates=2 seen=445"
   ],
   "preflight": null,
-  "logPath": "C:/Users/MohammedAhmed/Downloads/MyRepo-local-no-cursor-v2/MyRepo/artifacts/home-runs/hirist/hirist-20260907T095953Z.log"
+  "logPath": "C:/Users/MohammedAhmed/Downloads/MyRepo-local-no-cursor-v2/MyRepo/artifacts/home-runs/hirist/hirist-20260907T111847Z.log"
 }
