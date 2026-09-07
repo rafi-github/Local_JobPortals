@@ -3,7 +3,7 @@
   "source": "home-local",
   "date": "2026-09-07",
   "startedAt": null,
-  "finishedAt": "2026-09-07T07:19:52.803Z",
+  "finishedAt": "2026-09-07T07:29:29.257Z",
   "host": "NEM01-GBGR234",
   "ok": false,
   "counts": {
@@ -27,5 +27,5 @@
   "blockerSummary": "indeed_cloudflare_private_worker_required",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/MohammedAhmed/.cursor/portal-home-logs/indeed/indeed-20260907T071700Z.log"
+  "logPath": "C:/Users/MohammedAhmed/.cursor/portal-home-logs/indeed/indeed-20260907T072635Z.log"
 }
