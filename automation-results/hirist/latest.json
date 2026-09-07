@@ -1,31 +1,3434 @@
 {
   "portal": "hirist",
-  "source": "home-local",
+  "source": "cloud",
   "date": "2026-09-07",
   "startedAt": null,
-  "finishedAt": "2026-09-07T07:20:43.244Z",
+  "finishedAt": "2026-09-07T10:00:53.365Z",
   "host": "NEM01-GBGR234",
-  "ok": false,
+  "ok": true,
   "counts": {
-    "applied": 0,
+    "applied": 5,
     "external": 0,
     "rejected": 0,
-    "blocked": 1,
-    "skipped": 0,
-    "seen": 0
+    "blocked": 0,
+    "skipped": 444,
+    "seen": 449
   },
-  "applied": [],
-  "external": [],
-  "rejected": [],
-  "blocked": [
+  "applied": [
     {
-      "reason": "agent_finished_without_same_day_report_exit_1"
+      "id": 1668652,
+      "title": "Engineering Manager - Backend Architecture",
+      "company": "Whitetable",
+      "path": "hirist_apply",
+      "url": "https://www.hirist.tech/j/engineering-manager-backend-architecture-6-12-yrs-1668652"
+    },
+    {
+      "id": 1668857,
+      "title": "Principal/Senior Principal/Design Architect - Analog Circuit Design",
+      "company": "QuickHire",
+      "path": "hirist_apply",
+      "url": "https://www.hirist.tech/j/principalsenior-principaldesign-architect-analog-circuit-design-1668857"
+    },
+    {
+      "id": 1668960,
+      "title": "Cloud Automation Architect - AWS/Terraform",
+      "company": "Urgent Requirement : IT Recruiter",
+      "path": "hirist_apply",
+      "url": "https://www.hirist.tech/j/cloud-automation-architect-awsterraform-1668960"
+    },
+    {
+      "id": 1668842,
+      "title": "Principal Power BI Developer",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "path": "hirist_apply",
+      "url": "https://www.hirist.tech/j/principal-power-bi-developer-1668842"
+    },
+    {
+      "id": 1669023,
+      "title": "Principal Power BI Developer - Business Intelligence",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "path": "hirist_apply",
+      "url": "https://www.hirist.tech/j/principal-power-bi-developer-business-intelligence-1669023"
     }
   ],
-  "skipped": [],
-  "seen": [],
-  "blockerSummary": "agent_finished_without_same_day_report_exit_1",
-  "notes": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [],
+  "skipped": [
+    {
+      "id": 1655678,
+      "title": "Happiest Minds Technologies - .Net Solution Architect",
+      "company": "Happiest Minds Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661035,
+      "title": "McLaren Strategic Solutions - Solution Architect - .Net Frameworks",
+      "company": "MCLAREN STRATEGIC VENTURES INDIA PRIVATE LIMITED",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1649979,
+      "title": "Solution Architect - .Net/Sharepoint",
+      "company": "Coe Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1650661,
+      "title": "Soliton Technologies - Software Solution Architect - C#/.Net",
+      "company": "Soliton Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1644239,
+      "title": "Happiest Minds - Technical Presales Solution Architect - Java/.Net",
+      "company": "Happiest Minds Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1646627,
+      "title": "McLaren Strategic Solutions - Solution Architect - .Net Technologies",
+      "company": "MCLAREN STRATEGIC VENTURES INDIA PRIVATE LIMITED",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660058,
+      "title": ".Net Solution Architect - C#/Entity Framework",
+      "company": "People Creation",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669002,
+      "title": "Solution Architect - Java/Python",
+      "company": "Tidyhire",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1669166,
+      "title": "Azure Solution Architect",
+      "company": "Task Staffing Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667955,
+      "title": "Solution Architect - Baggage Handling Systems",
+      "company": "Evoke HR Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666215,
+      "title": "Solution Architect - Data Engineering",
+      "company": "Avisoft",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667068,
+      "title": "Solution Architect - Datacenter",
+      "company": "Infinium Associates",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667075,
+      "title": "Enterprise Solution Architect",
+      "company": "Live Connections",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666591,
+      "title": "Salesforce Solution Architect",
+      "company": "SK HR Consultants",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1666672,
+      "title": "Salesforce Solution Architect",
+      "company": "Career Infosystem",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1666360,
+      "title": "Azure Solution Architect",
+      "company": "Job Delights",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669146,
+      "title": "Presales AI Solution Architect",
+      "company": "E-Solutions",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667242,
+      "title": "Solution & Technical Architect - ADM Services",
+      "company": "Live Connections",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664620,
+      "title": "Salesforce Solution Architect",
+      "company": "INFINITES HR SERVICES     ",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1666867,
+      "title": "Enterprise Solution Architect - Digital Transformation",
+      "company": "Tez Recruit",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661971,
+      "title": "Solution Architect - AI Security",
+      "company": "People First Consultants",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1664742,
+      "title": "MDM Data Architect/Solution Architect",
+      "company": "Hawk Sense Business Solution pvt. ltd.",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1666669,
+      "title": "Salesforce Solution Architect - LWC/Apex",
+      "company": "Strategic HR Solutions",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1669112,
+      "title": "Databricks Solution Architect - Data Science",
+      "company": "NS Global Corporation",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1665928,
+      "title": "Loginsoft - Solution Architect - Salesforce ETM",
+      "company": "Loginsoft",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1667019,
+      "title": "Solution Architect - Cloud Computing",
+      "company": "HiPos Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662739,
+      "title": "Talkdesk Solution Architect",
+      "company": "Hurix Digital",
+      "reason": "already_applied_or_closed"
+    },
+    {
+      "id": 1664939,
+      "title": "Technical/Solution Architect - eCommerce Platform",
+      "company": "JFF - jobfittmentfinder",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666690,
+      "title": "Oracle Fusion Solution Architect",
+      "company": "Aanseacore",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662009,
+      "title": "AI Solution Architect",
+      "company": "Intelliserve",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667117,
+      "title": "Java Solution Architect - Native Cloud & Microservices Architecture",
+      "company": "HiringBlaze",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1661839,
+      "title": "ALM Solution Architect",
+      "company": "Randstad",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659742,
+      "title": "Solution Architect - Java/TOGAF",
+      "company": "Tidyhire",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1663377,
+      "title": "Presales Solution Architect - Healthcare EcoSystem",
+      "company": "Spot Your Leaders & Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664866,
+      "title": "SAP PP Solution Architect",
+      "company": "The Glove",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1668402,
+      "title": "Presales Solution Architect - Cloud Infrastructure",
+      "company": "Growel Softech",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660429,
+      "title": "AI Solution Architect",
+      "company": "The Reliable Jobs",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1660988,
+      "title": "EY - AI Solution Architect",
+      "company": "Ernst and Young LLP",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1659012,
+      "title": "AI Solution Architect",
+      "company": "Avisoft",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1663015,
+      "title": "ServiceNow Product & Solution Architect",
+      "company": "Tidyhire",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1662505,
+      "title": "Senior AWS Solution Architect",
+      "company": "Laksh Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661202,
+      "title": "Azure Solution Architect - Cloud Infrastructure",
+      "company": "Good Co",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665697,
+      "title": "ServiceNow Technical Lead/Solution Architect",
+      "company": "Three Across",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1664707,
+      "title": "Solution Architect - AI Products & Software Development",
+      "company": "CODEWORK",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1656930,
+      "title": "Solution Architect - Distributed Enterprise Applications",
+      "company": "Prodcon Tech Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1654765,
+      "title": "Solution Architect - AWS Platform",
+      "company": "Boolean Staffing & Recruitment Solutions Pvt Ltd",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659625,
+      "title": "Senior Solution Architect - Java/Python",
+      "company": "Tidyhire",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1654468,
+      "title": "Solution Architect - Delivery & Engineering",
+      "company": "Basebiz Private Limited",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660628,
+      "title": "Solution Architect - SAP BRIM",
+      "company": "Clovio IT Consulting Private Limited",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1663524,
+      "title": "ParentPay Group - Technical Architect - .Net/React.js/Azure",
+      "company": "ParentPay",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664870,
+      "title": "Azure .Net Architect - C#/React.js",
+      "company": "The Glove",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668074,
+      "title": ".Net Azure Developer",
+      "company": "SP Staffing Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664836,
+      "title": "Azure Security Architect",
+      "company": "Acme Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664872,
+      "title": "Azure AI Architect",
+      "company": "The Glove",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1661292,
+      "title": "Senior .Net Technical Lead/Architect",
+      "company": "Delphie Consulting services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665210,
+      "title": "Azure Fabric Architect - DAX Power BI",
+      "company": "Growel Softech",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667949,
+      "title": "Technical Architect - Backend & AI",
+      "company": "Neemtree",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1669120,
+      "title": "Technical Product Architect",
+      "company": "E-Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665705,
+      "title": "Technical Architect - Spring Boot",
+      "company": "BinaryStar SearchX",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666354,
+      "title": "Senior Developer - .Net/Azure",
+      "company": "Job Delights",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667559,
+      "title": "Salesforce Technical Architect",
+      "company": "Savishty",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1656790,
+      "title": "Technical Architect - .Net Core Frameworks",
+      "company": "Trailblaze Careerpaths Global",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664563,
+      "title": ".Net Technical Manager",
+      "company": "Sampoorna Computer People",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662595,
+      "title": "Technical Architect - Java/Microservices",
+      "company": "Fidius Advisory",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1666700,
+      "title": "Technical Quality Assurance Architect",
+      "company": "Square Root Consulting",
+      "reason": "qa_quality_engineering"
+    },
+    {
+      "id": 1662270,
+      "title": "Salesforce Technical Architect",
+      "company": "Success Jobs Organization",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1652052,
+      "title": "Azure Cloud Architect - Azure Kubernetes Service",
+      "company": "Spot Your Leaders & Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663753,
+      "title": "Technical Software Architect - Python/React",
+      "company": "TekPillar",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1659861,
+      "title": "Technical Architect - Full Stack Development",
+      "company": "UPAMP Business Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1657622,
+      "title": "Technical Architect - C++",
+      "company": "Sunsign Hiring",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666349,
+      "title": "Azure Integration Engineer - .Net/PaaS",
+      "company": "Big Ideas Social Media Recruitment",
+      "reason": "ctc_max_28"
+    },
+    {
+      "id": 1658780,
+      "title": "Technical Architect - Full Stack Development",
+      "company": "Benchire",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658641,
+      "title": "Technical Architect - Loan Origination System",
+      "company": "HriZen",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659174,
+      "title": "Salesforce Technical Architect",
+      "company": "Wilco Source",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1666355,
+      "title": "ServiceNow ITSM Functional Technical Architect",
+      "company": "Job Delights",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1656830,
+      "title": "Technical Architect - Loan Origination System",
+      "company": "Fidius Advisory",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665862,
+      "title": "Data Architect - Azure Databricks",
+      "company": "GoStravvy",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1656975,
+      "title": "Temenos Technical Architect",
+      "company": "LIB CAP Infotech Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663273,
+      "title": "Technical Architect - Conga CPQ/CLM",
+      "company": "Sureminds Solutions",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1662030,
+      "title": "Technical Lead - Azure Data Engineering",
+      "company": "Hyrhub",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1659284,
+      "title": "Salesforce Technical Architect - Apex/Visual Force",
+      "company": "Cloud Talent Search",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1658993,
+      "title": "ServiceNow Technical Architect - ITSM/ITBM Modules",
+      "company": "Shashwath Solution",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1655135,
+      "title": "Senior Technical Architect",
+      "company": "Resources Valley",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1654841,
+      "title": "ServiceNow Technical Architect",
+      "company": "Recruitment Hub 365",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1662133,
+      "title": "Principal Technical Architect - Appian Platform",
+      "company": "Talent Tribe",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1652730,
+      "title": "Technical Architect - System Design",
+      "company": "High Impact Talent",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1646810,
+      "title": "Azure Solution Architect",
+      "company": "Thinkaloud Consulting Private Limited",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1646437,
+      "title": "Azure Cloud Architect",
+      "company": "Next Gen Digital Technology",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664390,
+      "title": "Technical Lead/Voice AI Architect - Conversational AI",
+      "company": "Peoplelab Advisory",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1655528,
+      "title": "Willware Technologies - Technical Architect - JDA SCPO Suite",
+      "company": "Willware Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664776,
+      "title": "Software Architect - .Net/C#",
+      "company": "NAV Fund Services Back Office",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1644893,
+      "title": "CCTech - Lead Software Engineer/C++ Architect - iAM Components",
+      "company": "CCTech",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664986,
+      "title": "C/C++ Developer",
+      "company": "Lancesoft India Pvt Ltd",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1666030,
+      "title": "Senior Software Development Engineer - C++ Programming",
+      "company": "ConsultTrinity Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662161,
+      "title": "C# Lead Software Engineer - Microservices Architecture",
+      "company": "Orcapod Consulting Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662562,
+      "title": "C/C++ Developer - Payment Applications",
+      "company": "Arting Digital",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665758,
+      "title": "Embedded C/C++ Developer - Linux & Wireless Technologies",
+      "company": "coneexion",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1663838,
+      "title": "Principal Software Architect - Java/Python",
+      "company": "Good Co",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1663784,
+      "title": "Enterprise Software Architect - Java/Spring Boot",
+      "company": "Arting Digital",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1668919,
+      "title": "C# Developer - .Net/ASP",
+      "company": "Code Vyasa",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666593,
+      "title": "C++ Developer - QT",
+      "company": "Orange Jobs",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1668629,
+      "title": "Engineering Manager - C++",
+      "company": "Hyrhub",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664571,
+      "title": "Saraca Solutions - C ++ Developer",
+      "company": "Saraca Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661804,
+      "title": "C# Developer",
+      "company": "Avisoft",
+      "reason": "exp_max_5"
+    },
+    {
+      "id": 1668206,
+      "title": "Senior C++ Developer - Trading Systems",
+      "company": "Break into bfsi",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1665440,
+      "title": "Embedded Software Engineer - C/C++/Linux",
+      "company": "Akshaya Business IT solutions",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1663781,
+      "title": "Embedded Software Engineer - C/C++",
+      "company": "TekIntegral",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1662394,
+      "title": "C++ Developer - Application Architecture",
+      "company": "Randstad",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1651174,
+      "title": "Software Architect - .Net/Blazor",
+      "company": "Golden Hire Consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665935,
+      "title": "Principal Embedded Software Engineer - C/C++",
+      "company": "TekPillar",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666309,
+      "title": "Software Developer - Java/Python/C#",
+      "company": "HR Hai",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1663063,
+      "title": "Software Developer - C++",
+      "company": "Youth4 Talent Solutions",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1667659,
+      "title": "Senior C++ Engineer - Capital Markets/Trading Systems",
+      "company": "Techno Placements",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661687,
+      "title": "Senior Software Engineer - C/C++",
+      "company": "eTeam",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1664985,
+      "title": "C++ Windows Programmer - WPF",
+      "company": "Lancesoft India Pvt Ltd",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663605,
+      "title": "C++ Developer - HFT",
+      "company": "TalentStack",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1660024,
+      "title": "C Developer - Hardware Architecture",
+      "company": "Akshaya Business IT solutions",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1650873,
+      "title": "Software Java Architect",
+      "company": "Human Touch",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1649312,
+      "title": "Software Architect - Safety Critical Systems",
+      "company": "Armour Corporate Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668823,
+      "title": "Architect/Lead - Design and Verification - SOC/IP, SystemVerilog/UVM, SOC, RISC-C, Semiconductor Domain",
+      "company": "Career Makers",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1662626,
+      "title": "Software Engineer - C#/.Net",
+      "company": "Laksh Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1657038,
+      "title": "C Developer",
+      "company": "Career Infosystem",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1656758,
+      "title": "C++ Developer",
+      "company": "Xpheno",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658941,
+      "title": "C++ Developer - TCP/IP Protocols",
+      "company": "Sampoorna Computer People",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661410,
+      "title": "Senior Embedded Software Engineer - C/C++",
+      "company": "CIEL HR",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668850,
+      "title": "Enterprise Architect",
+      "company": "HiPos Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659892,
+      "title": "Embedded C++ Engineer - Linux",
+      "company": "svan global consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656970,
+      "title": "C Developer - Datacom/Networking Protocols Development",
+      "company": "LA Consultancy",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1666998,
+      "title": "Senior Software Engineer - C++/Linux Kernel",
+      "company": "Seventh Contact Hiring Solutions",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1662337,
+      "title": "BSW Software Developer - Embedded C",
+      "company": "BharatHire.Com",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1668180,
+      "title": "Cloud Architect - AIOps",
+      "company": "SK HR Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1653202,
+      "title": "C++ Developer",
+      "company": "The Growth Hive",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1659935,
+      "title": "Senior C++ Developer - Data Structure & Algorithm",
+      "company": "svan global consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668878,
+      "title": "System Architect - Distributed Systems",
+      "company": "HiringBlaze",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659529,
+      "title": "Software Developer - Autosar/Embedded C",
+      "company": "Orcapod Consulting Services",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1665984,
+      "title": "Databricks Architect",
+      "company": "Laksh Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665559,
+      "title": "AI Architect",
+      "company": "Strategic HR Solutions",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1665434,
+      "title": "AI  Architect",
+      "company": "Grassik Search",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1657591,
+      "title": "C#/WPF Developer - WinForms",
+      "company": "Sunsign Hiring",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1655350,
+      "title": "Icertis - Engineering Manager - .Net/C#",
+      "company": "Icertis Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1654786,
+      "title": "Software Engineering Manager - .Net/AngularJS",
+      "company": "Applied Systems, Inc. ",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1652878,
+      "title": "CAI Software - Software Engineering Manager - .Net",
+      "company": "CAI Software",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1648150,
+      "title": "ACG World - Senior Software Engineering Manager - .Net Technologies",
+      "company": "ACG Worldwide",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668877,
+      "title": "Engineering Manager - Agentic AI",
+      "company": "HiringBlaze",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667623,
+      "title": "Engineering Manager - Agentic AI",
+      "company": "HiringBlaze",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668869,
+      "title": "Engineering Manager - AI & Data Platform",
+      "company": "HiringBlaze",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667197,
+      "title": "Engineering Manager - Distributed Systems",
+      "company": "Recruise India Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667208,
+      "title": "Engineering Manager - Frontend Architecture",
+      "company": "HR LOBBY",
+      "reason": "frontend_without_dotnet"
+    },
+    {
+      "id": 1668149,
+      "title": "Engineering Manager - SaaS & Voice AI",
+      "company": "Magnet HR Consulting Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666428,
+      "title": "Engineering Manager - Artificial Intelligence",
+      "company": "Boots2Suits Consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666103,
+      "title": "Engineering Manager - Java/AWS",
+      "company": "svan global consultancy",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1666801,
+      "title": "Engineering Manager - Java/Spring Boot",
+      "company": "HR LOBBY",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1661284,
+      "title": "Engineering Manager - Data Engineering",
+      "company": "Caucus Consultant",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667626,
+      "title": "Data Engineering Manager",
+      "company": "HiringBlaze",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1662533,
+      "title": "Engineering Manager",
+      "company": "NovoTree Minds Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663542,
+      "title": "Engineering Manager - Software Development",
+      "company": "Indusion Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664775,
+      "title": "Engineering Manager - Python/Reat.js/Angular",
+      "company": "Seventh Contact Hiring Solutions",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1655202,
+      "title": "Engineering Manager - .Net/Java",
+      "company": "Seventh Contact Hiring Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663289,
+      "title": "Engineering Manager - Java/Python",
+      "company": "Mytech Global",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1662864,
+      "title": "Engineering Manager - Backend Architecture",
+      "company": "HR Works Consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664705,
+      "title": "Engineering Program Manager",
+      "company": "Good Co",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666800,
+      "title": "Senior Engineering Manager - Flutter & Web",
+      "company": "HR LOBBY",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662964,
+      "title": "Engineering Manager - Full Stack Development",
+      "company": "Magnet HR Consulting Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659054,
+      "title": "Engineering Manager",
+      "company": "Avom Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661361,
+      "title": "Engineering Manager - Search Infrastructure",
+      "company": "Human Touch",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658484,
+      "title": "Engineering Manager",
+      "company": "Digirecruitx",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660552,
+      "title": "Engineering Manager - Software Development",
+      "company": "Cosmic Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658062,
+      "title": "Engineering Manager",
+      "company": "Rapid Talent Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667206,
+      "title": "Senior Engineering Manager - WealthTech & Digital Broking Platform",
+      "company": "HR LOBBY",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668352,
+      "title": "Engineering Manager - Full Stack Development",
+      "company": "Whitetable",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660019,
+      "title": "Engineering Manager - Java/Scala",
+      "company": "Pravdaa People",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1661524,
+      "title": "Engineering Manager - MERN Stack Development",
+      "company": "Vintronics Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661863,
+      "title": "Engineering Manager - Dynamics 365 & Power Platform",
+      "company": "Bulwark Software Research",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1664288,
+      "title": "Senior Engineering Manager - Payments Infrastructure",
+      "company": "Archer and Bull Global",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656906,
+      "title": "Engineering Manager",
+      "company": "HyrMe",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659583,
+      "title": "Engineering Manager - React.js/Node.js",
+      "company": "Live Connections",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1658949,
+      "title": "Engineering Manager - Java/Node.js",
+      "company": "Avom Consultants",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1668767,
+      "title": "Engineering Manager - SaaS & Voice AI",
+      "company": "Magnet HR Consulting Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664857,
+      "title": "Delivery Manager - Automotive Engineering",
+      "company": "MiG Staffing",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1648629,
+      "title": "Engineering Manager - Java/.Net",
+      "company": "Seventh Contact Hiring Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658012,
+      "title": "Engineering Manager II",
+      "company": "HyrMe",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659909,
+      "title": "Software Engineering Manager - C++/Python",
+      "company": "svan global consultancy",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1655361,
+      "title": "Engineering Manager - Java/Python",
+      "company": "Human Touch",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1645715,
+      "title": ".Net Tech Lead - Cloud Native Applications",
+      "company": "Gokool Software Labs",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661323,
+      "title": "Tech Lead - .Net/React.js",
+      "company": "r3 Consultant",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669035,
+      "title": "Tech Lead/Senior Developer - Artificial Intelligence",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665787,
+      "title": "Tech Lead - Full Stack Development  - Node.js/AngularJS",
+      "company": "Skeps",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1668583,
+      "title": "Backend Technical Lead - Java/Python",
+      "company": "HiringBlaze",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1647063,
+      "title": "Tech Lead - Full Software Development Lifecycle",
+      "company": "Nexa Partners",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1649825,
+      "title": "Java Tech Lead - Spring Boot",
+      "company": "Xohani Solutions Pvt. Ltd.",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1647362,
+      "title": "Salesforce Tech Lead - Solution Implementation",
+      "company": "Career Foresight HR Solutions",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1648148,
+      "title": "Java Tech Lead - Spring Boot/Microservices Architecture",
+      "company": "Volto Consulting",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1661127,
+      "title": "Senior .Net Lead/Engineer - Distributed Systems",
+      "company": "Newaetate",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1651890,
+      "title": ".Net Lead - C#/ASP",
+      "company": "TSQUARE HR Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1648801,
+      "title": "Salesforce Health Cloud Tech Lead - LWC/Apex",
+      "company": "Albireo Recruiters",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1662970,
+      "title": "Skeps - Tech Lead - Full Stack Technologies",
+      "company": "Skeps",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662526,
+      "title": "Technical Lead - Salesforce CPQ/RCA",
+      "company": "Decimal Business Solutions Pte Ltd",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1657302,
+      "title": ".Net Full Stack Lead Developer",
+      "company": "Growel Softech",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663065,
+      "title": "Technical Lead - .Net/React.js",
+      "company": "Youth4 Talent Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667585,
+      "title": ".Net Developer",
+      "company": "Olive Trees Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1647175,
+      "title": "Lead .Net Developer",
+      "company": "Hirezy.ai",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667662,
+      "title": ".Net Developer - C# Programming",
+      "company": "sugandi consultancy services pvt ltd",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664767,
+      "title": ".Net Developer",
+      "company": "Contactx Resource Management",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666897,
+      "title": ".Net Developer - C#/ASP/WebAPI",
+      "company": "Recruise India Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665983,
+      "title": ".Net Developer - ASP/C#",
+      "company": "Contactx Resource Management",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668110,
+      "title": "Senior .Net Developer",
+      "company": "TeamPlus Staffing Solution",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665238,
+      "title": ".Net Developer - ASP/MVC",
+      "company": "Naukriverse",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660921,
+      "title": "Product Engineering Lead - .Net/React.js",
+      "company": "Human Touch",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661699,
+      "title": ".Net Developer",
+      "company": "SK HR Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656784,
+      "title": "Technical Lead - C#/.Net",
+      "company": "Trailblaze Careerpaths Global",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665373,
+      "title": "Senior .Net Developer",
+      "company": "sugandi consultancy services pvt ltd",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666637,
+      "title": "Senior .Net Developer - C#/ASP",
+      "company": "Tech Grow Global",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661615,
+      "title": ".Net Developer - C#/ASP",
+      "company": "Career Infosystem",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668951,
+      "title": "Lead - API & ESB Integration",
+      "company": "Qwickly Ventures",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656842,
+      "title": "Lead Software Engineer - .Net Core",
+      "company": "Pylon Management Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667129,
+      "title": "Lead - Product Design",
+      "company": "HR Works Consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668387,
+      "title": "Lead - Data Platform & Engineering",
+      "company": "MSD Pharmaceuticals",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660510,
+      "title": ".Net Developer - C#/ASP/MVC",
+      "company": "WeyBee Solutions Private Limited",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658758,
+      "title": ".Net Developer - C#",
+      "company": "Workplace",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663346,
+      "title": "Techgrit - Junior .Net Developer",
+      "company": "TechGrit",
+      "reason": "junior_title"
+    },
+    {
+      "id": 1656839,
+      "title": ".Net Developer",
+      "company": "Pylon Management Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658919,
+      "title": ".Net Developer - MongoDB/InfluxDB",
+      "company": "Contactx Resource Management",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665274,
+      "title": ".Net Full Stack Developer",
+      "company": "Naukriverse",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1647913,
+      "title": "Actimize SAM Implementation Tech Engineer",
+      "company": "Three Across",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664424,
+      "title": ".Net Full Stack Developer",
+      "company": "Magnet HR Consulting Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665268,
+      "title": "Lead -  Master Data Management",
+      "company": "Perfect Placer",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1653144,
+      "title": "Technical Lead - .Net Full Stack Applications",
+      "company": "Precision Staffers",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669021,
+      "title": "Delivery Lead - SAP MDG",
+      "company": "Nupay",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1669204,
+      "title": "Lead Developer - SailPoint IQ",
+      "company": "Spectrum Consulting India Pvt. Ltd.",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1656372,
+      "title": "Xeedo Technologies - .Net Developer",
+      "company": "Xeedo Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656599,
+      "title": ".Net Developer - AWS Services",
+      "company": "Wroots Global",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658587,
+      "title": "Nagarro - Associate Principal Engineer - .Net Full Stack Solutions",
+      "company": "Nagarro Software",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1645979,
+      "title": "Dell Technologies - Senior Principal Engineer - .Net",
+      "company": "Dell Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1652877,
+      "title": "CAI Software - Principal Software Engineer - .Net/C#",
+      "company": "CAI Software",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669067,
+      "title": "Principal Engineer - Systems Validation",
+      "company": "Square Root Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668116,
+      "title": "Principal Engineer - Software Quality Assurance",
+      "company": "Neemtree",
+      "reason": "qa_quality_engineering"
+    },
+    {
+      "id": 1659925,
+      "title": "Principal Software Engineer - .Net/AngularJS",
+      "company": "Winning Edge",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669017,
+      "title": "Principal Data Engineer - Azure Databricks",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668853,
+      "title": "Principal Data Engineer - Azure Databricks",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668567,
+      "title": "Principal Software Engineer - Data Platform",
+      "company": "MiG Staffing",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668714,
+      "title": "Principal AI Engineer - Voice Bot",
+      "company": "HumanWiz",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668563,
+      "title": "Principal AI Engineer - Voice/Agentic AI",
+      "company": "Talentxo",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668534,
+      "title": "Principal Site Reliability Engineer - DevOps",
+      "company": "MiG Staffing",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664956,
+      "title": "Principal Software Engineer - System Architecture",
+      "company": "Talent Corner HR Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660277,
+      "title": "Principal Engineer - Voice-Agent Platform",
+      "company": "Confidential",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664889,
+      "title": "Principal Engineer - Roku BrightScript",
+      "company": "TalentON",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664544,
+      "title": "Principal AI/ML Engineer",
+      "company": "Laksh Consultants",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667648,
+      "title": "Principal Analog Mixed Signal Engineer",
+      "company": "knowledge Artisan",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663569,
+      "title": "Principal Engineer - CPU Software",
+      "company": "Watson Search Partners",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663757,
+      "title": "Principal Engineer - Frontend Architecture",
+      "company": "IntelliPro",
+      "reason": "frontend_without_dotnet"
+    },
+    {
+      "id": 1660524,
+      "title": "Principal Software Engineer - Java & LLM",
+      "company": "Skyleaf Consultants",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1661943,
+      "title": "Principal Engineer - UI Development",
+      "company": "Neemtree",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659919,
+      "title": "Principal Software Engineer - Java Development",
+      "company": "svan global consultancy",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1656561,
+      "title": "Principal Software Engineer",
+      "company": "MAGIC BLOOMS MEDIA PRIVATE LIMITED",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659065,
+      "title": "Yallo Retail - Principal AI Engineer",
+      "company": "YALLO",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1655291,
+      "title": "Principal Engineer - Java & Generative AI",
+      "company": "Black Turtle",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1658340,
+      "title": "Principal AI Engineer - Python/FastAPI",
+      "company": "HyrMe",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1661728,
+      "title": "Principal Firmware Verification Engineer - SoC/RTOS",
+      "company": "Square Root Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1655282,
+      "title": "Principal Compiler Engineer",
+      "company": "Taglynk Careers",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668812,
+      "title": "Principal Data Scientist - Generative AI",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1661640,
+      "title": "Ekfrazo Technologies - Principal Data Engineer - Big Data & Spark Streaming",
+      "company": "EKFRAZO TECHNOLOGIES PRIVATE LIMITED",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1655674,
+      "title": "Principal Infrastructure Engineer - DevOps",
+      "company": "HyrMe",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660929,
+      "title": "Principal Machine Learning Engineer - Artificial Intelligence",
+      "company": "Futures and Careers",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1658148,
+      "title": "Principal AI/ML Engineer",
+      "company": "HR Works Consultancy",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1657139,
+      "title": "Principal Software Engineer - Avaloq Platform",
+      "company": "The Edge Partnership",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669091,
+      "title": "Principal AI Product Manager",
+      "company": "Hirezy.ai",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1657813,
+      "title": "Principal AI Engineer - LLM/Agentic AI",
+      "company": "Supersourcing",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1655967,
+      "title": "Principal AI Engineer - LLM Technologies",
+      "company": "Search Synergy",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668474,
+      "title": "Principal Architect - Integration Strategy",
+      "company": "UNICORN HR SOLUTIONS",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664059,
+      "title": "Principal AI Architect",
+      "company": "Corpxcel Corporate Consulting",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1663812,
+      "title": "Principal Firmware Architect",
+      "company": "Connectpro Management Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659835,
+      "title": "Principal Physical Design Engineer - Embedded System",
+      "company": "Mindsharp Consulting India",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1652365,
+      "title": "Principal Engineer - Backup & Recovery Technologies",
+      "company": "Norwin Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667185,
+      "title": "Principal AI Product Manager",
+      "company": "Hireginie",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665399,
+      "title": "Principal Product Manager - AI Platform",
+      "company": "olifer",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1655729,
+      "title": "Principal Software Engineer - System Design & Architecture",
+      "company": "HyrMe",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666442,
+      "title": "Senior Principal Architect - Technology Cloud & Infrastructure",
+      "company": "Pragvo Advisors LLP",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663367,
+      "title": "AI Principal Product Manager",
+      "company": "Tekee",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666832,
+      "title": "Principal Data Scientist - Generative AI",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1651161,
+      "title": "Principal AI Engineer",
+      "company": "Talentiser",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1651085,
+      "title": "Principal AI Engineer",
+      "company": "Talentiser",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1648841,
+      "title": "Principal Engineer - Data Science",
+      "company": "HC Consulting",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1647941,
+      "title": "Principal Engineer - Software Development",
+      "company": "Square Root Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662275,
+      "title": "Principal Data Scientist - AI/ML",
+      "company": "Good Co",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667127,
+      "title": "Staff Engineer - System Design",
+      "company": "Mriyaa",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666366,
+      "title": "Staff Engineer - Backend Development",
+      "company": "NovoTree Minds Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669071,
+      "title": "Technical Staff Engineer - Firmware/Device Driver",
+      "company": "Square Root Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667884,
+      "title": "Staff Data Engineer - ETL Tools",
+      "company": "MOURI Tech",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667090,
+      "title": "Senior Staff Engineer - Java Technologies",
+      "company": "Careerxperts Consulting",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1664907,
+      "title": "Staff Software Engineer - Python",
+      "company": "Tarlan",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1659503,
+      "title": "Staff Engineer - Backend Architecture",
+      "company": "HuntingCube Recruitment Solution",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665992,
+      "title": "Staff Data Engineer - SQL/ETL/Data Warehousing",
+      "company": "Inumellas Consultancy Services",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668195,
+      "title": "Azure Data Engineer",
+      "company": "SK HR Consultants",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667026,
+      "title": "Staff Full Stack Engineer - Node.js/AngularJS",
+      "company": "Petals Careers",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1667876,
+      "title": "Azure Databricks Engineer",
+      "company": "Risk Resources",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668073,
+      "title": "Azure DevOps Engineer",
+      "company": "SP Staffing Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668893,
+      "title": "Azure Data Engineer - PySpark",
+      "company": "Starvoke Consultancy Services",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668166,
+      "title": "Azure Data Engineer - Medallion Architecture",
+      "company": "Ai Adept Consulting",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1665555,
+      "title": "Azure Data Engineer",
+      "company": "WowJobs",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1659931,
+      "title": "Senior Staff Engineer - .Net/AngularJS",
+      "company": "Winning Edge",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667290,
+      "title": "Azure AI Engineer - Backend Development",
+      "company": "Adroit Innovative Solutions",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1656289,
+      "title": "Staff Engineer - Payment & Distributed Systems",
+      "company": "HuntingCube Recruitment Solution",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664190,
+      "title": "Azure Data Engineer",
+      "company": "Visioncraft",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668359,
+      "title": "Senior Azure Kubernetes Engineer",
+      "company": "Kansoft",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668064,
+      "title": "Senior Azure Data Engineer",
+      "company": "SP Staffing Services",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1657963,
+      "title": "Senior Staff Engineer - AI/ML",
+      "company": "Bean HR Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664299,
+      "title": "Azure Data Engineer - Python/SQL",
+      "company": "Hiring Squad",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1661040,
+      "title": "Jumio - Staff Machine Learning Engineer - Biometrics",
+      "company": "Grizmo Labs",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1656431,
+      "title": "Staff Software Engineer - Java/Python",
+      "company": "Prime Search",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1656078,
+      "title": "Staff Software Engineer - SaaS Platform",
+      "company": "HyrMe",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667672,
+      "title": "Senior Azure Data Engineer - Python/PySpark",
+      "company": "Hirezy.ai",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1663108,
+      "title": "Azure DevOps Engineer - Linux & Scripting",
+      "company": "NeedsO'Need Recruitment Consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662008,
+      "title": "Azure Data Engineer - Microsoft Fabric",
+      "company": "Recruitment Hub 365",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1655895,
+      "title": "Staff Software Engineer - Broadband CPE Domain",
+      "company": "Sampoorna Computer People",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1648055,
+      "title": "Staff Engineer",
+      "company": "Taglynk Careers",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1650259,
+      "title": "Staff Engineer - Java Technologies",
+      "company": "Recruise India Consulting",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1661912,
+      "title": "Staff Software Engineer - Java/Spring Boot",
+      "company": "Grassik Search",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1666457,
+      "title": "Lead Azure Data Engineer",
+      "company": "Inumellas Consultancy Services",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1661711,
+      "title": "Azure Cloud & Platform Engineer",
+      "company": "AJ Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663905,
+      "title": "Azure Cloud/Windows Engineer - ITIL Process",
+      "company": "Basebiz Private Limited",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1658252,
+      "title": "Azure Data Engineer - Python",
+      "company": "TekIntegral",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1659454,
+      "title": "Azure Data Engineer - Microsoft Fabric",
+      "company": "The Growth Hive",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1651675,
+      "title": "Senior Staff Engineer - Firmware/RTOS",
+      "company": "RANDSTAD INDIA PVT LTD",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668091,
+      "title": "Sharepoint & Azure Developer",
+      "company": "ANAXON TECHNOLOGIES PRIVATE LIMITED",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1657899,
+      "title": "Azure Databricks Engineer - Anti-Money Laundry",
+      "company": "WowJobs",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1650309,
+      "title": "Staff Software Engineer - Java/Python",
+      "company": "TELL Jobs",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1654356,
+      "title": "Azure Data Engineer",
+      "company": "Burgeon IT Services",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1654872,
+      "title": "Lead/Staff Software Engineer - Full Stack Development",
+      "company": "Pylon Management Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656357,
+      "title": "Azure Data Engineer - PySpark/Databricks",
+      "company": "Coders Brain",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1653508,
+      "title": "Staff Test Automation Engineer - Unit/Stress Testing",
+      "company": "ConsultBae",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1648900,
+      "title": "Staff Software Engineer - Distributed Systems",
+      "company": "Careerist Management Consultants Pvt Ltd",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659857,
+      "title": "Senior Azure DevOps Engineer - CI/CD Pipeline",
+      "company": "TRH Consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1655638,
+      "title": "Azure & PostgreSQL Support Engineer",
+      "company": "SysMind",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659006,
+      "title": "Azure Synapse Analytics Data Engineer",
+      "company": "The Growth Hive",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1652742,
+      "title": "Azure Data Engineer - PySpark",
+      "company": "TeamPlus Staffing Solution",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1662390,
+      "title": "Ginesys One - Cloud Architect - Azure Kubernetes Service",
+      "company": "Ginesys",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656041,
+      "title": "L3 Azure Cloud/Azure Solution Architect",
+      "company": "Applied Cloud Computing",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1650104,
+      "title": "Azure Cloud Architect",
+      "company": "Epicenter",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656935,
+      "title": "EverestDX - Cloud Data Architect - Azure",
+      "company": "Everestdx",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1657938,
+      "title": "Presales/Solution Architect - Azure Cloud Services",
+      "company": "Team Computers",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1651605,
+      "title": "Bitwise - Data Architect - Azure/AWS Cloud",
+      "company": "Bitwise Solutions",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1647495,
+      "title": "Equitas Small Finance Bank - Cloud Architect/Senior Cloud Engineer - AWS & Azure Platform",
+      "company": "Equitas Small Finance Bank Ltd",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1645556,
+      "title": "JLL - Principal Cloud Platform Architect - AWS/Azure/GCP",
+      "company": "JLL",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1655844,
+      "title": "Cloud Architect - AWS/Azure",
+      "company": "Talent Corner HR Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1646155,
+      "title": "Azure Cloud Architect",
+      "company": "Volto Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664764,
+      "title": "Cloud AI Architect",
+      "company": "TRUSTKLUB Consulting",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1658790,
+      "title": "Cloud Architect",
+      "company": "BinaryStar SearchX",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660269,
+      "title": "Cloud Architect - IaaS/PaaS",
+      "company": "Coders Brain",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667385,
+      "title": "Senior Cloud Security Architect - DevSecOps",
+      "company": "Sourcebae",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665393,
+      "title": "AI Storage Cloud Architect",
+      "company": "MacroHire",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1665166,
+      "title": "Salesforce Service Cloud Architect",
+      "company": "Etenico Recruits",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1666964,
+      "title": "Salesforce Data Cloud Lead/Architect",
+      "company": "TTC Group",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1659024,
+      "title": "Cloud & Infrastructure Architect",
+      "company": "Mancer Consulting Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1652050,
+      "title": "Cloud Architect - Google Cloud Platform",
+      "company": "Spot Your Leaders & Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1643904,
+      "title": "Cloud Architect - AWS/Azure",
+      "company": "HIRâ€™D",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665145,
+      "title": "Cloud Security Engineer - AWS/Azure",
+      "company": "Indus Action",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1659079,
+      "title": "Cloud Solution Architect - AWS Data Platform",
+      "company": "Impetus Career Consultants",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1653262,
+      "title": "Azure L3 Cloud Support Engineer",
+      "company": "Infogrowth",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1653266,
+      "title": "Cloud Solution Architect - Cyber Security",
+      "company": "Thinkaloud Consulting Private Limited",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1669034,
+      "title": "Senior Manager/Assistant General Manager - Azure Cloud",
+      "company": "HireVeda",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1653516,
+      "title": "Cloud Solution Architect - Application Architecture",
+      "company": "Trailblaze Careerpaths Global",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1650531,
+      "title": "Cloud Deployment/Azure Administrator Engineer",
+      "company": "IPEOPLE BUSINESS SOLUTIONS",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1660398,
+      "title": "Cloud Infrastructure Lead - AWS/Azure/GCP",
+      "company": "Good Co",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1665259,
+      "title": "Horigine - SAP S/4HANA Public Cloud Solution Architect",
+      "company": "Horigine Consulting",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1657505,
+      "title": "Salesforce Technical Architect - Marketing Cloud",
+      "company": "Talent Corner HR Services",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1655535,
+      "title": "Willware Technologies - Salesforce Communications Cloud Architect",
+      "company": "Willware Technologies",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1645769,
+      "title": "Azure Data Architect",
+      "company": "Mount Talent Consulting",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1657004,
+      "title": "AI Architect - .Net/React.js",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668862,
+      "title": "Erwin Data Modeler/Data Architect",
+      "company": "Resource Solutions",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667376,
+      "title": "Data Architect - LLM/RAG",
+      "company": "4th Orbit Business Solutions",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1664957,
+      "title": "ServiceNow Architect",
+      "company": "Volto Consulting",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1668819,
+      "title": "Architect/Lead - SoC Design Verification",
+      "company": "Career Makers",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668529,
+      "title": "AI Architect - Python/Machine Learning",
+      "company": "Vashistha Consulting Group (VCG)",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1669031,
+      "title": "ServiceNow ITOM Architect",
+      "company": "Strategic HR Solutions",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1667052,
+      "title": "ServiceNow Architect - ITSM/CMDB",
+      "company": "Nam Info Inc",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1666968,
+      "title": "Business Architect - GuideWire Integration",
+      "company": "Neerinfo Solutions",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1667862,
+      "title": "Enterprise Architect - SuperApp/Agentic AI",
+      "company": "Employee Forums",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1664377,
+      "title": "Salesforce Architect",
+      "company": "Rojo Integrations",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1664182,
+      "title": "Salesforce Architect",
+      "company": "The Glove",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1664007,
+      "title": "Data Architect",
+      "company": "Spectrum Consulting",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668660,
+      "title": "Databricks Architect/Engineer",
+      "company": "HR Works Consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668745,
+      "title": "Generative AI Architect",
+      "company": "Path Mentors Staffing Solution ",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667160,
+      "title": "System Architect - Agentic AI Infrastructure",
+      "company": "HiringBlaze",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1667375,
+      "title": "AI Architect - LLM/RAG Solutions",
+      "company": "Zone IT Solutions",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1663664,
+      "title": "Security Architect",
+      "company": "Futures and Careers",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663585,
+      "title": "Security Architect",
+      "company": "Talent Potential Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1663826,
+      "title": "ServiceNow Architect",
+      "company": "Ushta Te Consultancy Services",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1666100,
+      "title": "Engineering Architect - Backend Development",
+      "company": "Recrew AI",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668034,
+      "title": "E2Open GTM Architect",
+      "company": "ARA Resources",
+      "reason": "wrong_stack_title"
+    },
+    {
+      "id": 1667719,
+      "title": "Quality Engineering Architect",
+      "company": "Mount Talent Consulting",
+      "reason": "qa_quality_engineering"
+    },
+    {
+      "id": 1666490,
+      "title": "Senior Architect - AI/ML Systems",
+      "company": "BIZ STAFFING COMRADE",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1652260,
+      "title": "Netsmart - Software Architect - .Net/Mobile Full Stack Development",
+      "company": "Netsmart Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662855,
+      "title": ".Net Full Stack Developer",
+      "company": "Golden Hire Consultancy",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666035,
+      "title": ".Net Core Full Stack Developer",
+      "company": "TeamPlus Staffing Solution",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1661384,
+      "title": ".Net Full Stack Developer",
+      "company": "Recruitment Hub 365",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664012,
+      "title": "Senior .Net Full Stack Developer",
+      "company": "Upcruit",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662601,
+      "title": ".Net Full Stack Developer - C#/AngularJS",
+      "company": "Patronage HR Solution",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667676,
+      "title": "Full Stack Developer - Python/.Net",
+      "company": "SysMind",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1656178,
+      "title": "Full Stack .Net Developer",
+      "company": "Panmach",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668306,
+      "title": "Associate Full Stack Developer - .Net/AngularJS",
+      "company": "SysMind",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668100,
+      "title": "Senior Full Stack Developer - .Net/React.js",
+      "company": "ANAXON TECHNOLOGIES PRIVATE LIMITED",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1664087,
+      "title": "Full Stack Developer - .Net & React.js",
+      "company": "Softomatic Technology Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667613,
+      "title": "Senior Full Stack Developer - .Net/React.js",
+      "company": "Sureminds Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666939,
+      "title": "Senior Full Stack Developer - .Net/React.js",
+      "company": "Magnet HR Consulting Services",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662073,
+      "title": "Vysystems - .Net Core Full Stack Developer - AngularJS/Entity Framework",
+      "company": "Vy Systems",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1657641,
+      "title": "Senior Full Stack .Net Developer",
+      "company": "Konnectrack People Search & Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668645,
+      "title": "Full Stack Developer - MERN Stack",
+      "company": "Zealant Consulting Group",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1656024,
+      "title": ".Net Full Stack Developer - C#/ASP/AngularJS",
+      "company": "Hashone Careers",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662561,
+      "title": "Full Stack Developer - .Net Core/Angular",
+      "company": "Aatral Hr Consulting",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668990,
+      "title": "Full Stack Developer",
+      "company": "Career Makers",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1668994,
+      "title": "Full Stack Developer",
+      "company": "HiringBlaze",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662405,
+      "title": "Full Stack Developer - .Net Core/SQL Server",
+      "company": "Skillsyncs Business Solutions",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667984,
+      "title": "Full Stack Developer",
+      "company": "FindErnest",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1651449,
+      "title": ".Net Full Stack Developer",
+      "company": "Mantraminds",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1652354,
+      "title": "Somani Technologies - .Net Full Stack Developer",
+      "company": "Somani Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666846,
+      "title": "Full Stack Developer",
+      "company": "RiverForest Connections",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1653841,
+      "title": "Java Full Stack Architect - Distributed Systems",
+      "company": "Aari Consultants",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1650087,
+      "title": ".Net Full Stack Developer",
+      "company": "Talent Pro",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1653171,
+      "title": "Senior .Net Full Stack Engineer",
+      "company": "TeamPlus Staffing Solution",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668806,
+      "title": "Full Stack Engineer - Node.js/React.js",
+      "company": "Scrabble",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1668175,
+      "title": "Full Stack Developer - Java/React.js",
+      "company": "SK HR Consultants",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1668167,
+      "title": "Full Stack Developer - Java/React.js",
+      "company": "Starvoke Consultancy Services",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1668526,
+      "title": "Full Stack Developer - Java/React.js",
+      "company": "Coders Brain",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1668356,
+      "title": "Full Stack Engineer - Python/React.js",
+      "company": "QuickHire",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1657697,
+      "title": "Full Stack Engineer - .Net/React.js",
+      "company": "CRESCENDO GLOBAL LEADERSHIP HIRING INDIA PRIVATE L",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667603,
+      "title": "Senior Full Stack Engineer - MERN Stack",
+      "company": "Unico Talent",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1662481,
+      "title": "Full Stack Developer - .Net/React.js",
+      "company": "SysMind",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667254,
+      "title": "Full Stack Developer - Java/React.js",
+      "company": "Hawk Sense Business Solution pvt. ltd.",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1667210,
+      "title": "Full Stack Developer - React Native",
+      "company": "WowJobs",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1648869,
+      "title": ".Net Full Stack Developer",
+      "company": "Albireo Recruiters",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1666070,
+      "title": "Full Stack AI Developer",
+      "company": "Workplace",
+      "reason": "pure_ai_data_without_dotnet"
+    },
+    {
+      "id": 1668791,
+      "title": "Python Full Stack Developer - React/Next.js",
+      "company": "Hiring Squad",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1666896,
+      "title": "Full Stack Developer - Python/React.js",
+      "company": "Rapid Talent Solutions",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1668591,
+      "title": "Java Full Stack Developer",
+      "company": "Jobato HR Consultancy",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1666859,
+      "title": "Full Stack Developer",
+      "company": "The Reliable Jobs",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    },
+    {
+      "id": 1647852,
+      "title": ".Net Full Stack Developer",
+      "company": "First Career Center",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1648008,
+      "title": ".Net Full Stack Developer",
+      "company": "Hirezy.ai",
+      "reason": "exp_max_5"
+    },
+    {
+      "id": 1648116,
+      "title": ".Net Full Stack Developer",
+      "company": "NS Global Corporation",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667611,
+      "title": "Full Stack Developer - Ruby on Rails",
+      "company": "HyreSnap",
+      "reason": "non_dotnet_primary"
+    },
+    {
+      "id": 1660952,
+      "title": "Senior Full Stack Developer - C#/.Net/React.js",
+      "company": "Scaling Theory Technologies",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1668170,
+      "title": "Java Full Stack Developer",
+      "company": "Olive Trees Consulting",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1666559,
+      "title": "Full Stack Developer - Java/AngularJS",
+      "company": "Magnet HR Consulting Services",
+      "reason": "java_primary"
+    },
+    {
+      "id": 1650019,
+      "title": ".Net Full Stack Developer - C#/AngularJS",
+      "company": "Talentxo",
+      "reason": "location_not_hyd_remote"
+    },
+    {
+      "id": 1667215,
+      "title": "Full Stack Developer - Claude/Cursor Code",
+      "company": "Mesitus",
+      "reason": "generic_engineering_without_dotnet_cloud"
+    }
+  ],
+  "seen": [
+    {
+      "id": 1655678,
+      "title": "Happiest Minds Technologies - .Net Solution Architect",
+      "company": "Happiest Minds Technologies",
+      "location": "Madurai",
+      "score": 65
+    },
+    {
+      "id": 1661035,
+      "title": "McLaren Strategic Solutions - Solution Architect - .Net Frameworks",
+      "company": "MCLAREN STRATEGIC VENTURES INDIA PRIVATE LIMITED",
+      "location": "Bangalore, Others",
+      "score": 70
+    },
+    {
+      "id": 1649979,
+      "title": "Solution Architect - .Net/Sharepoint",
+      "company": "Coe Solutions",
+      "location": "Bhopal, Vadodara/Baroda, Mumbai, Gurgaon/Gurugram, Noida, Bangalore",
+      "score": 70
+    },
+    {
+      "id": 1650661,
+      "title": "Soliton Technologies - Software Solution Architect - C#/.Net",
+      "company": "Soliton Technologies",
+      "location": "Chennai",
+      "score": 65
+    },
+    {
+      "id": 1644239,
+      "title": "Happiest Minds - Technical Presales Solution Architect - Java/.Net",
+      "company": "Happiest Minds Technologies",
+      "location": "Bangalore",
+      "score": 65
+    },
+    {
+      "id": 1646627,
+      "title": "McLaren Strategic Solutions - Solution Architect - .Net Technologies",
+      "company": "MCLAREN STRATEGIC VENTURES INDIA PRIVATE LIMITED",
+      "location": "Bangalore",
+      "score": 65
+    },
+    {
+      "id": 1660058,
+      "title": ".Net Solution Architect - C#/Entity Framework",
+      "company": "People Creation",
+      "location": "Trivandrum/Thiruvananthapuram, Cochin/Kochi, Chennai, Bangalore",
+      "score": 70
+    },
+    {
+      "id": 1669002,
+      "title": "Solution Architect - Java/Python",
+      "company": "Tidyhire",
+      "location": "Hyderabad",
+      "score": 45
+    },
+    {
+      "id": 1669166,
+      "title": "Azure Solution Architect",
+      "company": "Task Staffing Solutions",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1667955,
+      "title": "Solution Architect - Baggage Handling Systems",
+      "company": "Evoke HR Solutions",
+      "location": "Pune",
+      "score": 40
+    },
+    {
+      "id": 1666215,
+      "title": "Solution Architect - Data Engineering",
+      "company": "Avisoft",
+      "location": "Anywhere in India/Multiple Locations",
+      "score": 45
+    },
+    {
+      "id": 1667068,
+      "title": "Solution Architect - Datacenter",
+      "company": "Infinium Associates",
+      "location": "Mumbai",
+      "score": 45
+    },
+    {
+      "id": 1667075,
+      "title": "Enterprise Solution Architect",
+      "company": "Live Connections",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1666591,
+      "title": "Salesforce Solution Architect",
+      "company": "SK HR Consultants",
+      "location": "Noida",
+      "score": 45
+    },
+    {
+      "id": 1666672,
+      "title": "Salesforce Solution Architect",
+      "company": "Career Infosystem",
+      "location": "Noida",
+      "score": 45
+    },
+    {
+      "id": 1666360,
+      "title": "Azure Solution Architect",
+      "company": "Job Delights",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1669146,
+      "title": "Presales AI Solution Architect",
+      "company": "E-Solutions",
+      "location": "Noida",
+      "score": 45
+    },
+    {
+      "id": 1667242,
+      "title": "Solution & Technical Architect - ADM Services",
+      "company": "Live Connections",
+      "location": "Bangalore",
+      "score": 70
+    },
+    {
+      "id": 1664620,
+      "title": "Salesforce Solution Architect",
+      "company": "INFINITES HR SERVICES     ",
+      "location": "Noida, Gurgaon/Gurugram",
+      "score": 45
+    },
+    {
+      "id": 1666867,
+      "title": "Enterprise Solution Architect - Digital Transformation",
+      "company": "Tez Recruit",
+      "location": "Thane, Navi Mumbai",
+      "score": 45
+    },
+    {
+      "id": 1661971,
+      "title": "Solution Architect - AI Security",
+      "company": "People First Consultants",
+      "location": "Anywhere in India/Multiple Locations",
+      "score": 40
+    },
+    {
+      "id": 1664742,
+      "title": "MDM Data Architect/Solution Architect",
+      "company": "Hawk Sense Business Solution pvt. ltd.",
+      "location": "Bangalore, Noida",
+      "score": 45
+    },
+    {
+      "id": 1666669,
+      "title": "Salesforce Solution Architect - LWC/Apex",
+      "company": "Strategic HR Solutions",
+      "location": "Noida",
+      "score": 45
+    },
+    {
+      "id": 1669112,
+      "title": "Databricks Solution Architect - Data Science",
+      "company": "NS Global Corporation",
+      "location": "Remote, Anywhere in India/Multiple Locations",
+      "score": 40
+    },
+    {
+      "id": 1665928,
+      "title": "Loginsoft - Solution Architect - Salesforce ETM",
+      "company": "Loginsoft",
+      "location": "Bangalore, Hyderabad, Pune",
+      "score": 40
+    },
+    {
+      "id": 1667019,
+      "title": "Solution Architect - Cloud Computing",
+      "company": "HiPos Consulting",
+      "location": "Mumbai, Navi Mumbai, Thane",
+      "score": 45
+    },
+    {
+      "id": 1662739,
+      "title": "Talkdesk Solution Architect",
+      "company": "Hurix Digital",
+      "location": "Others",
+      "score": 40
+    },
+    {
+      "id": 1664939,
+      "title": "Technical/Solution Architect - eCommerce Platform",
+      "company": "JFF - jobfittmentfinder",
+      "location": "Mumbai, Navi Mumbai",
+      "score": 40
+    },
+    {
+      "id": 1666690,
+      "title": "Oracle Fusion Solution Architect",
+      "company": "Aanseacore",
+      "location": "Chennai",
+      "score": 40
+    },
+    {
+      "id": 1662009,
+      "title": "AI Solution Architect",
+      "company": "Intelliserve",
+      "location": "Mumbai, Delhi NCR",
+      "score": 40
+    },
+    {
+      "id": 1667117,
+      "title": "Java Solution Architect - Native Cloud & Microservices Architecture",
+      "company": "HiringBlaze",
+      "location": "Chennai, Hyderabad",
+      "score": 45
+    },
+    {
+      "id": 1661839,
+      "title": "ALM Solution Architect",
+      "company": "Randstad",
+      "location": "Chennai",
+      "score": 40
+    },
+    {
+      "id": 1659742,
+      "title": "Solution Architect - Java/TOGAF",
+      "company": "Tidyhire",
+      "location": "Hyderabad",
+      "score": 45
+    },
+    {
+      "id": 1663377,
+      "title": "Presales Solution Architect - Healthcare EcoSystem",
+      "company": "Spot Your Leaders & Consulting",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1664866,
+      "title": "SAP PP Solution Architect",
+      "company": "The Glove",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1668402,
+      "title": "Presales Solution Architect - Cloud Infrastructure",
+      "company": "Growel Softech",
+      "location": "Mumbai",
+      "score": 45
+    },
+    {
+      "id": 1660429,
+      "title": "AI Solution Architect",
+      "company": "The Reliable Jobs",
+      "location": "Remote",
+      "score": 45
+    },
+    {
+      "id": 1660988,
+      "title": "EY - AI Solution Architect",
+      "company": "Ernst and Young LLP",
+      "location": "Gurgaon/Gurugram",
+      "score": 45
+    },
+    {
+      "id": 1659012,
+      "title": "AI Solution Architect",
+      "company": "Avisoft",
+      "location": "Gurgaon/Gurugram",
+      "score": 45
+    },
+    {
+      "id": 1663015,
+      "title": "ServiceNow Product & Solution Architect",
+      "company": "Tidyhire",
+      "location": "Hyderabad",
+      "score": 40
+    },
+    {
+      "id": 1662505,
+      "title": "Senior AWS Solution Architect",
+      "company": "Laksh Consultants",
+      "location": "Bangalore",
+      "score": 55
+    },
+    {
+      "id": 1661202,
+      "title": "Azure Solution Architect - Cloud Infrastructure",
+      "company": "Good Co",
+      "location": "Overseas/International",
+      "score": 45
+    },
+    {
+      "id": 1665697,
+      "title": "ServiceNow Technical Lead/Solution Architect",
+      "company": "Three Across",
+      "location": "Noida, Bangalore, Mumbai",
+      "score": 60
+    },
+    {
+      "id": 1664707,
+      "title": "Solution Architect - AI Products & Software Development",
+      "company": "CODEWORK",
+      "location": "Chennai",
+      "score": 45
+    },
+    {
+      "id": 1656930,
+      "title": "Solution Architect - Distributed Enterprise Applications",
+      "company": "Prodcon Tech Services",
+      "location": "Thane, Mumbai",
+      "score": 45
+    },
+    {
+      "id": 1654765,
+      "title": "Solution Architect - AWS Platform",
+      "company": "Boolean Staffing & Recruitment Solutions Pvt Ltd",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1659625,
+      "title": "Senior Solution Architect - Java/Python",
+      "company": "Tidyhire",
+      "location": "Hyderabad",
+      "score": 55
+    },
+    {
+      "id": 1654468,
+      "title": "Solution Architect - Delivery & Engineering",
+      "company": "Basebiz Private Limited",
+      "location": "Pune",
+      "score": 40
+    },
+    {
+      "id": 1660628,
+      "title": "Solution Architect - SAP BRIM",
+      "company": "Clovio IT Consulting Private Limited",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1663524,
+      "title": "ParentPay Group - Technical Architect - .Net/React.js/Azure",
+      "company": "ParentPay",
+      "location": "Pune",
+      "score": 70
+    },
+    {
+      "id": 1664870,
+      "title": "Azure .Net Architect - C#/React.js",
+      "company": "The Glove",
+      "location": "Bangalore",
+      "score": 70
+    },
+    {
+      "id": 1668074,
+      "title": ".Net Azure Developer",
+      "company": "SP Staffing Services",
+      "location": "Pune",
+      "score": 30
+    },
+    {
+      "id": 1664836,
+      "title": "Azure Security Architect",
+      "company": "Acme Services",
+      "location": "Navi Mumbai",
+      "score": 45
+    },
+    {
+      "id": 1664872,
+      "title": "Azure AI Architect",
+      "company": "The Glove",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1661292,
+      "title": "Senior .Net Technical Lead/Architect",
+      "company": "Delphie Consulting services",
+      "location": "Chennai, Tamil Nadu, Others",
+      "score": 95
+    },
+    {
+      "id": 1665210,
+      "title": "Azure Fabric Architect - DAX Power BI",
+      "company": "Growel Softech",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1667949,
+      "title": "Technical Architect - Backend & AI",
+      "company": "Neemtree",
+      "location": "Mumbai",
+      "score": 40
+    },
+    {
+      "id": 1669120,
+      "title": "Technical Product Architect",
+      "company": "E-Solutions",
+      "location": "Noida",
+      "score": 40
+    },
+    {
+      "id": 1665705,
+      "title": "Technical Architect - Spring Boot",
+      "company": "BinaryStar SearchX",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1666354,
+      "title": "Senior Developer - .Net/Azure",
+      "company": "Job Delights",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1667559,
+      "title": "Salesforce Technical Architect",
+      "company": "Savishty",
+      "location": "Remote, Anywhere in India/Multiple Locations",
+      "score": 40
+    },
+    {
+      "id": 1656790,
+      "title": "Technical Architect - .Net Core Frameworks",
+      "company": "Trailblaze Careerpaths Global",
+      "location": "Jaipur",
+      "score": 65
+    },
+    {
+      "id": 1664563,
+      "title": ".Net Technical Manager",
+      "company": "Sampoorna Computer People",
+      "location": "Chennai",
+      "score": 45
+    },
+    {
+      "id": 1662595,
+      "title": "Technical Architect - Java/Microservices",
+      "company": "Fidius Advisory",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1666700,
+      "title": "Technical Quality Assurance Architect",
+      "company": "Square Root Consulting",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1662270,
+      "title": "Salesforce Technical Architect",
+      "company": "Success Jobs Organization",
+      "location": "Jaipur",
+      "score": 40
+    },
+    {
+      "id": 1652052,
+      "title": "Azure Cloud Architect - Azure Kubernetes Service",
+      "company": "Spot Your Leaders & Consulting",
+      "location": "Pune",
+      "score": 45
+    },
+    {
+      "id": 1663753,
+      "title": "Technical Software Architect - Python/React",
+      "company": "TekPillar",
+      "location": "Pune, Maharashtra, Others",
+      "score": 45
+    },
+    {
+      "id": 1659861,
+      "title": "Technical Architect - Full Stack Development",
+      "company": "UPAMP Business Solutions",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1657622,
+      "title": "Technical Architect - C++",
+      "company": "Sunsign Hiring",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1666349,
+      "title": "Azure Integration Engineer - .Net/PaaS",
+      "company": "Big Ideas Social Media Recruitment",
+      "location": "Hyderabad",
+      "score": 30
+    },
+    {
+      "id": 1658780,
+      "title": "Technical Architect - Full Stack Development",
+      "company": "Benchire",
+      "location": "Gurgaon/Gurugram",
+      "score": 40
+    },
+    {
+      "id": 1658641,
+      "title": "Technical Architect - Loan Origination System",
+      "company": "HriZen",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1659174,
+      "title": "Salesforce Technical Architect",
+      "company": "Wilco Source",
+      "location": "Hyderabad",
+      "score": 45
+    },
+    {
+      "id": 1666355,
+      "title": "ServiceNow ITSM Functional Technical Architect",
+      "company": "Job Delights",
+      "location": "Remote",
+      "score": 40
+    },
+    {
+      "id": 1656830,
+      "title": "Technical Architect - Loan Origination System",
+      "company": "Fidius Advisory",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1665862,
+      "title": "Data Architect - Azure Databricks",
+      "company": "GoStravvy",
+      "location": "Abu Dhabi, Overseas/International",
+      "score": 45
+    },
+    {
+      "id": 1656975,
+      "title": "Temenos Technical Architect",
+      "company": "LIB CAP Infotech Solutions",
+      "location": "Pune, Chennai, Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1663273,
+      "title": "Technical Architect - Conga CPQ/CLM",
+      "company": "Sureminds Solutions",
+      "location": "Remote",
+      "score": 40
+    },
+    {
+      "id": 1662030,
+      "title": "Technical Lead - Azure Data Engineering",
+      "company": "Hyrhub",
+      "location": "Bangalore, Mangalore",
+      "score": 65
+    },
+    {
+      "id": 1659284,
+      "title": "Salesforce Technical Architect - Apex/Visual Force",
+      "company": "Cloud Talent Search",
+      "location": "Bangalore, Hyderabad, Chennai",
+      "score": 40
+    },
+    {
+      "id": 1658993,
+      "title": "ServiceNow Technical Architect - ITSM/ITBM Modules",
+      "company": "Shashwath Solution",
+      "location": "Bangalore, Pune, Chennai, Hyderabad",
+      "score": 40
+    },
+    {
+      "id": 1655135,
+      "title": "Senior Technical Architect",
+      "company": "Resources Valley",
+      "location": "Jaipur",
+      "score": 55
+    },
+    {
+      "id": 1654841,
+      "title": "ServiceNow Technical Architect",
+      "company": "Recruitment Hub 365",
+      "location": "Bangalore, Pune, Mohali",
+      "score": 40
+    },
+    {
+      "id": 1662133,
+      "title": "Principal Technical Architect - Appian Platform",
+      "company": "Talent Tribe",
+      "location": "Chennai",
+      "score": 45
+    },
+    {
+      "id": 1652730,
+      "title": "Technical Architect - System Design",
+      "company": "High Impact Talent",
+      "location": "Kolkata",
+      "score": 40
+    },
+    {
+      "id": 1646810,
+      "title": "Azure Solution Architect",
+      "company": "Thinkaloud Consulting Private Limited",
+      "location": "Noida",
+      "score": 45
+    },
+    {
+      "id": 1646437,
+      "title": "Azure Cloud Architect",
+      "company": "Next Gen Digital Technology",
+      "location": "Indore",
+      "score": 45
+    },
+    {
+      "id": 1664390,
+      "title": "Technical Lead/Voice AI Architect - Conversational AI",
+      "company": "Peoplelab Advisory",
+      "location": "Hyderabad",
+      "score": 60
+    },
+    {
+      "id": 1655528,
+      "title": "Willware Technologies - Technical Architect - JDA SCPO Suite",
+      "company": "Willware Technologies",
+      "location": "Bangalore",
+      "score": 40
+    },
+    {
+      "id": 1664776,
+      "title": "Software Architect - .Net/C#",
+      "company": "NAV Fund Services Back Office",
+      "location": "Jaipur",
+      "score": 65
+    },
+    {
+      "id": 1644893,
+      "title": "CCTech - Lead Software Engineer/C++ Architect - iAM Components",
+      "company": "CCTech",
+      "location": "Pune",
+      "score": 65
+    },
+    {
+      "id": 1664986,
+      "title": "C/C++ Developer",
+      "company": "Lancesoft India Pvt Ltd",
+      "location": "Bangalore",
+      "score": 0
+    },
+    {
+      "id": 1666030,
+      "title": "Senior Software Development Engineer - C++ Programming",
+      "company": "ConsultTrinity Services",
+      "location": "Chennai, Bangalore",
+      "score": 10
+    },
+    {
+      "id": 1662161,
+      "title": "C# Lead Software Engineer - Microservices Architecture",
+      "company": "Orcapod Consulting Services",
+      "location": "Bangalore",
+      "score": 45
+    },
+    {
+      "id": 1662562,
+      "title": "C/C++ Developer - Payment Applications",
+      "company": "Arting Digital",
+      "location": "Bangalore",
+      "score": 0
+    },
+    {
+      "id": 1665758,
+      "title": "Embedded C/C++ Developer - Linux & Wireless Technologies",
+      "company": "coneexion",
+      "location": "Bangalore",
+      "score": 0
+    },
+    {
+      "id": 1663838,
+      "title": "Principal Software Architect - Java/Python",
+      "company": "Good Co",
+      "location": "Anywhere in India/Multiple Locations",
+      "score": 45
+    },
+    {
+      "id": 1663784,
+      "title": "Enterprise Software Architect - Java/Spring Boot",
+      "company": "Arting Digital",
+      "location": "Delhi NCR, Noida, Greater Noida, Hyderabad",
+      "score": 40
+    },
+    {
+      "id": 1668919,
+      "title": "C# Developer - .Net/ASP",
+      "company": "Code Vyasa",
+      "location": "Gurgaon/Gurugram, Haryana",
+      "score": 25
+    }
+  ],
+  "blockerSummary": null,
+  "notes": [
+    "resume=C:\\Users\\MohammedAhmed\\Downloads\\MyRepo-local-no-cursor-v2\\MyRepo\\resumes\\Rafi_Resume.docx",
+    "ctc=52->65",
+    "login_ok url=https://www.hirist.tech/jobfeed",
+    "candidates=5 seen=449"
+  ],
   "preflight": null,
-  "logPath": "C:/Users/MohammedAhmed/.cursor/portal-home-logs/hirist/hirist-20260907T072013Z.log"
+  "logPath": "C:/Users/MohammedAhmed/Downloads/MyRepo-local-no-cursor-v2/MyRepo/artifacts/home-runs/hirist/hirist-20260907T095953Z.log"
 }
