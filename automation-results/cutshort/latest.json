@@ -3,58 +3,32 @@
   "source": "home-local",
   "date": "2026-09-13",
   "startedAt": null,
-  "finishedAt": "2026-09-13T12:11:46.312Z",
+  "finishedAt": "2026-09-13T13:56:05.852Z",
   "host": "NEM01-GBGR234",
   "ok": true,
   "counts": {
     "applied": 0,
     "external": 0,
-    "rejected": 2,
+    "rejected": 0,
     "blocked": 0,
     "skipped": 0,
-    "seen": 3420
+    "seen": 3441
   },
   "applied": [],
   "external": [],
-  "rejected": [
-    {
-      "id": "6aa3ef7ed8b7e67aafe02172",
-      "title": "Founding Full-Stack Engineer / Technical Lead",
-      "company": "PencilCrew",
-      "reason": "exception"
-    },
-    {
-      "id": "6aa560940057646f34320458",
-      "title": "Data Governance Lead",
-      "company": "The supreme consultancy",
-      "reason": "exception"
-    }
-  ],
+  "rejected": [],
   "blocked": [],
   "skipped": [],
-  "seen": [
-    {
-      "id": "6aa3ef7ed8b7e67aafe02172",
-      "title": "Founding Full-Stack Engineer / Technical Lead",
-      "company": "PencilCrew",
-      "tier": 1
-    },
-    {
-      "id": "6aa560940057646f34320458",
-      "title": "Data Governance Lead",
-      "company": "The supreme consultancy",
-      "tier": 2
-    }
-  ],
+  "seen": [],
   "blockerSummary": null,
   "notes": [
-    "qualifying=2",
+    "qualifying=0",
     "q_answered=0",
     "q_locked_empty=0",
     "q_already_submitted=0",
-    "tailored_built=2",
+    "tailored_built=0",
     "tailored_uploaded=0"
   ],
   "preflight": null,
-  "logPath": "C:/Users/MohammedAhmed/Downloads/MyRepo-local-no-cursor-v2/MyRepo/artifacts/home-runs/cutshort/cutshort-20260913T120020Z.log"
+  "logPath": "C:/Users/MohammedAhmed/Downloads/MyRepo-local-no-cursor-v2/MyRepo/artifacts/home-runs/cutshort/cutshort-20260913T173449Z.log"
 }
