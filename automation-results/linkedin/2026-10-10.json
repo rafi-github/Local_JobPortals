@@ -1,0 +1,31 @@
+{
+  "portal": "linkedin",
+  "source": "home-local",
+  "date": "2026-10-10",
+  "startedAt": null,
+  "finishedAt": "2026-10-10T00:20:44.509Z",
+  "host": "LAPY",
+  "ok": false,
+  "counts": {
+    "applied": 0,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 1,
+    "skipped": 0,
+    "seen": 0
+  },
+  "applied": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [
+    {
+      "reason": "cursor_agent_cli_missing"
+    }
+  ],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "cursor_agent_cli_missing",
+  "notes": [],
+  "preflight": null,
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/linkedin/linkedin-20261010T002043Z.log"
+}
