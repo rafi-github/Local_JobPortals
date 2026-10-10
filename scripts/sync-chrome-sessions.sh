@@ -69,7 +69,7 @@ DESTS=(
   "${INSTAHYRE_CHROME_PROFILE:-$(node tools/chrome_session.js path instahyre)}"
   "${INDEED_CHROME_PROFILE:-$(node tools/chrome_session.js path indeed)}"
   "${HIRIST_CHROME_PROFILE:-$(node tools/chrome_session.js path hirist)}"
-  "${LINKEDIN_CHROME_PROFILE_ALT:-/home/ubuntu/chrome-linkedin-profile}"
+  "${LINKEDIN_CHROME_PROFILE_ALT:-$(node tools/chrome_session.js path linkedin_alt)}"
 )
 COOKIE_SETS=(
   "li_at"
@@ -283,7 +283,13 @@ if [[ "$IS_WIN" -eq 1 && "$ABE" -eq 1 && "${CHROME_FORCE_COOKIE_SYNC:-0}" != "1"
     portal="${PORTALS[$i]}"
     dest="${DESTS[$i]}"
     read -r -a cookies <<< "${COOKIE_SETS[$i]}"
-    mkdir -p "$dest"
+    if ! mkdir -p "$dest" 2>/dev/null; then
+      echo "NOTE: skip $portal — cannot mkdir $dest (optional=${REQUIRED[$i]})" >&2
+      if [[ "${REQUIRED[$i]}" == "1" ]]; then
+        missing_required=$((missing_required + 1))
+      fi
+      continue
+    fi
     touch "$dest/First Run" 2>/dev/null || true
     set +e
     has_auth "$dest" "${cookies[@]}"
@@ -300,6 +306,8 @@ if [[ "$IS_WIN" -eq 1 && "$ABE" -eq 1 && "${CHROME_FORCE_COOKIE_SYNC:-0}" != "1"
   done
   node tools/chrome_session.js status || true
   echo "Chrome session sync complete (Windows ABE preserve mode)."
+  # Home ABE mode: missing li_at is expected until headed/auto login; do not fail
+  # preflight here — launch-chrome-cdp + auto_login heal the session.
   if [[ "$STRICT" == "1" && "$missing_required" -gt 0 ]]; then
     echo "ERROR: $missing_required required portal CDP profile(s) still lack auth." >&2
     exit 3

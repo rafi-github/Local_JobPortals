@@ -57,7 +57,20 @@ done
 echo "Resume ready (rebuilt from Mohammed_Abdul_Rafi_Ahmed_Resume.docx):"
 ls -la "$OWNER_SRC" "$SRC" /home/ubuntu/resumes/Rafi_Resume.docx /home/ubuntu/Documents/Rafi_Resume.docx 2>/dev/null || true
 
-# JD tailor dependency (best-effort; tailor also self-installs if missing)
-if command -v python3 >/dev/null 2>&1; then
-  python3 -c "import docx" 2>/dev/null || python3 -m pip install -q -r "$ROOT/tools/requirements-resume.txt" >/dev/null 2>&1 || true
-fi
+# Python deps for resume tailor + LinkedIn auto_login (best-effort).
+# Prefer resolve-python.sh — Windows Store python3 stubs are broken.
+install_py_reqs() {
+  local req="$1"
+  [[ -f "$req" ]] || return 0
+  if [[ "$PY" == "py" ]]; then
+    py -3 -c "import docx, playwright" 2>/dev/null && return 0
+    py -3 -m pip install -q -r "$req" >/dev/null 2>&1 || true
+  elif command -v "$PY" >/dev/null 2>&1; then
+    "$PY" -c "import docx, playwright" 2>/dev/null && return 0
+    "$PY" -m pip install -q -r "$req" >/dev/null 2>&1 || true
+  elif command -v python3 >/dev/null 2>&1; then
+    python3 -c "import docx" 2>/dev/null || python3 -m pip install -q -r "$ROOT/tools/requirements-resume.txt" >/dev/null 2>&1 || true
+  fi
+}
+install_py_reqs "$ROOT/tools/requirements-apply.txt"
+install_py_reqs "$ROOT/tools/requirements-resume.txt"
