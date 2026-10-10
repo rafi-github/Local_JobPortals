@@ -283,14 +283,22 @@ if [[ "$cdp_ready" -eq 0 ]]; then
     mkdir -p "$ROOT/artifacts"
     ps_file="$ROOT/artifacts/_chrome_cdp_launch_${portal}.ps1"
     ps_file_win="$(cygpath -w "$ps_file" 2>/dev/null || echo "$ps_file")"
+    # PowerShell cannot Start-Process MSYS paths like /c/Program Files/...
+    chrome_win="$(cygpath -w "$chrome" 2>/dev/null || echo "$chrome")"
+    profile_win="$(cygpath -w "$profile" 2>/dev/null || echo "$profile")"
+    # Normalize accidental forward-slash Windows paths.
+    chrome_win="${chrome_win//\//\\}"
+    profile_win="${profile_win//\//\\}"
     profile_dir="${CHROME_PROFILE_DIRECTORY:-Default}"
     {
+      echo "\$ErrorActionPreference = 'Stop'"
       echo "\$chrome = @'"
-      echo "$chrome"
+      echo "$chrome_win"
       echo "'@"
       echo "\$ud = @'"
-      echo "$profile"
+      echo "$profile_win"
       echo "'@"
+      echo "if (-not (Test-Path -LiteralPath \$chrome)) { throw \"Chrome not found: \$chrome\" }"
       echo "\$args = @("
       echo "  '--no-sandbox',"
       # --disable-gpu can crash Chrome mid-CDP on some Windows home GPUs.
@@ -321,7 +329,7 @@ if [[ "$cdp_ready" -eq 0 ]]; then
     if ! powershell.exe -NoProfile -ExecutionPolicy Bypass -File "$ps_file_win"; then
       echo "WARNING: PowerShell -File launch failed — retrying inline Start-Process" >&2
       powershell.exe -NoProfile -Command \
-        "Start-Process -FilePath '$chrome' -ArgumentList @('--no-sandbox','--disable-dev-shm-usage','--disable-extensions','--no-first-run','--no-default-browser-check','--disable-session-crashed-bubble','--hide-crash-restore-bubble','--remote-debugging-address=127.0.0.1','--remote-debugging-port=9222','--remote-allow-origins=*','--user-data-dir=$profile','--profile-directory=${CHROME_PROFILE_DIRECTORY:-Default}','about:blank')" \
+        "Start-Process -FilePath '$chrome_win' -ArgumentList @('--no-sandbox','--disable-dev-shm-usage','--disable-extensions','--no-first-run','--no-default-browser-check','--disable-session-crashed-bubble','--hide-crash-restore-bubble','--remote-debugging-address=127.0.0.1','--remote-debugging-port=9222','--remote-allow-origins=*','--user-data-dir=$profile_win','--profile-directory=${CHROME_PROFILE_DIRECTORY:-Default}','about:blank')" \
         || true
     fi
   else

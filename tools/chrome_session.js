@@ -99,6 +99,9 @@ const PROFILES = {
   instahyre: defaultPortalProfile("instahyre"),
   indeed: defaultPortalProfile("indeed"),
   hirist: defaultPortalProfile("hirist"),
+  // Optional alt LinkedIn profile (cloud seed / secondary). Must resolve on Windows
+  // home too — never hardcode /home/ubuntu in sync-chrome-sessions.sh.
+  linkedin_alt: defaultPortalProfile("linkedin_alt"),
 };
 
 const AUTH_COOKIES = {

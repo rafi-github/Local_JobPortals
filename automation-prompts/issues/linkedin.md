@@ -1,5 +1,12 @@
 # LinkedIn — issues & fixes
 
+## 2026-10-10 (home)
+
+| Issue | Fix |
+| --- | --- |
+| Windows home preflight aborted: linkedin_alt DESTS hardcoded to /home/ubuntu so mkdir failed under set -e; PowerShell CDP launch used MSYS /c/... chrome path (Start-Process file not found); auto_login ModuleNotFoundError playwright | Resolve linkedin_alt via chrome_session.js; soft-skip optional mkdir; cygpath -w chrome/profile for PS1 Start-Process; requirements-apply+bootstrap install playwright |
+
+
 ## 2026-09-04 (cloud)
 
 | Issue | Fix |
