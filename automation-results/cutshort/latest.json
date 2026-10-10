@@ -1,62 +1,31 @@
 {
   "portal": "cutshort",
   "source": "home-local",
-  "date": "2026-09-18",
+  "date": "2026-10-10",
   "startedAt": null,
-  "finishedAt": "2026-09-18T18:06:00.032Z",
-  "host": "NEM01-GBGR234",
-  "ok": true,
+  "finishedAt": "2026-10-10T00:21:47.524Z",
+  "host": "LAPY",
+  "ok": false,
   "counts": {
-    "applied": 2,
+    "applied": 0,
     "external": 0,
     "rejected": 0,
-    "blocked": 0,
+    "blocked": 1,
     "skipped": 0,
-    "seen": 3490
+    "seen": 0
   },
-  "applied": [
-    {
-      "id": "6aad340eafc1b5a6fc4cdcd4",
-      "title": "Automation & AI Solutions Delivery Lead",
-      "company": "Cognizant",
-      "tier": 1,
-      "ctc": 40
-    },
-    {
-      "id": "6aaccff9ceb82da8c6798d45",
-      "title": "Senior Full-Stack Engineer",
-      "company": "Wissen Technology",
-      "tier": 2,
-      "ctc": 35
-    }
-  ],
+  "applied": [],
   "external": [],
   "rejected": [],
-  "blocked": [],
-  "skipped": [],
-  "seen": [
+  "blocked": [
     {
-      "id": "6aad340eafc1b5a6fc4cdcd4",
-      "title": "Automation & AI Solutions Delivery Lead",
-      "company": "Cognizant",
-      "tier": 1
-    },
-    {
-      "id": "6aaccff9ceb82da8c6798d45",
-      "title": "Senior Full-Stack Engineer",
-      "company": "Wissen Technology",
-      "tier": 2
+      "reason": "cursor_agent_cli_missing"
     }
   ],
-  "blockerSummary": null,
-  "notes": [
-    "qualifying=2",
-    "q_answered=2",
-    "q_locked_empty=316",
-    "q_already_submitted=75",
-    "tailored_built=2",
-    "tailored_uploaded=2"
-  ],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "cursor_agent_cli_missing",
+  "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/MohammedAhmed/Downloads/MyRepo-local-no-cursor-v2/MyRepo/artifacts/home-runs/cutshort/cutshort-20260918T173611Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/cutshort/cutshort-20261010T002144Z.log"
 }
