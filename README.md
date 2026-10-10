@@ -46,24 +46,14 @@ node tools/chrome_session.js status
 Disable the duplicate General Daily automation
 `30e2c023-9067-11f1-ba66-0e7d0216e441`; Naukri Daily owns that flow.
 
-## Home-local evening replicas (cloud can stay ON)
+## Daily run on this PC
 
-Second daily pass at **5 PM** on this PC (Task Scheduler + Cursor CLI). Cloud
-morning automations can remain enabled.
-
-See [`automation-prompts/HOME_AUTOMATIONS.md`](automation-prompts/HOME_AUTOMATIONS.md).
+One Windows Task Scheduler job runs every portal with the local Python and Node
+tools. It does not start the Cursor CLI and does not call the Cursor API.
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File scripts\install-all-home-tasks.ps1
 ```
 
-## Windows private worker (My Machines)
-
-Native Windows `agent worker start` currently crashes with `better-sqlite3`
-NODE_MODULE_VERSION 127 vs 137. Use WSL:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File scripts\fix-windows-agent-worker.ps1 -LaunchWsl
-```
-
-Or inside Ubuntu WSL: `bash scripts/setup-wsl-agent-worker.sh --name job-apply-laptop`
+Default time is **09:00** local. The task name is `LocalJobPortals-Daily`.
+See [`automation-prompts/HOME_AUTOMATIONS.md`](automation-prompts/HOME_AUTOMATIONS.md).

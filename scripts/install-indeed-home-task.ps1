@@ -28,9 +28,7 @@ $Settings = New-ScheduledTaskSettingsSet -AllowStartIfOnBatteries -DontStopIfGoi
 Register-ScheduledTask -TaskName $TaskName -Action $Action -Trigger $Trigger -Settings $Settings -Force | Out-Null
 
 Write-Host "Installed scheduled task '$TaskName' daily at $Time"
-Write-Host "Prereqs: prefer WSL Ubuntu for Cursor Agent worker (native Windows worker is broken Aug 2026:"
-Write-Host "  better-sqlite3 NODE_MODULE_VERSION 127 vs 137)."
-Write-Host "  Fix: powershell -ExecutionPolicy Bypass -File scripts\fix-windows-agent-worker.ps1 -LaunchWsl"
-Write-Host "  Or native CLI only: irm 'https://cursor.com/install?win32=true' | iex , then agent login"
+Write-Host "This task runs the local Indeed script. It does not start Cursor."
+Write-Host "Prefer the full daily job: powershell -ExecutionPolicy Bypass -File scripts\install-all-home-tasks.ps1"
 Write-Host "Test: bash `"$Script`""
 Write-Host "Remove: Unregister-ScheduledTask -TaskName $TaskName -Confirm:`$false"

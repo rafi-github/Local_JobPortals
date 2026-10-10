@@ -37,6 +37,11 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
+echo "Cursor cloud launch is disabled. This script does not call the Cursor API."
+echo "Daily applies run on this PC: bash scripts/run-all-home-now.sh"
+echo "Requested portals=${PORTAL_ARG:-all} dry_run=$DRY_RUN force=$FORCE"
+exit 0
+
 job_label() {
   case "$1" in
     linkedin) echo "LinkedIn Daily" ;;

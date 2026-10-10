@@ -371,6 +371,8 @@ cursor_api() {
 }
 
 count_existing_cloud_reruns() {
+  echo 0
+  return
   local portal="$1"
   local label needle body
   label="$(job_label "$portal")"
@@ -398,6 +400,8 @@ print(sum(1 for it in items if needle in str(it.get("name") or "").lower()))
 }
 
 launch_cloud_agent() {
+  echo "cloud-launch disabled: this repo does not call the Cursor API" >&2
+  return 1
   local portal="$1"
   local name prompt repo payload body url
   if [[ -z "${CURSOR_API_KEY:-}" ]]; then
@@ -538,9 +542,10 @@ exec_portal_job() {
       set -e
       ;;
     notification)
-      echo "same-session exec: notification is agent-composed mail — launching/re-prompting, not a blind send."
-      echo "SAME_SESSION_RERUN_REQUIRED=notification"
-      return 0
+      set +e
+      bash "$ROOT/scripts/notification-home-daily.sh"
+      rc=$?
+      set -e
       ;;
     *)
       echo "ERROR: no exec recipe for $portal" >&2

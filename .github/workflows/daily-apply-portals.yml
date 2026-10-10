@@ -1,28 +1,17 @@
-# Reliable 9:00 AM IST launcher for all daily apply portals (incl. Hirist).
-# Cursor Automations cron can miss even when enabled; this workflow is the
-# durable trigger. Skips portals that already have a same-day agent.
-# REQUIRES repo secret CURSOR_API_KEY — without it Hirist never starts
-# (Hirist has no Cursor Automation UUID yet; other portals still fire via Automations).
+# Daily applies run on the owner PC via Windows Task Scheduler
+# (scripts/install-all-home-tasks.ps1 → scripts/run-all-home-now.sh).
+# This workflow must not call the Cursor API.
 name: Daily Apply Portals
 
 on:
-  schedule:
-    # 9:00 AM IST (Asia/Kolkata has no DST) = 03:30 UTC
-    - cron: "30 3 * * *"
   workflow_dispatch:
 
 jobs:
   launch-daily:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Launch daily portal cloud jobs
-        env:
-          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+      - name: Local scheduler owns the daily run
         run: |
-          if [[ -z "${CURSOR_API_KEY}" ]]; then
-            echo "Set repository secret CURSOR_API_KEY (https://cursor.com/dashboard/api)."
-            exit 1
-          fi
-          chmod +x scripts/launch-daily-portals.sh
-          bash scripts/launch-daily-portals.sh
+          echo "Cursor cloud launch is disabled."
+          echo "Daily applies run on the Windows PC task LocalJobPortals-Daily."
+          echo "No Cursor API key is read and no agent is started."

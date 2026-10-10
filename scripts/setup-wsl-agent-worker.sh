@@ -9,6 +9,10 @@
 #   bash scripts/setup-wsl-agent-worker.sh --start-only --name job-apply-laptop
 set -euo pipefail
 
+echo "Refusing to install or start the Cursor agent." >&2
+echo "Daily applies run locally: bash scripts/run-all-home-now.sh" >&2
+exit 1
+
 WORKER_NAME="job-apply-laptop"
 REPO_URL="${REPO_URL:-https://github.com/rafi-solibri/MyRepo.git}"
 REPO_DIR="${REPO_DIR:-$HOME/MyRepo}"

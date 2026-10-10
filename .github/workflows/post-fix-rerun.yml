@@ -1,14 +1,11 @@
-# Manual same-day re-run of a daily automation after a merged fix.
-# Automatic path is scripts/auto-merge-fix-pr.sh → rerun-daily-after-fix.sh
-# (runs inside the cloud/home agent). This workflow is owner-triggered only so
-# GitHub runners never exec portal applies (no Chrome).
+# Post-fix re-runs stay on the owner PC. This workflow must not call the Cursor API.
 name: Post-fix daily re-run
 
 on:
   workflow_dispatch:
     inputs:
       portal:
-        description: Daily job to re-run on main with the merged fix
+        description: Portal to re-run locally on the Windows PC
         required: true
         type: choice
         options:
@@ -27,13 +24,8 @@ jobs:
   launch:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - name: Launch cloud post-fix re-run
-        env:
-          CURSOR_API_KEY: ${{ secrets.CURSOR_API_KEY }}
+      - name: Do not launch a cloud agent
         run: |
-          if [[ -z "${CURSOR_API_KEY}" ]]; then
-            echo "Set repository secret CURSOR_API_KEY (https://cursor.com/dashboard/api) to launch a cloud job."
-            exit 1
-          fi
-          bash scripts/rerun-daily-after-fix.sh --portal "${{ inputs.portal }}" --no-exec
+          echo "Cursor cloud re-run is disabled for ${{ inputs.portal }}."
+          echo "On the Windows PC run: bash scripts/portal-home-daily.sh ${{ inputs.portal }}"
+          echo "No Cursor API key is read and no agent is started."

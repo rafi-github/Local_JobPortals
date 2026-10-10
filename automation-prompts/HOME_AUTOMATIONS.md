@@ -1,63 +1,36 @@
-# Home-local automation replicas (evening — cloud stays ON)
+# Daily applies on this PC
 
-> **2026-08-26:** Owner disabled home-local for Notification reporting. The **Notification Job 11 AM** cloud automation must use **cloud agents only** (see `07-notification.md`). Home Task Scheduler jobs below remain optional/legacy and are not required for the morning status email.
+One Windows scheduled task runs the local portal scripts. It does not start the
+Cursor CLI and does not call the Cursor API, so the run does not use Cursor
+billing or usage.
 
-Cursor **cloud Automations** can keep running in the morning. These **home PC
-replicas** run in the evening on your residential IP + local Chrome logins via:
+1. Windows Task Scheduler (`LocalJobPortals-Daily`, default 09:00)
+2. `scripts/run-all-home-now.sh` → each `scripts/portal-home-daily.sh`
+3. Local tools under `tools/<portal>/` and a local status email
 
-1. Windows Task Scheduler
-2. Cursor CLI (`agent`) on this machine
-3. Same prompts as cloud (`automation-prompts/0*.md`)
-
-Every run must **auto-fix → push a ready PR → merge → same-day re-run** (`AUTO_FIX.md`,
-`scripts/auto-merge-fix-pr.sh`, `scripts/rerun-daily-after-fix.sh`). Batch runners also sweep leftovers with
-`scripts/merge-open-fix-prs.sh`.
+Portals run one after another so they do not share Chrome at the same time. On Windows they use system Chrome (`CHROME_CDP_MODE=system`).
 
 ## What gets installed
 
 | Scheduled task | Default time (local) | Script |
 | --- | --- | --- |
-| HomeDaily-LinkedIn | 17:00 | `portal-home-daily.sh linkedin` |
-| HomeDaily-Foundit | 17:20 | `portal-home-daily.sh foundit` |
-| HomeDaily-Cutshort | 17:40 | `portal-home-daily.sh cutshort` |
-| HomeDaily-Naukri | 18:00 | `portal-home-daily.sh naukri` |
-| HomeDaily-Instahyre | 18:20 | `portal-home-daily.sh instahyre` |
-| HomeDaily-Indeed | 18:40 | `portal-home-daily.sh indeed` (**preferred Indeed path** — residential IP) |
-| HomeDaily-Hirist | 19:00 | `portal-home-daily.sh hirist` |
-| HomeDaily-HitechCity | 19:20 | `portal-home-daily.sh hitechcity` |
-| HomeDaily-Notification | 19:30 | `notification-home-daily.sh` |
+| LocalJobPortals-Daily | 09:00 | `run-all-home-now.sh` (every portal, then the status mail) |
 
-Cloud morning applies are launched by GitHub Actions **Daily Apply Portals**
-(`scripts/launch-daily-portals.sh`, 9:00 AM IST). Cursor Automations may stay
-enabled for manual runs; the launcher skips portals that already have a
-same-day agent. Owner steps: `MAX_APPLY_OWNER_CHECKLIST.md`.
-
-Stagger avoids fighting over Chrome. On Windows home, all portals share **system Chrome Default** (`CHROME_CDP_MODE=system`) so ABE cookies work — one Chrome with remote debugging.
+The installer removes the older `HomeDaily-*` and `IndeedHomeDaily` tasks.
+GitHub Actions **Daily Apply Portals** no longer starts cloud jobs.
 
 ## One-time setup (this PC)
 
 ```powershell
-# 1) Cursor CLI
-irm 'https://cursor.com/install?win32=true' | iex
-agent login
-# Optional unattended: set user env CURSOR_API_KEY from https://cursor.com/dashboard/api
-
-# 2) Repo
-cd C:\Users\MohammedAhmed\MyRepo
-git checkout main
-git pull
-
-# 3) Git for Windows (Git Bash) — required by the scheduled tasks
-
-# 4) Install all daily tasks (5 PM start by default)
+# Git for Windows (Git Bash) is required by the scheduled task.
+cd C:\Code\Local_JobPortals
 powershell -ExecutionPolicy Bypass -File scripts\install-all-home-tasks.ps1
 ```
 
-Custom times:
+Optional time:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File scripts\install-all-home-tasks.ps1 `
-  -BaseTime "17:00" -StaggerMinutes 20 -NotificationTime "19:30"
+powershell -ExecutionPolicy Bypass -File scripts\install-all-home-tasks.ps1 -Time "09:00"
 ```
 
 ## Run all portals now (sequential)
@@ -72,7 +45,7 @@ powershell -ExecutionPolicy Bypass -File scripts\install-all-home-tasks.ps1 `
 & "$env:LOCALAPPDATA\Programs\Git\bin\bash.exe" scripts/portal-home-daily.sh linkedin
 ```
 
-Logs: `~/.cursor/portal-home-logs/<portal>/`  
+Logs: `artifacts/home-logs/<portal>/`  
 JSON: `artifacts/<portal>-daily-run.json` (also published to git branch `automation-results`)
 
 ## Indeed on this work laptop
@@ -89,16 +62,6 @@ Task Scheduler cannot run if the machine is asleep. Use:
 
 - Windows → Power → never sleep on AC (or schedule wake)
 - Or run a portal manually when you are at the desk
-
-## Cloud + local together
-
-Leave cloud automations **On**. Local evening runs are a second pass — already-applied
-roles should be skipped. Do not turn cloud off unless you want local-only.
-
-**They do not need different apply code.** Shared `tools/<portal>/` helpers are correct.
-What *did* collide was every agent appending the same `ISSUES_AND_FIXES.md` — that left
-conflict markers on `main`. Home and cloud now append only to
-`automation-prompts/issues/<portal>.md` via `scripts/append-issue-fix.sh`.
 
 ## Portal login on this PC
 
@@ -121,13 +84,12 @@ SQLite cookie **names** alone can be stale under App-Bound Encryption — Chrome
 
 ## Notification email
 
-`HomeDaily-Notification` loads each portal’s same-day JSON via
-`scripts/fetch-home-result.sh <portal> --today`, then emails
-`rafi.success@gmail.com` (Resend MCP or `RESEND_API_KEY`).
+After the portals finish, `notification-home-daily.sh` writes
+`artifacts/job-status-YYYY-MM-DD.md` and sends it with `RESEND_API_KEY` when that
+variable is set.
 
 ## Uninstall
 
 ```powershell
-Get-ScheduledTask HomeDaily-* | Unregister-ScheduledTask -Confirm:$false
-Unregister-ScheduledTask -TaskName IndeedHomeDaily -Confirm:$false
+Unregister-ScheduledTask -TaskName LocalJobPortals-Daily -Confirm:$false
 ```

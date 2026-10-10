@@ -78,11 +78,10 @@ See STEP 0 in [04-naukri-general.md](04-naukri-general.md). Indeed Cloudflare: [
 | Hirist Daily 9 AM | [09-hirist.md](09-hirist.md) |
 | **Daily Apply Portals** (GHA 9:00 AM IST) | [`.github/workflows/daily-apply-portals.yml`](../.github/workflows/daily-apply-portals.yml) + `scripts/launch-daily-portals.sh` |
 
-### Home-local evening replicas (cloud can stay ON)
-
-Run a second pass on this PC at **5 PM** (cloud morning automations stay On):
+### Daily run on this PC
 
 → **[HOME_AUTOMATIONS.md](HOME_AUTOMATIONS.md)**  
-→ Windows: `powershell -ExecutionPolicy Bypass -File scripts\install-all-home-tasks.ps1`
+→ Windows: `powershell -ExecutionPolicy Bypass -File scripts\install-all-home-tasks.ps1`  
+The scheduled task uses local scripts only. It does not start Cursor.
 
 See [issues/](issues/) (per portal) and [ISSUES_AND_FIXES.md](ISSUES_AND_FIXES.md) for what was broken and what still needs your login/secrets.

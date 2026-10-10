@@ -12,6 +12,9 @@ param(
   [switch]$TryNativeReinstall
 )
 
+Write-Error "Refusing to install or start the Cursor agent. Daily applies run via scripts\install-all-home-tasks.ps1."
+exit 1
+
 $ErrorActionPreference = "Continue"
 $AgentRoot = Join-Path $env:LOCALAPPDATA "cursor-agent"
 $BetterSqlite = Join-Path $AgentRoot "node_modules\better-sqlite3\build\Release\better_sqlite3.node"
