@@ -1,31 +1,2086 @@
 {
   "portal": "naukri",
   "source": "home-local",
-  "date": "2026-10-10",
-  "startedAt": null,
-  "finishedAt": "2026-10-10T00:22:11.486Z",
+  "date": "2026-10-12",
+  "startedAt": "2026-10-12T10:10:08.386Z",
+  "finishedAt": "2026-10-12T10:33:39.127Z",
   "host": "LAPY",
-  "ok": false,
+  "ok": true,
   "counts": {
-    "applied": 0,
+    "applied": 10,
     "external": 0,
     "rejected": 0,
-    "blocked": 1,
-    "skipped": 0,
-    "seen": 0
+    "blocked": 8,
+    "skipped": 126,
+    "seen": 60
   },
-  "applied": [],
+  "applied": [
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architecture - HCL Commerce",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/solution-architect-jobs-in-hyderabad-secunderabad?k=solution%20architect&l=hyderabad&experience=12&jobAge=1",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\71dfa9aa9394\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "REST APIs",
+        "React",
+        "Agile / Scrum"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · REST APIs · React · Agile / Scrum",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "chatbot:responses_thanks",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-solution-architecture-hcl-commerce-epam-systems-hyderabad-chennai-bengaluru-10-to-13-years-121026009691?src=directSearch"
+    },
+    {
+      "company": "Highradius",
+      "role": "Technical Account Manager / Forward Deployed Architect",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/solution-architect-jobs-in-hyderabad-secunderabad?k=solution%20architect&l=hyderabad&experience=12&jobAge=1",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\5ed200ba44c2\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C#",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "chatbot:responses_thanks",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-technical-account-manager-forward-deployed-architect-highradius-hyderabad-5-to-12-years-121026006830?src=directSearch"
+    },
+    {
+      "company": "Valuelabs",
+      "role": "Dot Net Technical Architect",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\ba49ca0a5d09\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Azure",
+        "REST APIs",
+        "Angular",
+        "SQL Server / PostgreSQL",
+        "Cloud Architecture"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Azure · REST APIs · Angular",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "chatbot:responses_thanks",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-dot-net-technical-architect-valuelabs-hyderabad-10-to-15-years-121026004649?src=directSearch"
+    },
+    {
+      "company": "Intellics Global Services",
+      "role": "Urgent Hiring For Cryptography Architect",
+      "location": "Hybrid - Hyderabad, Pune, Chennai",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\ddac6a4e963d\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Kafka",
+        "SQL Server / PostgreSQL"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Kafka · SQL Server / PostgreSQL",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "chatbot:responses_thanks",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-urgent-hiring-for-cryptography-architect-intellics-global-services-hyderabad-pune-chennai-16-to-26-years-061026010440?src=directSearch"
+    },
+    {
+      "company": "Valuelabs",
+      "role": "Purview Architect",
+      "location": "Remote",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\ee83aafc626c\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Azure"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Azure",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "chatbot:responses_thanks",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-purview-architect-valuelabs-hyderabad-10-to-20-years-071026018911?src=directSearch"
+    },
+    {
+      "company": "iitjobs",
+      "role": "Incorta Architect - Hyderabad",
+      "location": "Hybrid - Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\b0bf7adc2236\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "SQL Server / PostgreSQL"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · SQL Server / PostgreSQL",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "view_applied_jobs",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-incorta-architect-hyderabad-iitjobs-inc-hyderabad-8-to-13-years-081026049561?src=directSearch"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Senior Solution Architect - .NET Full Stack with Cloud",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\52e508cef095\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Azure",
+        "AWS",
+        "Microservices",
+        "REST APIs",
+        "React",
+        "Angular",
+        "SQL Server / PostgreSQL",
+        "CI/CD / Jenkins",
+        "Distributed Systems"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Azure · AWS · Microservices",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "chatbot:responses_thanks",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-senior-solution-architect-net-full-stack-with-cloud-epam-systems-hyderabad-chennai-bengaluru-14-to-18-years-121026010550?src=directSearch"
+    },
+    {
+      "company": "GSPANN",
+      "role": "Contentful Architect",
+      "location": "Hyderabad, Noida, Gurugram",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\6066af8b1ec7\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "React",
+        "Agile / Scrum",
+        "Mentoring / Code Reviews"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · React · Agile / Scrum · Mentoring / Code Reviews",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "chatbot:responses_thanks",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-contentful-architect-gspann-noida-hyderabad-gurugram-12-to-18-years-290926024856?src=directSearch"
+    },
+    {
+      "company": "Genpact",
+      "role": "Urgent Opening For MSD 365 F&O Side Architect",
+      "location": "Hybrid - Hyderabad, Bengaluru, Delhi / NCR",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\851faaeb082e\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Azure",
+        "Mentoring / Code Reviews"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Azure · Mentoring / Code Reviews",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "view_applied_jobs",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-urgent-opening-for-msd-365-f-o-side-architect-genpact-hyderabad-bengaluru-delhi-ncr-10-to-20-years-300926033704?src=directSearch"
+    },
+    {
+      "company": "Hiring for an IT Services & Consulting company",
+      "role": "Dell Boomi Architect/Developer - Hyderabad",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\136b0ce41126\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "REST APIs",
+        "SQL Server / PostgreSQL",
+        "Cloud Architecture"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · REST APIs · SQL Server / PostgreSQL · Cloud Architecture",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "path": "Naukri",
+      "cta": "view_applied_jobs",
+      "recruiterNote": false,
+      "naukriJobUrl": "https://www.naukri.com/job-listings-dell-boomi-architect-developer-hyderabad-tekskills-hyderabad-8-to-13-years-300926021227?src=directSearch"
+    }
+  ],
   "external": [],
   "rejected": [],
   "blocked": [
     {
-      "reason": "cursor_agent_cli_missing"
+      "company": "Coinbase India Services",
+      "role": "Sr Engineering Manager",
+      "location": "Remote",
+      "naukriUrl": "https://www.naukri.com/jobs-in-remote?k=solution%20architect%20.net&experience=12&jobAge=1",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote",
+      "resume": "\\tmp\\naukri-tailored\\de842a0ad45b\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Distributed Systems",
+        "Mentoring / Code Reviews"
+      ],
+      "tailorHeadline": "Engineering Manager | Technical Architect — .NET Core / C# · Distributed Systems · Mentoring / Code Reviews",
+      "reason": "external_incomplete_or_timeout",
+      "url": "https://www.coinbase.com/en-in/careers/positions/8265918?gh_jid=8265918",
+      "path": "company_ATS"
+    },
+    {
+      "company": "AsentechLLC",
+      "role": "Sr Business Development Manager",
+      "location": "Remote",
+      "naukriUrl": "https://www.naukri.com/jobs-in-remote?k=solution%20architect%20.net&experience=12&jobAge=1",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote",
+      "resume": "\\tmp\\naukri-tailored\\debffd14aac4\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        "Cloud Architecture"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — Cloud Architecture",
+      "reason": "external_incomplete_or_timeout",
+      "url": "chrome-error://chromewebdata/",
+      "path": "company_ATS"
+    },
+    {
+      "company": "Imedhas",
+      "role": "Dot Net Architect",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\4ffd9d540d21\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Distributed Systems",
+        "Cloud Architecture",
+        "Mentoring / Code Reviews"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Distributed Systems · Cloud Architecture · Mentoring / Code Reviews",
+      "reason": "external_link_not_opened",
+      "path": "company_ATS",
+      "cta": "Quick apply"
+    },
+    {
+      "company": "Wissen Infotech",
+      "role": "Architect",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\59178593b679\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "SQL Server / PostgreSQL",
+        "Cloud Architecture"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · SQL Server / PostgreSQL · Cloud Architecture",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "reason": "apply_unconfirmed",
+      "cta": "",
+      "path": "Naukri",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-architect-wissen-infotech-pvt-ltd-hyderabad-10-to-15-years-081026024949?src=directSearch",
+      "chat": {
+        "done": true,
+        "reason": "no_chat"
+      }
+    },
+    {
+      "company": "Capgemini",
+      "role": "Architect",
+      "location": "Hyderabad, Pune, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\12077e7c5239\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C#",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "reason": "apply_unconfirmed",
+      "cta": "",
+      "path": "Naukri",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-architect-capgemini-hyderabad-pune-bengaluru-12-to-18-years-300926030689?src=directSearch",
+      "chat": {
+        "done": true,
+        "reason": "no_chat"
+      }
+    },
+    {
+      "company": "TechBlocks",
+      "role": "IDP Architect",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\f3f7e85ad184\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Azure",
+        "AWS",
+        "Kubernetes",
+        "REST APIs",
+        "CI/CD / Jenkins",
+        "Cloud Architecture"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Azure · AWS · Kubernetes",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "reason": "apply_unconfirmed",
+      "cta": "",
+      "path": "Naukri",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-idp-architect-techblocks-consulting-pvt-ltd-hyderabad-10-to-15-years-290926917389?src=directSearch",
+      "chat": {
+        "done": true,
+        "reason": "no_chat"
+      }
+    },
+    {
+      "company": "Grid Dynamics",
+      "role": ".NET Developer",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\22358b4b0a7f\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "AWS",
+        "Microservices",
+        "Event-Driven Architecture",
+        "REST APIs",
+        "Cloud Architecture"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · AWS · Microservices · Event-Driven Architecture",
+      "profileTailorUpload": {
+        "ok": true,
+        "profileUpdated": true
+      },
+      "reason": "apply_unconfirmed",
+      "cta": "",
+      "path": "Naukri",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-net-developer-grid-dynamics-private-limited-hyderabad-10-to-11-years-051026933037?src=directSearch",
+      "chat": {
+        "done": true,
+        "reason": "no_chat"
+      }
+    },
+    {
+      "company": "Hiring for a Software Product company",
+      "role": ".NET Full Stack Lead",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\8f68f0d2553f\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Azure",
+        "AWS",
+        "REST APIs",
+        "React",
+        "Angular",
+        "SQL Server / PostgreSQL",
+        "Cloud Architecture",
+        "Agile / Scrum",
+        "Mentoring / Code Reviews"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Azure · AWS · REST APIs",
+      "profileTailorUpload": {
+        "ok": false,
+        "profileUpdated": false,
+        "reason": "exception"
+      },
+      "reason": "exception",
+      "error": "Error: page.evaluate: Target page, context or browser has been closed"
     }
   ],
-  "skipped": [],
-  "seen": [],
-  "blockerSummary": "cursor_agent_cli_missing",
-  "notes": [],
+  "skipped": [
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "location": "Remote",
+      "naukriUrl": "https://www.naukri.com/jobs-in-remote?k=solution%20architect%20.net&experience=12&jobAge=1",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "skip_jd_non_dotnet_detail"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "location": "Remote",
+      "naukriUrl": "https://www.naukri.com/jobs-in-remote?k=solution%20architect%20.net&experience=12&jobAge=1",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "skip_jd_non_dotnet_detail"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "location": "Remote",
+      "reason": "skip_no_dotnet",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "technical architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "technical architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "technical architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "technical architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "technical architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "technical architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "technical architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net technical lead",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net technical lead",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net technical lead",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net technical lead",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net technical lead",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": ".net technical lead",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": ".net technical lead",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "engineering manager .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "engineering manager .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "engineering manager .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "principal engineer .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "principal engineer .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "principal engineer .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - .NET with Azure, React and AI Native",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/azure-architect-net-jobs-in-hyderabad-secunderabad?k=azure%20architect%20.net&l=hyderabad&experience=12&jobAge=1",
+      "query": "azure architect .net",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "already_applied_detail",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-solution-architect-net-with-azure-react-and-ai-native-epam-systems-hyderabad-chennai-bengaluru-10-to-13-years-040926019385?src=directSearch",
+      "cta": "Applied",
+      "ctaState": "applied"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "azure architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "azure architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "azure architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "cloud architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "cloud architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "cloud architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - .NET with Azure, React and AI Native",
+      "reason": "duplicate_in_run",
+      "query": "dotnet architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet architect",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "dotnet architect",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "dotnet architect",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet technical lead",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet technical lead",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet technical lead",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet technical lead",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "dotnet technical lead",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "dotnet technical lead",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "dotnet technical lead",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solutions architect csharp",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solutions architect csharp",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solutions architect csharp",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solutions architect csharp",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "solutions architect csharp",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "solutions architect csharp",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "solutions architect csharp",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "PwC",
+      "role": "Sap Solution Architect",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - .NET with Azure, React and AI Native",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - Azure with AI",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect – Python with GenAI",
+      "location": "Hybrid - Hyderabad, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Palantir Data Solution Architect",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/solution-architect-jobs-in-hyderabad-secunderabad?k=solution%20architect&l=hyderabad&experience=12&jobAge=1",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "skip_jd_non_dotnet_detail"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect – Python with GenAI",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect – Python with GenAI",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect – Python with GenAI",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect – Python with GenAI",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect – Java Full Stack",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java full stack Architect-STG",
+      "location": "Hyderabad, Kolkata, Pune",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - SAP MDM IS Retail",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - SAP MDM IS Retail",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full stack Architect (8-15 Years PAN INDIA)",
+      "location": "Hyderabad, Kolkata, Chennai",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - SAP MDM IS Retail",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - SAP MDM IS Retail",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Phenom People",
+      "role": "Engineering Manager",
+      "location": "Hyderabad, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/solution-architect-jobs-in-hyderabad-secunderabad?k=solution%20architect&l=hyderabad&experience=12&jobAge=1",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "skip_jd_non_dotnet_detail"
+    },
+    {
+      "company": "Synechron",
+      "role": "Technical Delivery Manager",
+      "location": "Hyderabad, Pune, Bengaluru",
+      "reason": "skip_no_dotnet",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architecture - HCL Commerce",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architecture - HCL Commerce",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Mainframe Architect",
+      "location": "Hyderabad, Pune, Chennai",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Cloud Platform Architect - AWS with AI",
+      "location": "Hyderabad",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "role": "Java Architect",
+      "location": "Hyderabad",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full Stack Architect - STG",
+      "location": "Hyderabad, Pune, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Lead Software Engineer - Camunda",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/solution-architect-jobs-in-hyderabad-secunderabad?k=solution%20architect&l=hyderabad&experience=12&jobAge=1",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "already_applied_detail",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-lead-software-engineer-camunda-epam-systems-hyderabad-chennai-bengaluru-8-to-12-years-040926019331?src=directSearch",
+      "cta": "Applied",
+      "ctaState": "applied"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Lead Software Engineer - Camunda",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Hiring for an IT Services & Consulting company",
+      "role": "Salesforce Technical Architect",
+      "location": "Hybrid - Hyderabad, Noida, Gurugram, Chennai, Bengaluru, Delhi / NCR",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Vivid Edge Corp",
+      "role": "Azure Integration Consultant with Dell Boomi exp",
+      "location": "Hyderabad, Bengaluru",
+      "reason": "skip_seniority",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Pi Square Technologies",
+      "role": "D365 Finance & Operations Technical Architect",
+      "location": "Remote",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full Stack Lead-(8-15 years PAN INDIA)",
+      "location": "Hyderabad, Ahmedabad, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architecture - HCL Commerce",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full Stack Developer-(8-16 years)",
+      "location": "Hybrid - Hyderabad, Chennai, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full Stack Developer_STG",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Big Data Engineer-(8-16years)",
+      "location": "Hybrid - Hyderabad, Chennai, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "reason": "duplicate_in_run",
+      "query": "principal engineer dotnet",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "reason": "duplicate_in_run",
+      "query": "principal engineer dotnet",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "reason": "duplicate_in_run",
+      "query": "principal engineer dotnet",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Capgemini",
+      "role": "Dot Net Fullstack Developer",
+      "location": "Hybrid - Hyderabad",
+      "reason": "skip_seniority",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Hiring for an Analytics / KPO / Research company",
+      "role": "Leadership role LLM Architect, RAG, Langchain, Langgraph- PAN INDIA",
+      "location": "Hybrid - Hyderabad, Bengaluru, Delhi / NCR",
+      "reason": "skip_title_keyword",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Upsteer",
+      "role": "Dot Net Architect",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "\\tmp\\naukri-tailored\\c4792c0aad1f\\Rafi_Resume.docx",
+      "tailored": true,
+      "tailorSkills": [
+        ".NET Core / C#",
+        "Azure",
+        "AWS",
+        "SQL Server / PostgreSQL",
+        "Cloud Architecture",
+        "Agile / Scrum",
+        "Mentoring / Code Reviews"
+      ],
+      "tailorHeadline": "Solutions Architect | Technical Lead — .NET Core / C# · Azure · AWS · SQL Server / PostgreSQL",
+      "reason": "no_ats_form",
+      "url": "https://www.upsteer.com/careers.html",
+      "path": "company_ATS"
+    },
+    {
+      "company": "Genpact",
+      "role": "MS fabric Developer/Architect",
+      "location": "Hybrid - Hyderabad, Pune, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Accenture",
+      "role": "Large Language Model Architect",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "skip_jd_non_dotnet_detail"
+    },
+    {
+      "company": "Accenture",
+      "role": "Large Language Model Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Sidgs Digisol",
+      "role": "Apigee Architect",
+      "location": "Hyderabad, Mumbai, Mumbai (All Areas)",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "already_applied_detail",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-apigee-architect-sidgs-digisol-mumbai-hyderabad-mumbai-all-areas-10-to-20-years-250626007032?src=directSearch",
+      "cta": "Applied",
+      "ctaState": "applied"
+    },
+    {
+      "company": "Accenture",
+      "role": "Large Language Model Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Celebal Technologies",
+      "role": "RSA Databricks Architect",
+      "location": "Hyderabad, Jaipur, Bengaluru",
+      "reason": "skip_title_keyword",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Accenture",
+      "role": "Large Language Model Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Senior Solution Architect - .NET Full Stack with Cloud",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Senior Solution Architect - .NET Full Stack with Cloud",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "role": "AIML Architect",
+      "location": "Hyderabad",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "skip_jd_non_dotnet_detail"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Mainframe Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Medrisk",
+      "role": "Dot Net Developer",
+      "location": "Hybrid - Hyderabad",
+      "reason": "skip_seniority",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Hiring for an IT Services & Consulting company",
+      "role": "GenAI Architect",
+      "location": "Hybrid - Hyderabad",
+      "reason": "skip_title_keyword",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Cloud Angles Digital Transformation",
+      "role": "Dot Net Developer",
+      "location": "Hyderabad",
+      "reason": "skip_seniority",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Deloitte Shared Services India",
+      "role": "Full Stack - Java + React",
+      "location": "Hyderabad, Bengaluru, Mumbai (All Areas)",
+      "reason": "skip_title_keyword",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "role": "MES- Siemens Opcenter Architect",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "already_applied_detail",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-mes-siemens-opcenter-architect-tata-consultancy-services-hyderabad-chennai-bengaluru-10-to-20-years-130826015493?src=directSearch",
+      "cta": "Applied",
+      "ctaState": "applied"
+    },
+    {
+      "company": "Tiger Analytics",
+      "role": "Snowflake-Architect",
+      "location": "Hybrid - Hyderabad, Chennai, Bengaluru",
+      "naukriUrl": "https://www.naukri.com/aurus/dot-net-architect-jobs-in-hyderabad-hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad",
+      "resume": "C:\\Code\\Local_JobPortals\\resumes\\Rafi_Resume.docx",
+      "reason": "already_applied_detail",
+      "naukriJobUrl": "https://www.naukri.com/job-listings-snowflake-architect-tiger-analytics-hyderabad-chennai-bengaluru-9-to-14-years-050426003266?src=directSearch",
+      "cta": "Applied",
+      "ctaState": "applied"
+    },
+    {
+      "company": "Highradius",
+      "role": "Project Manager",
+      "location": "Hyderabad",
+      "reason": "skip_no_dotnet",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "reason": "duplicate_in_run",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    }
+  ],
+  "seen": [
+    {
+      "company": "Epam Systems",
+      "role": "Quality Architect",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Coinbase India Services",
+      "role": "Sr Engineering Manager",
+      "location": "Remote",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Resource Pro",
+      "role": "Principal AI Solutions Architect",
+      "location": "Remote",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Nagarro",
+      "role": "Associate Distinguished Engineer (Solution Architect)",
+      "location": "Remote",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "AsentechLLC",
+      "role": "Sr Business Development Manager",
+      "location": "Remote",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Oddball",
+      "role": "Program Manager",
+      "location": "Remote",
+      "query": "solution architect .net",
+      "age": 1,
+      "loc": "remote"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - .NET with Azure, React and AI Native",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "azure architect .net",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "PwC",
+      "role": "Sap Solution Architect",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - Azure with AI",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect – Python with GenAI",
+      "location": "Hybrid - Hyderabad, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Palantir Data Solution Architect",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect – Java Full Stack",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java full stack Architect-STG",
+      "location": "Hyderabad, Kolkata, Pune",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architect - SAP MDM IS Retail",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full stack Architect (8-15 Years PAN INDIA)",
+      "location": "Hyderabad, Kolkata, Chennai",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Phenom People",
+      "role": "Engineering Manager",
+      "location": "Hyderabad, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Synechron",
+      "role": "Technical Delivery Manager",
+      "location": "Hyderabad, Pune, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Solution Architecture - HCL Commerce",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Mainframe Architect",
+      "location": "Hyderabad, Pune, Chennai",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Cloud Platform Architect - AWS with AI",
+      "location": "Hyderabad",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "role": "Java Architect",
+      "location": "Hyderabad",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full Stack Architect - STG",
+      "location": "Hyderabad, Pune, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Lead Software Engineer - Camunda",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Hiring for an IT Services & Consulting company",
+      "role": "Salesforce Technical Architect",
+      "location": "Hybrid - Hyderabad, Noida, Gurugram, Chennai, Bengaluru, Delhi / NCR",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Vivid Edge Corp",
+      "role": "Azure Integration Consultant with Dell Boomi exp",
+      "location": "Hyderabad, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Pi Square Technologies",
+      "role": "D365 Finance & Operations Technical Architect",
+      "location": "Remote",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Highradius",
+      "role": "Technical Account Manager / Forward Deployed Architect",
+      "location": "Hyderabad",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full Stack Lead-(8-15 years PAN INDIA)",
+      "location": "Hyderabad, Ahmedabad, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full Stack Developer-(8-16 years)",
+      "location": "Hybrid - Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Java Full Stack Developer_STG",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Infosys",
+      "role": "Big Data Engineer-(8-16years)",
+      "location": "Hybrid - Hyderabad, Chennai, Bengaluru",
+      "query": "solution architect",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Valuelabs",
+      "role": "Dot Net Technical Architect",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Capgemini",
+      "role": "Dot Net Fullstack Developer",
+      "location": "Hybrid - Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Hiring for an Analytics / KPO / Research company",
+      "role": "Leadership role LLM Architect, RAG, Langchain, Langgraph- PAN INDIA",
+      "location": "Hybrid - Hyderabad, Bengaluru, Delhi / NCR",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Upsteer",
+      "role": "Dot Net Architect",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Genpact",
+      "role": "MS fabric Developer/Architect",
+      "location": "Hybrid - Hyderabad, Pune, Bengaluru",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Accenture",
+      "role": "Large Language Model Architect",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Imedhas",
+      "role": "Dot Net Architect",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Sidgs Digisol",
+      "role": "Apigee Architect",
+      "location": "Hyderabad, Mumbai, Mumbai (All Areas)",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Intellics Global Services",
+      "role": "Urgent Hiring For Cryptography Architect",
+      "location": "Hybrid - Hyderabad, Pune, Chennai",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Wissen Infotech",
+      "role": "Architect",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Valuelabs",
+      "role": "Purview Architect",
+      "location": "Remote",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Celebal Technologies",
+      "role": "RSA Databricks Architect",
+      "location": "Hyderabad, Jaipur, Bengaluru",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "iitjobs",
+      "role": "Incorta Architect - Hyderabad",
+      "location": "Hybrid - Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Epam Systems",
+      "role": "Senior Solution Architect - .NET Full Stack with Cloud",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "role": "AIML Architect",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Medrisk",
+      "role": "Dot Net Developer",
+      "location": "Hybrid - Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Hiring for an IT Services & Consulting company",
+      "role": "GenAI Architect",
+      "location": "Hybrid - Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "GSPANN",
+      "role": "Contentful Architect",
+      "location": "Hyderabad, Noida, Gurugram",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Capgemini",
+      "role": "Architect",
+      "location": "Hyderabad, Pune, Bengaluru",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "TechBlocks",
+      "role": "IDP Architect",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Cloud Angles Digital Transformation",
+      "role": "Dot Net Developer",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Grid Dynamics",
+      "role": ".NET Developer",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Genpact",
+      "role": "Urgent Opening For MSD 365 F&O Side Architect",
+      "location": "Hybrid - Hyderabad, Bengaluru, Delhi / NCR",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Deloitte Shared Services India",
+      "role": "Full Stack - Java + React",
+      "location": "Hyderabad, Bengaluru, Mumbai (All Areas)",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Tata Consultancy Services",
+      "role": "MES- Siemens Opcenter Architect",
+      "location": "Hyderabad, Chennai, Bengaluru",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Tiger Analytics",
+      "role": "Snowflake-Architect",
+      "location": "Hybrid - Hyderabad, Chennai, Bengaluru",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Highradius",
+      "role": "Project Manager",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Hiring for an IT Services & Consulting company",
+      "role": "Dell Boomi Architect/Developer - Hyderabad",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    },
+    {
+      "company": "Hiring for a Software Product company",
+      "role": ".NET Full Stack Lead",
+      "location": "Hyderabad",
+      "query": ".net architect hyderabad",
+      "age": 1,
+      "loc": "hyderabad"
+    }
+  ],
+  "blockerSummary": "browser_closed_during_age_expand_after_10_applies",
+  "notes": [
+    "profileUpdated: true",
+    "profileResumeRestored: {\"ok\":true,\"resume\":\"C:\\\\Code\\\\Local_JobPortals\\\\resumes\\\\Rafi_Resume.docx\"}"
+  ],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/naukri/naukri-20261010T002210Z.log"
+  "logPath": null
 }
