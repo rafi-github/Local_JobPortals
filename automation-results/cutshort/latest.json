@@ -1,31 +1,178 @@
 {
   "portal": "cutshort",
   "source": "home-local",
-  "date": "2026-10-10",
+  "date": "2026-10-12",
   "startedAt": null,
-  "finishedAt": "2026-10-10T00:21:47.524Z",
+  "finishedAt": "2026-10-12T09:57:25.470Z",
   "host": "LAPY",
-  "ok": false,
+  "ok": true,
   "counts": {
-    "applied": 0,
+    "applied": 9,
     "external": 0,
     "rejected": 0,
-    "blocked": 1,
-    "skipped": 0,
-    "seen": 0
+    "blocked": 0,
+    "skipped": 2,
+    "seen": 3683
   },
-  "applied": [],
-  "external": [],
-  "rejected": [],
-  "blocked": [
+  "applied": [
     {
-      "reason": "cursor_agent_cli_missing"
+      "id": "6ab36e60b6532193889f71d0",
+      "title": "Head of Engineering / Lead Engineer",
+      "company": "Craft My Plate",
+      "tier": 1,
+      "ctc": 50
+    },
+    {
+      "id": "6abb7c6028d38668e6e1f70f",
+      "title": "Staff QA Automation Engineer",
+      "company": "Egnyte",
+      "tier": 1,
+      "ctc": 50
+    },
+    {
+      "id": "6ac50708c0f26ec59cc07068",
+      "title": "Staff Software Craftsperson",
+      "company": "Incubyte",
+      "tier": 1,
+      "ctc": 42
+    },
+    {
+      "id": "6ab394c183e7d74672ed6e05",
+      "title": "Principal Lead Developer",
+      "company": "Technoidentity",
+      "tier": 1,
+      "ctc": 40
+    },
+    {
+      "id": "6ab2291ed1c27e634c10e168",
+      "title": "Aras Solution Architect",
+      "company": "Vedic Systems",
+      "tier": 1,
+      "ctc": 35
+    },
+    {
+      "id": "6ab51eb64409b6ce8c8a0b08",
+      "title": "Technical Lead \n– Python",
+      "company": "Leegality",
+      "tier": 1,
+      "ctc": 35
+    },
+    {
+      "id": "6ac18bb0d1e0903a72433d57",
+      "title": "Senior Full-Stack Developer",
+      "company": "Save",
+      "tier": 2,
+      "ctc": 45
+    },
+    {
+      "id": "6abe4d08f4afa2722c7a7b28",
+      "title": "Full-Stack Software Engineer",
+      "company": "Provenir",
+      "tier": 2,
+      "ctc": 40
+    },
+    {
+      "id": "6aba7cb5ac92797fde083d4e",
+      "title": "Senior DevOps Engineer - Cloud Migration",
+      "company": "Mactores Cognition Private Limited",
+      "tier": 3,
+      "ctc": 37
     }
   ],
-  "skipped": [],
-  "seen": [],
-  "blockerSummary": "cursor_agent_cli_missing",
-  "notes": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [],
+  "skipped": [
+    {
+      "id": "6ab0f9a5a8afac69f1586404",
+      "title": "AI/ML Engineering Lead",
+      "company": "Google",
+      "reason": "already_applied"
+    },
+    {
+      "id": "6ab1570f999c97394ed2cd4e",
+      "title": "Senior / Staff Software Engineer – Backend Engineering",
+      "company": "Oddr",
+      "reason": "already_applied"
+    }
+  ],
+  "seen": [
+    {
+      "id": "6ab0f9a5a8afac69f1586404",
+      "title": "AI/ML Engineering Lead",
+      "company": "Google",
+      "tier": 1
+    },
+    {
+      "id": "6ab1570f999c97394ed2cd4e",
+      "title": "Senior / Staff Software Engineer – Backend Engineering",
+      "company": "Oddr",
+      "tier": 1
+    },
+    {
+      "id": "6ab36e60b6532193889f71d0",
+      "title": "Head of Engineering / Lead Engineer",
+      "company": "Craft My Plate",
+      "tier": 1
+    },
+    {
+      "id": "6abb7c6028d38668e6e1f70f",
+      "title": "Staff QA Automation Engineer",
+      "company": "Egnyte",
+      "tier": 1
+    },
+    {
+      "id": "6ac50708c0f26ec59cc07068",
+      "title": "Staff Software Craftsperson",
+      "company": "Incubyte",
+      "tier": 1
+    },
+    {
+      "id": "6ab394c183e7d74672ed6e05",
+      "title": "Principal Lead Developer",
+      "company": "Technoidentity",
+      "tier": 1
+    },
+    {
+      "id": "6ab2291ed1c27e634c10e168",
+      "title": "Aras Solution Architect",
+      "company": "Vedic Systems",
+      "tier": 1
+    },
+    {
+      "id": "6ab51eb64409b6ce8c8a0b08",
+      "title": "Technical Lead \n– Python",
+      "company": "Leegality",
+      "tier": 1
+    },
+    {
+      "id": "6ac18bb0d1e0903a72433d57",
+      "title": "Senior Full-Stack Developer",
+      "company": "Save",
+      "tier": 2
+    },
+    {
+      "id": "6abe4d08f4afa2722c7a7b28",
+      "title": "Full-Stack Software Engineer",
+      "company": "Provenir",
+      "tier": 2
+    },
+    {
+      "id": "6aba7cb5ac92797fde083d4e",
+      "title": "Senior DevOps Engineer - Cloud Migration",
+      "company": "Mactores Cognition Private Limited",
+      "tier": 3
+    }
+  ],
+  "blockerSummary": null,
+  "notes": [
+    "qualifying=11",
+    "q_answered=10",
+    "q_locked_empty=311",
+    "q_already_submitted=84",
+    "tailored_built=11",
+    "tailored_uploaded=11"
+  ],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/cutshort/cutshort-20261010T002144Z.log"
+  "logPath": null
 }
