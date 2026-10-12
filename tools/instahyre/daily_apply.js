@@ -25,6 +25,10 @@ const { tailorResumeForJob } = require("../resume_tailor");
 const { completeExternalPage } = require("../ats/complete_page");
 const { companyAllowed, allowlistActive } = require("../hitechcity/campus_allowlist");
 
+/** Instahyre migrated opportunities APIs from candidate_opportunity → candidate_matching (2026). */
+const MATCHING_API =
+  "https://www.instahyre.com/api/v1/candidate_opportunities/candidate_matching";
+
 const CDP = process.env.INSTAHYRE_CDP || "http://127.0.0.1:9222";
 const OUT =
   process.env.INSTAHYRE_REPORT ||
@@ -172,8 +176,7 @@ async function apiPost(page, url, body) {
 }
 
 async function fetchFilterCounts(page) {
-  const url =
-    "https://www.instahyre.com/api/v1/candidate_opportunities/candidate_opportunity/fetch_filter_counts/";
+  const url = `${MATCHING_API}/fetch_filter_counts?interest_facet=0`;
   const res = await apiGet(page, url);
   return res.json?.status_counts || res.json || null;
 }
@@ -213,9 +216,7 @@ async function fetchUndecidedOpportunities(page, report) {
   const limit = 50;
   let pages = 0;
   while (pages < 6) {
-    const url =
-      `https://www.instahyre.com/api/v1/candidate_opportunities/candidate_opportunity/` +
-      `?status=0&limit=${limit}&offset=${offset}`;
+    const url = `${MATCHING_API}?interest_facet=0&limit=${limit}&offset=${offset}`;
     let res;
     for (let attempt = 0; attempt < 4; attempt++) {
       res = await apiGet(page, url);
@@ -366,11 +367,11 @@ async function searchSkill(page, skill, location, report) {
 }
 
 async function applyJob(page, jobId) {
-  return apiPost(
-    page,
-    "https://www.instahyre.com/api/v1/candidate_opportunities/candidate_opportunity/apply",
-    { id: null, job_id: jobId, is_interested: true }
-  );
+  return apiPost(page, `${MATCHING_API}/apply`, {
+    id: null,
+    job_id: jobId,
+    is_interested: true,
+  });
 }
 
 /** Scrape public job page for JD text (API job_search detail has no description). */
@@ -701,7 +702,7 @@ async function main() {
       blocked: report.blocked.length,
       uniqueJobsSeen: seen.size,
       opportunitiesUndecided: report.opportunitiesUndecided || 0,
-      path: "Instahyre opportunities feed + job_search API (candidate_opportunity/apply)",
+      path: "Instahyre opportunities feed + job_search API (candidate_matching/apply)",
       partial: browserDied || undefined,
     };
 

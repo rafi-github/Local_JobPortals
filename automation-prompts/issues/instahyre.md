@@ -1,5 +1,13 @@
 # Instahyre — issues & fixes
 
+## 2026-10-12 (home)
+
+| Issue | Fix |
+| --- | --- |
+| candidate_opportunity/* API 404 HTML — apply and opportunities list dead | Point daily_apply at candidate_matching (fetch_filter_counts, interest_facet=0 list, /apply) |
+| issue | fix |
+
+
 ## 2026-08-25 (cloud)
 
 | Issue | Fix |
