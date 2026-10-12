@@ -1,0 +1,1155 @@
+{
+  "portal": "instahyre",
+  "source": "home-local",
+  "date": "2026-10-12",
+  "startedAt": null,
+  "finishedAt": "2026-10-12T11:03:50.867Z",
+  "host": "LAPY",
+  "ok": true,
+  "counts": {
+    "applied": 30,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 0,
+    "skipped": 642,
+    "seen": 672
+  },
+  "applied": [
+    {
+      "id": 444474,
+      "title": "Lead Software Development Engineer",
+      "company": "Qapita",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 50,
+      "publicUrl": "https://www.instahyre.com/job-444474-lead-software-development-engineer-at-qapita-hyderabad/",
+      "oppId": 6286952665,
+      "appliedOn": "2026-10-12T10:55:59.444472+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\444474-661ffba6dd\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS, .NET Core, Kafka",
+        "skills": [
+          "AWS",
+          "Agile",
+          "React",
+          ".NET Core",
+          "ASP.NET Core",
+          "Domain-Driven Design",
+          "Kafka",
+          "Kubernetes",
+          "PostgreSQL",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "Solution Architecture",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\444474-661ffba6dd\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 446118,
+      "title": "Lead Analyst - .NET",
+      "company": "ArcelorMittal",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 45,
+      "publicUrl": "https://www.instahyre.com/job-446118-lead-analyst-net-at-arcelormittal-hyderabad/",
+      "oppId": 6286952706,
+      "appliedOn": "2026-10-12T10:56:10.745725+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\446118-32f164cf4f\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — Azure, .NET Core, Kafka",
+        "skills": [
+          "Technical Leadership",
+          "Azure",
+          "RabbitMQ",
+          "React",
+          "SQL Server",
+          ".NET Core",
+          "Scrum",
+          "Kafka",
+          "API Design",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "REST API",
+          "Software Architecture",
+          "System Design"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\446118-32f164cf4f\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 442843,
+      "title": ".NET Developer",
+      "company": "Infosys",
+      "location": "Bangalore,Hyderabad,Pune",
+      "path": "Instahyre",
+      "score": 30,
+      "publicUrl": "https://www.instahyre.com/job-442843-dot-net-developer-at-infosys-4-bangalore-hyderabad-pune/",
+      "oppId": 6286952733,
+      "appliedOn": "2026-10-12T10:56:22.011864+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\442843-bcd6dc06a6\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — Azure, Kubernetes, Microservices",
+        "skills": [
+          "CI/CD",
+          "REST API",
+          "Agile",
+          "Angular",
+          "Azure",
+          "Docker",
+          "Kubernetes",
+          "Microservices",
+          "React",
+          "Scrum",
+          "SQL Server",
+          ".NET Core",
+          "ASP.NET Core",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Software Architecture",
+          "Solution Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\442843-bcd6dc06a6\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 445712,
+      "title": "Dotnet Developer",
+      "company": "Firstsource",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 30,
+      "publicUrl": "https://www.instahyre.com/job-445712-dotnet-developer-at-firstsource-work-from-home/",
+      "oppId": 6286952773,
+      "appliedOn": "2026-10-12T10:56:33.492031+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\445712-06f0b519bf\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — .NET Core, Microservices",
+        "skills": [
+          ".NET Core",
+          "ASP.NET Core",
+          "Angular",
+          "Microservices",
+          "PostgreSQL",
+          "React",
+          "SQL Server",
+          "CI/CD",
+          "API Design",
+          "Domain-Driven Design",
+          "Software Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\445712-06f0b519bf\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 426141,
+      "title": "Senior Engineering Manager",
+      "company": "DBSync",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 75,
+      "publicUrl": "https://www.instahyre.com/job-426141-senior-engineering-manager-at-dbsync-work-from-home/",
+      "oppId": 6286954664,
+      "appliedOn": "2026-10-12T10:58:30.598073+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\426141-f72d37cf52\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Engineering Manager — Kubernetes, AWS",
+        "skills": [
+          "Kubernetes",
+          "Agile",
+          "AWS",
+          "Docker",
+          "Mentoring",
+          "Solution Architecture",
+          "SQL Server",
+          "Technical Leadership",
+          "CI/CD",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "Software Architecture",
+          "System Design"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\426141-f72d37cf52\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 443181,
+      "title": "Tech Lead",
+      "company": "Klimb.io",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 65,
+      "publicUrl": "https://www.instahyre.com/job-443181-tech-lead-at-klimb-hyderabad/",
+      "oppId": 6286954766,
+      "appliedOn": "2026-10-12T10:58:42.006914+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\443181-0f6b3859c1\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Tech Lead — AWS, Kafka, Azure",
+        "skills": [
+          "AWS",
+          "Docker",
+          "Kafka",
+          "Technical Leadership",
+          "CI/CD",
+          "Azure",
+          "Distributed Systems",
+          "Event-Driven Architecture",
+          "Jenkins",
+          "Kubernetes",
+          "REST API",
+          "System Design",
+          "Cloud Architecture",
+          "Microservices",
+          ".NET Core",
+          "API Design",
+          "Architecture Reviews",
+          "ASP.NET Core",
+          "Domain-Driven Design",
+          "High Availability",
+          "Software Architecture",
+          "Solution Architecture",
+          "SQL Server"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\443181-0f6b3859c1\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 443087,
+      "title": "Data Solution Architect",
+      "company": "TA Digital",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 45,
+      "publicUrl": "https://www.instahyre.com/job-443087-data-solution-architect-at-ta-digital-work-from-home/",
+      "oppId": 6286954990,
+      "appliedOn": "2026-10-12T10:58:53.442747+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\443087-6efced808e\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Solution Architect — AWS, Azure, Kafka",
+        "skills": [
+          "AWS",
+          "Solution Architecture",
+          "Azure",
+          "Kafka",
+          "Kubernetes",
+          ".NET Core",
+          "API Design",
+          "Architecture Reviews",
+          "ASP.NET Core",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "REST API",
+          "Software Architecture",
+          "SQL Server",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\443087-6efced808e\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 434531,
+      "title": "Security Architect",
+      "company": "Tata Group",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 45,
+      "publicUrl": "https://www.instahyre.com/job-434531-security-architect-at-tata-group-hyderabad/",
+      "oppId": 6286955083,
+      "appliedOn": "2026-10-12T10:59:04.803111+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\434531-0221e2bc8f\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Architect — Kubernetes, Microservices",
+        "skills": [
+          "API Design",
+          "Kubernetes",
+          "Microservices",
+          "Solution Architecture",
+          "CI/CD",
+          "Docker",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Event-Driven Architecture",
+          "REST API",
+          "Software Architecture",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\434531-0221e2bc8f\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 445358,
+      "title": "Solution Architect",
+      "company": "Amazon",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 40,
+      "publicUrl": "https://www.instahyre.com/job-445358-solution-architect-at-amazon-work-from-home/",
+      "oppId": 6286955268,
+      "appliedOn": "2026-10-12T10:59:16.217651+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\445358-5f734331d0\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Solution Architect — AWS, Azure, Kafka",
+        "skills": [
+          "Solution Architecture",
+          "API Design",
+          "AWS",
+          "Azure",
+          "Kafka",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "REST API",
+          "Software Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\445358-5f734331d0\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 446459,
+      "title": "Solution Architect",
+      "company": "Amazon",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 40,
+      "publicUrl": "https://www.instahyre.com/job-446459-solution-architect-at-amazon-work-from-home/",
+      "oppId": 6286955340,
+      "appliedOn": "2026-10-12T10:59:27.568942+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\446459-b697e50a40\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Solution Architect — AWS, Azure, Kafka",
+        "skills": [
+          "Solution Architecture",
+          "API Design",
+          "AWS",
+          "Azure",
+          "Kafka",
+          ".NET Core",
+          "Architecture Reviews",
+          "ASP.NET Core",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "REST API",
+          "Software Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\446459-b697e50a40\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 445162,
+      "title": "Staff Engineer",
+      "company": "Uber",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 40,
+      "publicUrl": "https://www.instahyre.com/job-445162-staff-engineer-at-uber-work-from-home/",
+      "oppId": 6286955446,
+      "appliedOn": "2026-10-12T10:59:38.912782+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\445162-f0142ecc89\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Staff Engineer — Microservices, Kubernetes, .NET Core",
+        "skills": [
+          "Distributed Systems",
+          "Microservices",
+          "System Design",
+          "REST API",
+          "Technical Leadership",
+          "Kubernetes",
+          ".NET Core",
+          "API Design",
+          "ASP.NET Core",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "Software Architecture",
+          "SQL Server"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\445162-f0142ecc89\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 444875,
+      "title": "Staff Engineer",
+      "company": "Freehand",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 40,
+      "publicUrl": "https://www.instahyre.com/job-444875-staff-engineer-at-freehand-work-from-home/",
+      "oppId": 6286955553,
+      "appliedOn": "2026-10-12T10:59:50.253013+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\444875-d20290d6ec\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Staff Engineer — .NET, Cloud, Distributed Systems",
+        "skills": [
+          "Distributed Systems",
+          "Solution Architecture",
+          "System Design",
+          "Technical Leadership",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "SQL Server"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\444875-d20290d6ec\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      },
+      "ui": "application_sent"
+    },
+    {
+      "id": 444907,
+      "title": "Staff Engineer",
+      "company": "NetSpring",
+      "location": "Bangalore,Work From Home",
+      "path": "Instahyre",
+      "score": 40,
+      "publicUrl": "https://www.instahyre.com/job-444907-staff-engineer-at-netspring-bangalore-work-from-home/",
+      "oppId": 6286955743,
+      "appliedOn": "2026-10-12T11:00:01.733517+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\444907-9493474c1a\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Staff Engineer — .NET, Cloud, Distributed Systems",
+        "skills": [
+          "Distributed Systems",
+          "Solution Architecture",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\444907-9493474c1a\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 444874,
+      "title": "Staff Engineer",
+      "company": "Freehand",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 40,
+      "publicUrl": "https://www.instahyre.com/job-444874-staff-engineer-at-freehand-work-from-home/",
+      "oppId": 6286955823,
+      "appliedOn": "2026-10-12T11:00:13.007797+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\444874-3874ba856f\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Staff Engineer — .NET, Cloud, Distributed Systems",
+        "skills": [
+          "Distributed Systems",
+          "Mentoring",
+          "System Design",
+          "Technical Leadership",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "Solution Architecture",
+          "SQL Server"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\444874-3874ba856f\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 446312,
+      "title": "Principal Engineer",
+      "company": "Entain India",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 40,
+      "publicUrl": "https://www.instahyre.com/job-446312-principal-engineer-at-entain-india-hyderabad/",
+      "oppId": 6286955932,
+      "appliedOn": "2026-10-12T11:00:24.372498+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\446312-244e825901\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Principal Engineer — Kafka, Kubernetes, Microservices",
+        "skills": [
+          "Kafka",
+          "Technical Leadership",
+          "API Design",
+          "Distributed Systems",
+          "Docker",
+          "Domain-Driven Design",
+          "Kubernetes",
+          "Mentoring",
+          "Microservices",
+          "CI/CD",
+          "REST API",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "Solution Architecture",
+          "System Design"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\446312-244e825901\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 443554,
+      "title": "Software Architect",
+      "company": "EPAM Systems",
+      "location": "Bangalore,Hyderabad,Pune",
+      "path": "Instahyre",
+      "score": 40,
+      "publicUrl": "https://www.instahyre.com/job-443554-software-architect-at-epam-systems-bangalore-hyderabad-pune/",
+      "oppId": 6286956017,
+      "appliedOn": "2026-10-12T11:00:35.714801+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\443554-b6bd212f34\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Software Architect — Kafka, AWS, Azure",
+        "skills": [
+          "Kafka",
+          "Solution Architecture",
+          "Technical Leadership",
+          "Angular",
+          "AWS",
+          "Azure",
+          "Docker",
+          "Microservices",
+          "React",
+          "System Design",
+          "CI/CD",
+          "Cloud Architecture",
+          "RabbitMQ",
+          "REST API",
+          "Software Architecture",
+          "Kubernetes",
+          ".NET Core",
+          "API Design",
+          "Architecture Reviews",
+          "ASP.NET Core",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\443554-b6bd212f34\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 436073,
+      "title": "Lead Full Stack Developer",
+      "company": "Accellor",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 20,
+      "publicUrl": "https://www.instahyre.com/job-436073-lead-full-stack-developer-at-accellor-3-hyderabad/",
+      "oppId": 6286956137,
+      "appliedOn": "2026-10-12T11:00:47.082358+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\436073-251e482c23\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS, Azure, Kubernetes",
+        "skills": [
+          "AWS",
+          "Azure",
+          "Jenkins",
+          "Kubernetes",
+          "React",
+          "API Design",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "REST API",
+          "Software Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\436073-251e482c23\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 446557,
+      "title": "Senior Platform Developer With AWS",
+      "company": "DataArt",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 15,
+      "publicUrl": "https://www.instahyre.com/job-446557-senior-platform-developer-with-aws-at-dataart-work-from-home/",
+      "oppId": 6286956246,
+      "appliedOn": "2026-10-12T11:00:58.478911+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\446557-c5c05374dd\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — Kubernetes, AWS, Azure",
+        "skills": [
+          "Kubernetes",
+          "CI/CD",
+          "AWS",
+          "Azure",
+          "Docker",
+          "Solution Architecture",
+          "Cloud Architecture",
+          ".NET Core",
+          "API Design",
+          "Architecture Reviews",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "Software Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\446557-c5c05374dd\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 445138,
+      "title": "Azure DevOps Engineer",
+      "company": "Algoworks",
+      "location": "Bangalore,Hyderabad,Pune",
+      "path": "Instahyre",
+      "score": 5,
+      "publicUrl": "https://www.instahyre.com/job-445138-azure-devops-engineer-at-algoworks-bangalore-hyderabad-pune/",
+      "oppId": 6286956334,
+      "appliedOn": "2026-10-12T11:01:10.004046+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\445138-1955a4995c\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — Kubernetes, Azure, .NET Core",
+        "skills": [
+          "Kubernetes",
+          "CI/CD",
+          "Azure",
+          "Docker",
+          "React",
+          "Cloud Architecture",
+          ".NET Core",
+          "API Design",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "Software Architecture",
+          "System Design"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\445138-1955a4995c\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 443666,
+      "title": "Linux AWS Engineer",
+      "company": "Arcesium",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 5,
+      "publicUrl": "https://www.instahyre.com/job-443666-linux-aws-engineer-at-arcesium-2-hyderabad/",
+      "oppId": 6286956383,
+      "appliedOn": "2026-10-12T11:01:21.331882+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\443666-b70edc5944\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS",
+        "skills": [
+          "AWS",
+          "CI/CD",
+          "Docker",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "Software Architecture",
+          "Solution Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\443666-b70edc5944\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 444735,
+      "title": "Software Engineer (AWS)",
+      "company": "Accenture",
+      "location": "Chennai,Gurgaon,Hyderabad",
+      "path": "Instahyre",
+      "score": 5,
+      "publicUrl": "https://www.instahyre.com/job-444735-software-engineer-aws-at-accenture-2-chennai-gurgaon-hyderabad/",
+      "oppId": 6286956420,
+      "appliedOn": "2026-10-12T11:01:32.643878+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\444735-d5c0ea78c9\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS, Kubernetes, .NET Core",
+        "skills": [
+          "CI/CD",
+          "Agile",
+          "AWS",
+          "Kubernetes",
+          ".NET Core",
+          "API Design",
+          "ASP.NET Core",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "Software Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\444735-d5c0ea78c9\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 444145,
+      "title": "Consultant - Linux AWS Vmware",
+      "company": "Yash Technologies",
+      "location": "Hyderabad,Indore,Pune",
+      "path": "Instahyre",
+      "score": 5,
+      "publicUrl": "https://www.instahyre.com/job-444145-consultant-linux-aws-vmware-at-yash-technologies-2-hyderabad-indore-pune/",
+      "oppId": 6286956658,
+      "appliedOn": "2026-10-12T11:01:44.616323+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\444145-26b8e92197\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS",
+        "skills": [
+          "AWS",
+          "Cloud Architecture",
+          "Solution Architecture",
+          "CI/CD",
+          "Distributed Systems",
+          "Software Architecture",
+          "SQL Server",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\444145-26b8e92197\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 443569,
+      "title": "Node.js Developer",
+      "company": "Intel",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 5,
+      "publicUrl": "https://www.instahyre.com/job-443569-node-js-developer-at-intel-2-hyderabad/",
+      "oppId": 6286957044,
+      "appliedOn": "2026-10-12T11:01:55.928813+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\443569-0b0b7f6fc9\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS, Kubernetes, Microservices",
+        "skills": [
+          "AWS",
+          "Kubernetes",
+          "REST API",
+          "CI/CD",
+          "API Design",
+          "Distributed Systems",
+          "Docker",
+          "High Availability",
+          "Microservices",
+          "Cloud Architecture",
+          "Kafka",
+          ".NET Core",
+          "Architecture Reviews",
+          "ASP.NET Core",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "Software Architecture",
+          "System Design"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\443569-0b0b7f6fc9\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 444299,
+      "title": "Backend Engineer",
+      "company": "Axi",
+      "location": "Work From Home",
+      "path": "Instahyre",
+      "score": 5,
+      "publicUrl": "https://www.instahyre.com/job-444299-backend-engineer-at-axi-work-from-home/",
+      "oppId": 6286957132,
+      "appliedOn": "2026-10-12T11:02:07.192270+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\444299-acedfe0361\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS",
+        "skills": [
+          "AWS",
+          "PostgreSQL",
+          "CI/CD",
+          "REST API",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "Solution Architecture",
+          "SQL Server",
+          "System Design"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\444299-acedfe0361\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 435247,
+      "title": "Software Development Engineer 2",
+      "company": "NxtWave",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 5,
+      "publicUrl": "https://www.instahyre.com/job-435247-software-development-engineer-2-at-nxtwave-hyderabad/",
+      "oppId": 6286957240,
+      "appliedOn": "2026-10-12T11:02:18.432587+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\435247-e88ef2e72b\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS",
+        "skills": [
+          "AWS",
+          "REST API",
+          "Agile",
+          "Docker",
+          "PostgreSQL",
+          "Scrum",
+          "API Design",
+          "CI/CD",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "Solution Architecture",
+          "SQL Server",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\435247-e88ef2e72b\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 444035,
+      "title": "SSE (L5) - BE",
+      "company": "Uber",
+      "location": "Bangalore,Hyderabad",
+      "path": "Instahyre",
+      "score": 0,
+      "publicUrl": "https://www.instahyre.com/job-444035-sse-l5-be-at-uber-bangalore-hyderabad/",
+      "oppId": 6286957360,
+      "appliedOn": "2026-10-12T11:02:29.734404+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\444035-25bbbf6095\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — Microservices",
+        "skills": [
+          "API Design",
+          "Distributed Systems",
+          "Microservices",
+          "Solution Architecture",
+          "System Design",
+          "Technical Leadership",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "REST API",
+          "Software Architecture"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\444035-25bbbf6095\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 446412,
+      "title": "Python Engineer",
+      "company": "Nineleaps",
+      "location": "Bangalore,Hyderabad",
+      "path": "Instahyre",
+      "score": 0,
+      "publicUrl": "https://www.instahyre.com/job-446412-python-engineer-at-nineleaps-2-bangalore-hyderabad/",
+      "oppId": 6286957404,
+      "appliedOn": "2026-10-12T11:02:41.100111+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\446412-66b5d6fbe4\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — .NET, Cloud, Distributed Systems",
+        "skills": [
+          "REST API",
+          "API Design",
+          "Docker",
+          "PostgreSQL",
+          "CI/CD",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "SQL Server",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\446412-66b5d6fbe4\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 433030,
+      "title": "Python Developer",
+      "company": "Incedo",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 0,
+      "publicUrl": "https://www.instahyre.com/job-433030-python-developer-at-incedo-hyderabad/",
+      "oppId": 6286957784,
+      "appliedOn": "2026-10-12T11:02:52.465346+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\433030-5c7fc9fe59\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — AWS, Microservices",
+        "skills": [
+          "AWS",
+          "Mentoring",
+          "Microservices",
+          "CI/CD",
+          "REST API",
+          "API Design",
+          "Architecture Reviews",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Software Architecture",
+          "SQL Server",
+          "System Design"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\433030-5c7fc9fe59\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 437537,
+      "title": "Principle Engineer",
+      "company": "Helfie.AI",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 0,
+      "publicUrl": "https://www.instahyre.com/job-437537-principle-engineer-at-helfie-hyderabad/",
+      "oppId": 6286957834,
+      "appliedOn": "2026-10-12T11:03:03.832517+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\437537-1e7997652d\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — Azure",
+        "skills": [
+          "CI/CD",
+          "Azure",
+          "Software Architecture",
+          "Solution Architecture",
+          "System Design",
+          "Technical Leadership",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Distributed Systems",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "REST API"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\437537-1e7997652d\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    },
+    {
+      "id": 436518,
+      "title": "Engineering Manage II",
+      "company": "Uber",
+      "location": "Hyderabad",
+      "path": "Instahyre",
+      "score": 0,
+      "publicUrl": "https://www.instahyre.com/job-436518-engineering-manage-ii-at-uber-hyderabad/",
+      "oppId": 6286957889,
+      "appliedOn": "2026-10-12T11:03:15.309367+00:00",
+      "tailoredResume": "\\opt\\cursor\\artifacts\\tailored-resumes\\436518-d2e69ebe3c\\Rafi_Resume.docx",
+      "tailor": {
+        "headline": "Technical Architect | Technical Lead — .NET, Cloud, Distributed Systems",
+        "skills": [
+          "Mentoring",
+          "System Design",
+          "Technical Leadership",
+          "API Design",
+          "Architecture Reviews",
+          "Cloud Architecture",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "Solution Architecture"
+        ],
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\436518-d2e69ebe3c\\Rafi_Resume.docx"
+      },
+      "profileResumeUpload": {
+        "ok": true,
+        "reason": null
+      }
+    }
+  ],
+  "external": [],
+  "rejected": [],
+  "blocked": [],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": null,
+  "notes": [
+    "Post-fix rerun after candidate_matching API migration"
+  ],
+  "preflight": {
+    "reason": "live_cdp_instahyre_ok"
+  },
+  "logPath": null
+}
