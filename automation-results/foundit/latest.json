@@ -1,31 +1,383 @@
 {
   "portal": "foundit",
   "source": "home-local",
-  "date": "2026-10-10",
+  "date": "2026-10-12",
   "startedAt": null,
-  "finishedAt": "2026-10-10T00:21:32.879Z",
+  "finishedAt": "2026-10-12T08:36:59.493Z",
   "host": "LAPY",
-  "ok": false,
+  "ok": true,
   "counts": {
-    "applied": 0,
+    "applied": 2,
     "external": 0,
     "rejected": 0,
-    "blocked": 1,
-    "skipped": 0,
-    "seen": 0
+    "blocked": 51,
+    "skipped": 899,
+    "seen": 956
   },
-  "applied": [],
+  "applied": [
+    {
+      "jobId": "69209656",
+      "title": "Application Architect .Net -Lead Architect",
+      "company": "Deloitte",
+      "loc": "Hyderabad / Secunderabad, Telangana | India",
+      "path": "Foundit Falcon",
+      "falconStatus": 200,
+      "falconNext": "NORMAL",
+      "ats": null,
+      "ageDays": 13.330876481481482,
+      "tailoredResume": {
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\69209656-7697f35553\\Rafi_Resume.docx",
+        "headline": "Architect — AWS, Kubernetes, .NET Core",
+        "matchedSkills": [
+          "AWS",
+          "Kubernetes",
+          ".NET Core",
+          "ASP.NET Core",
+          "Docker",
+          "Domain-Driven Design",
+          "CI/CD",
+          "Azure",
+          "Distributed Systems",
+          "Jenkins",
+          "Kafka",
+          "Microservices",
+          "PostgreSQL",
+          "SQL Server",
+          "API Design",
+          "Cloud Architecture",
+          "REST API",
+          "Solution Architecture",
+          "Architecture Reviews",
+          "Event-Driven Architecture",
+          "High Availability",
+          "Software Architecture",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "profileUploadOk": true
+      }
+    },
+    {
+      "jobId": "69129282",
+      "title": "Resident solution architect",
+      "company": "Socnet Technologies Private Limited",
+      "loc": "Remote",
+      "path": "Foundit Falcon",
+      "falconStatus": 200,
+      "falconNext": "NORMAL",
+      "ats": null,
+      "ageDays": 13.921373391203703,
+      "tailoredResume": {
+        "path": "\\opt\\cursor\\artifacts\\tailored-resumes\\69129282-7251cc392e\\Rafi_Resume.docx",
+        "headline": "Solution Architect — AWS, Azure, Kafka",
+        "matchedSkills": [
+          "Cloud Architecture",
+          "Solution Architecture",
+          "AWS",
+          "Azure",
+          "Kafka",
+          "CI/CD",
+          "API Design",
+          "Architecture Reviews",
+          "Domain-Driven Design",
+          "Event-Driven Architecture",
+          "Software Architecture",
+          "SQL Server",
+          "System Design",
+          "Technical Leadership"
+        ],
+        "profileUploadOk": true
+      }
+    }
+  ],
   "external": [],
   "rejected": [],
   "blocked": [
     {
-      "reason": "cursor_agent_cli_missing"
+      "jobId": "69448778",
+      "title": "Senior .NET Full Stack Developer- Angular - Remote",
+      "company": "relq technologies",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4477400460/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4477400460/"
+      }
+    },
+    {
+      "jobId": "69449643",
+      "title": "RCF_IC_Engineering Manager",
+      "company": "Larsen & Toubro",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4477433807/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4477433807/"
+      }
+    },
+    {
+      "jobId": "69447870",
+      "title": "Solutions Architect",
+      "company": "Jobgether",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_ats_cap_or_incomplete",
+      "url": "https://www.linkedin.com/jobs/view/4475955687/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_ats_cap_or_incomplete",
+        "url": "https://www.linkedin.com/jobs/view/4475955687/"
+      }
+    },
+    {
+      "jobId": "69432109",
+      "title": "Senior .Net Developer",
+      "company": "lancesoft middle east",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4475781141/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4475781141/"
+      }
+    },
+    {
+      "jobId": "69427636",
+      "title": "Principal Software Engineer - C .NET",
+      "company": "Nasuni",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4475411203/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4475411203/"
+      }
+    },
+    {
+      "jobId": "69436346",
+      "title": "Adobe Solution Architect | Remote | 10 -15 Y | Perm | Quick Joiner Only.",
+      "company": "accedepro private limited",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4476707813/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4476707813/"
+      }
+    },
+    {
+      "jobId": "69431951",
+      "title": "Solution Architect",
+      "company": "Accenture",
+      "reason": "external_ats_incomplete",
+      "detail": "external_incomplete_or_timeout",
+      "url": "https://www.monsterindia.com/event/triumph/",
+      "falconStatus": 200,
+      "falconNext": "NORMAL",
+      "ats": {
+        "status": "external_incomplete_or_timeout",
+        "url": "https://www.foundit.in/event/triumph/"
+      }
+    },
+    {
+      "jobId": "69409099",
+      "title": "Technical Architect, Revenue Management Systems",
+      "company": "Bristol Myers Squibb",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4476150727/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4476150727/"
+      }
+    },
+    {
+      "jobId": "69432620",
+      "title": "Principal Software Engineering Manager",
+      "company": "Microsoft Corp",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4476719429/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4476719429/"
+      }
+    },
+    {
+      "jobId": "69432836",
+      "title": "Senior Software Engineering Manager",
+      "company": "Microsoft Corp",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4476727166/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4476727166/"
+      }
+    },
+    {
+      "jobId": "69410126",
+      "title": "Principal Engineer / Senior Design Manager",
+      "company": "SNC Lavalin Fayez Engineering",
+      "reason": "external_ats_incomplete",
+      "detail": "external_incomplete_or_timeout",
+      "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/INGurgaonDLF-Cyber-City/Principal-Engineer---Senior-Design-Manager_R-163103",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "external_incomplete_or_timeout",
+        "url": "https://slihrms.wd3.myworkdayjobs.com/en-US/Careers/job/INGurgaonDLF-Cyber-City/Principal-Engineer---Senior-Design-Manager_R-163103"
+      }
+    },
+    {
+      "jobId": "69417625",
+      "title": "Senior Principal Engineer, Silicon Photonics Architect",
+      "company": "Renesas Electronics",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_ats_cap_or_incomplete",
+      "url": "https://www.linkedin.com/jobs/view/4476149009/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_ats_cap_or_incomplete",
+        "url": "https://www.linkedin.com/jobs/view/4476149009/"
+      }
+    },
+    {
+      "jobId": "69446502",
+      "title": "Principal Full Stack Engineer (Fully Remote- Only Filipino citizens)",
+      "company": "teamified",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4475180477/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4475180477/"
+      }
+    },
+    {
+      "jobId": "69372006",
+      "title": "Lead Engineer/ Architect (.NET) - Industrial",
+      "company": "embrace software inc",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4469812299/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4469812299/"
+      }
+    },
+    {
+      "jobId": "69388639",
+      "title": "Lead RPA Engineer",
+      "company": "Experian",
+      "reason": "external_ats_incomplete",
+      "detail": "external_incomplete_or_timeout",
+      "url": "https://jobs.smartrecruiters.com/Experian/744000154348040-lead-rpa-engineer",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "external_incomplete_or_timeout",
+        "url": "https://jobs.smartrecruiters.com/Experian/744000154348040-lead-rpa-engineer"
+      }
+    },
+    {
+      "jobId": "69367071",
+      "title": "AWS Solutions Architect | Remote | Jobs In India",
+      "company": "digitalxnode",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4469873583/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4469873583/"
+      }
+    },
+    {
+      "jobId": "69425452",
+      "title": "Senior Engineering Manager – TDP Insights and Data Resiliency",
+      "company": "Atlassian",
+      "reason": "external_ats_incomplete",
+      "detail": "external_incomplete_or_timeout",
+      "url": "https://www.atlassian.com/company/careers/details/26739",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "external_incomplete_or_timeout",
+        "url": "https://careers-apac-atlassian.icims.com/jobs/26739/senior-engineering-manager-%e2%80%93-tdp-insights-and-data-resiliency/login?mobile=false&width=1414&height=500&bga=true&needsRedirect=false&jan1offset=330&jun1offset=330"
+      }
+    },
+    {
+      "jobId": "69392275",
+      "title": "Engineering Manager - India",
+      "company": "Vestd",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4475584113/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4475584113/"
+      }
+    },
+    {
+      "jobId": "69387467",
+      "title": "Senior Engineering Manager",
+      "company": "Atlassian",
+      "reason": "external_ats_incomplete",
+      "detail": "external_incomplete_or_timeout",
+      "url": "https://www.atlassian.com/company/careers/details/27652",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "external_incomplete_or_timeout",
+        "url": "https://careers-apac-atlassian.icims.com/jobs/27652/senior-engineering-manager/login"
+      }
+    },
+    {
+      "jobId": "69362638",
+      "title": "Engineering Manager",
+      "company": "BrowserStack",
+      "reason": "external_ats_incomplete",
+      "detail": "linkedin_no_easy_apply",
+      "url": "https://www.linkedin.com/jobs/view/4467708229/",
+      "falconStatus": 200,
+      "falconNext": "APPLY_REDIRECT_STAGE_ONE",
+      "ats": {
+        "status": "linkedin_no_easy_apply",
+        "url": "https://www.linkedin.com/jobs/view/4467708229/"
+      }
     }
   ],
   "skipped": [],
   "seen": [],
-  "blockerSummary": "cursor_agent_cli_missing",
+  "blockerSummary": "48 external_ats_incomplete (mostly LinkedIn no Easy Apply); 4 false Falcon applies fixed on cursor/foundit-filter-telecom-graphics-erp-20261012",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/foundit/foundit-20261010T002131Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/foundit/foundit-20261012T075722Z.log"
 }
