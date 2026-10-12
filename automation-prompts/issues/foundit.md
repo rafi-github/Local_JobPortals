@@ -1,5 +1,13 @@
 # Foundit — issues & fixes
 
+## 2026-10-12 (home)
+
+| Issue | Fix |
+| --- | --- |
+| False Falcon NORMAL: TCS EPC & 5G Core SA; L&T Technical Lead Graphics; Infosys IT/Data supply-chain + P2P architects (skills laundry .NET) | filters.js: skip telecom/5G/EPC, graphics title, IT data solution/supply chain/P2P architects without .NET on title; tests |
+| issue | fix |
+
+
 ## 2026-09-04 (cloud)
 
 | Issue | Fix |

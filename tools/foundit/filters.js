@@ -209,6 +209,25 @@ function skipTitleReason(title) {
   // VoIP / Asterisk / telephony stacks — not .NET/cloud Arch targets (Jobgether 2026-08-25).
   if (/\b(asterisk|telephony|\bvoip\b)\b/i.test(t) && !hasDotNet(t, ""))
     return "Asterisk/telephony without .NET on title";
+  // Telecom / 5G core / EPC / RAN — not .NET/cloud Arch targets (TCS EPC & 5G Core 2026-10-12).
+  if (
+    /\b(5g\s+core|\bepc\b|\bran\b|telecom\s+network|telecom\s+billing|core\s+network)\b/i.test(
+      t
+    ) &&
+    !hasDotNet(t, "")
+  )
+    return "telecom/5G without .NET on title";
+  // GPU / rendering graphics leads — not software .NET Arch (L&T Technical Lead Graphics 2026-10-12).
+  if (/\bgraphics\b/i.test(t) && !hasDotNet(t, ""))
+    return "graphics/GPU without .NET on title";
+  // Infosys-style ERP / supply-chain data architects — skills laundry .NET is noisy (2026-10-12).
+  if (
+    /\b(it\s*&?\s*data\s+solution|data\s+solution\s+architect|supply\s+chain\s+planning|\bp2p\b)\b/i.test(
+      t
+    ) &&
+    !hasDotNet(t, "")
+  )
+    return "ERP/supply-chain data architect without .NET on title";
   // UI/frontend React|Angular|Vue Architect without .NET on TITLE (Infosys UI Technical Architect 2026-08-25).
   if (
     /\b(ui\s+(?:technical\s+)?architect|frontend|front[\s-]?end)\b/i.test(t) &&

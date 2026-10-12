@@ -1001,4 +1001,74 @@ assert.strictEqual(
   "Technical Lead AI Development must skip Arch/Lead band (2026-09-03 Falcon redirect noise)"
 );
 
+assert.strictEqual(
+  classifyJob({
+    jobId: 69436773,
+    title: "Solution Architect - EPC & 5G Core Networks",
+    companyName: "Tata Consultancy Services",
+    locations: [{ text: "Hyderabad / Secunderabad, Telangana" }],
+    skills: [{ text: ".NET Core" }, { text: "Kubernetes" }],
+    minimumExperience: { years: 12 },
+    maximumExperience: { years: 18 },
+  }).reason,
+  "telecom/5G without .NET on title",
+  "TCS EPC & 5G Core must skip (2026-10-12 home false Falcon NORMAL)"
+);
+
+assert.strictEqual(
+  classifyJob({
+    jobId: 69428467,
+    title: "Technical Lead Graphics",
+    companyName: "L&T Technology Services",
+    locations: [{ text: "Hyderabad / Secunderabad, Telangana" }],
+    skills: [{ text: ".NET" }, { text: "OpenGL" }],
+    minimumExperience: { years: 10 },
+    maximumExperience: { years: 15 },
+  }).reason,
+  "graphics/GPU without .NET on title",
+  "Technical Lead Graphics must skip (2026-10-12 home)"
+);
+
+assert.strictEqual(
+  classifyJob({
+    jobId: 69351124,
+    title: "IT & Data Solution Architect - Supply Chain Planning",
+    companyName: "Infosys",
+    locations: [{ text: "Hyderabad / Secunderabad, Telangana" }],
+    skills: [{ text: ".NET" }, { text: "SAP" }],
+    minimumExperience: { years: 12 },
+    maximumExperience: { years: 16 },
+  }).reason,
+  "ERP/supply-chain data architect without .NET on title",
+  "Infosys supply-chain data SA must skip (2026-10-12 home)"
+);
+
+assert.strictEqual(
+  classifyJob({
+    jobId: 69347440,
+    title: "IT Data Solution Architect P2P",
+    companyName: "Infosys",
+    locations: [{ text: "Hyderabad / Secunderabad, Telangana" }],
+    skills: [{ text: ".NET Core" }],
+    minimumExperience: { years: 12 },
+    maximumExperience: { years: 16 },
+  }).reason,
+  "ERP/supply-chain data architect without .NET on title",
+  "Infosys P2P data SA must skip (2026-10-12 home)"
+);
+
+assert.strictEqual(
+  classifyJob({
+    jobId: 69209656,
+    title: "Application Architect .Net -Lead Architect",
+    companyName: "Deloitte",
+    locations: [{ text: "Hyderabad / Secunderabad, Telangana" }],
+    skills: [{ text: "AWS" }, { text: "Kubernetes" }],
+    minimumExperience: { years: 12 },
+    maximumExperience: { years: 16 },
+  }).pass,
+  true,
+  "Deloitte Application Architect .Net on title must still pass"
+);
+
 console.log("filters.test.js OK");
