@@ -1,5 +1,12 @@
 # Cutshort — issues & fixes
 
+## 2026-10-15 (home)
+
+| Issue | Fix |
+| --- | --- |
+| Windows home resume_tailor hit Store python stub — tailor failed every apply | `resume_tailor.js` uses `chrome_session.resolvePython` (`py -3`); Cutshort `connectOverCDP` timeout 120s |
+| Stale reused Chrome CDP on :9222 — Playwright connectOverCDP 60s timeout | Clean-exit + full Chrome restart before apply when connect fails |
+
 ## 2026-08-25 (cloud)
 
 | Issue | Fix |

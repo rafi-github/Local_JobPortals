@@ -12,6 +12,7 @@
 const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
+const { resolvePython } = require("./chrome_session");
 
 const ROOT = path.join(__dirname, "..");
 
@@ -27,22 +28,9 @@ function skillText(skills) {
   return String(skills);
 }
 
-function resolvePython() {
-  const candidates = [process.env.PYTHON, process.env.PYTHON3, "python3", "python"].filter(
-    Boolean
-  );
-  for (const bin of candidates) {
-    const probe = spawnSync(
-      bin,
-      ["-c", "import docx; import tools.resume_tailor"],
-      { encoding: "utf8", cwd: ROOT, env: { ...process.env, PYTHONPATH: ROOT } }
-    );
-    if (probe.status === 0) return bin;
-  }
-  spawnSync("python3", ["-m", "pip", "install", "-q", "python-docx"], {
-    encoding: "utf8",
-  });
-  return "python3";
+function pythonArgs(extra) {
+  const py = resolvePython();
+  return py === "py" ? ["-3", ...extra] : extra;
 }
 
 /**
@@ -87,7 +75,7 @@ except Exception as e:
     sys.exit(1)
 `;
 
-  const run = spawnSync(py, ["-c", code], {
+  const run = spawnSync(py, pythonArgs(["-c", code]), {
     encoding: "utf8",
     cwd: ROOT,
     env: { ...process.env, PYTHONPATH: ROOT },

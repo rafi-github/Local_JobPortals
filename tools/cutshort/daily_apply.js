@@ -378,7 +378,7 @@ function createCdpSession() {
   let page = null;
 
   async function connect() {
-    browser = await chromium.connectOverCDP(CDP, { timeout: 60000 });
+    browser = await chromium.connectOverCDP(CDP, { timeout: 120000 });
     context = browser.contexts()[0] || (await browser.newContext());
     page = context.pages().find((p) => /cutshort\.io/i.test(p.url())) || (await context.newPage());
     if (!String(page.url()).includes("cutshort.io")) {
