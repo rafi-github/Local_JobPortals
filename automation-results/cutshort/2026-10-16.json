@@ -1,0 +1,48 @@
+{
+  "portal": "cutshort",
+  "source": "home-local",
+  "date": "2026-10-16",
+  "startedAt": null,
+  "finishedAt": "2026-10-16T14:19:19.441Z",
+  "host": "LAPY",
+  "ok": true,
+  "counts": {
+    "applied": 0,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 0,
+    "skipped": 1,
+    "seen": 3845
+  },
+  "applied": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [],
+  "skipped": [
+    {
+      "id": "6acc593799bbbd3a45ce9998",
+      "title": "Chief Agentic Systems Architect",
+      "company": "HyrHub",
+      "reason": "already_applied"
+    }
+  ],
+  "seen": [
+    {
+      "id": "6acc593799bbbd3a45ce9998",
+      "title": "Chief Agentic Systems Architect",
+      "company": "HyrHub",
+      "tier": 1
+    }
+  ],
+  "blockerSummary": null,
+  "notes": [
+    "qualifying=1",
+    "q_answered=0",
+    "q_locked_empty=0",
+    "q_already_submitted=0",
+    "tailored_built=0",
+    "tailored_uploaded=0"
+  ],
+  "preflight": null,
+  "logPath": null
+}
