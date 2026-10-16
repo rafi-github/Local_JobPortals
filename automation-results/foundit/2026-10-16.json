@@ -1,0 +1,27 @@
+{
+  "portal": "foundit",
+  "source": "home-local",
+  "date": "2026-10-16",
+  "startedAt": null,
+  "finishedAt": "2026-10-16T14:10:48.560Z",
+  "host": "LAPY",
+  "ok": true,
+  "counts": {
+    "applied": 0,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 0,
+    "skipped": 1186,
+    "seen": 1283
+  },
+  "applied": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "eligible_inventory_already_applied_no_new_submissions",
+  "notes": [],
+  "preflight": null,
+  "logPath": null
+}
