@@ -1,73 +1,31 @@
 {
   "portal": "instahyre",
   "source": "home-local",
-  "date": "2026-10-16",
+  "date": "2026-10-17",
   "startedAt": null,
-  "finishedAt": "2026-10-16T15:08:00.000Z",
+  "finishedAt": "2026-10-17T15:03:10.698Z",
   "host": "LAPY",
-  "ok": true,
+  "ok": false,
   "counts": {
-    "applied": 7,
+    "applied": 0,
     "external": 0,
     "rejected": 0,
-    "blocked": 0,
-    "skipped": 664,
-    "seen": 671
+    "blocked": 1,
+    "skipped": 0,
+    "seen": 0
   },
-  "applied": [
-    {
-      "company": "Lyric",
-      "title": "Senior Software Engineer II",
-      "location": "Hyderabad",
-      "path": "Instahyre"
-    },
-    {
-      "company": "Qapita",
-      "title": "Senior Full Stack Developer",
-      "location": "Hyderabad",
-      "path": "Instahyre"
-    },
-    {
-      "company": "NTT Data",
-      "title": "Fullstack Developer (.NET)",
-      "location": "Bangalore,Hyderabad,Pune",
-      "path": "Instahyre"
-    },
-    {
-      "company": "Helfie.AI",
-      "title": "Senior Principal Engineer",
-      "location": "Hyderabad",
-      "path": "Instahyre"
-    },
-    {
-      "company": "ScaleOrange Technologies",
-      "title": "Solution Architect",
-      "location": "Hyderabad",
-      "path": "Instahyre"
-    },
-    {
-      "company": "Visilant",
-      "title": "Lead Backend Engineer",
-      "location": "Work From Home",
-      "path": "Instahyre"
-    },
-    {
-      "company": "Hexaware Technologies",
-      "title": "Azure DevOps Engineer",
-      "location": "Hyderabad",
-      "path": "Instahyre"
-    }
-  ],
+  "applied": [],
   "external": [],
   "rejected": [],
-  "blocked": [],
+  "blocked": [
+    {
+      "reason": "agent_finished_without_same_day_report_exit_0"
+    }
+  ],
   "skipped": [],
   "seen": [],
-  "blockerSummary": null,
-  "notes": [
-    "Fixed candidate_matching API migration + Windows py -3 for JD tailor; interested 313→320",
-    "All 7 applies: profileResumeUpload.ok true"
-  ],
+  "blockerSummary": "agent_finished_without_same_day_report_exit_0",
+  "notes": [],
   "preflight": null,
-  "logPath": "artifacts/instahyre-daily-apply-rerun-20261016.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/instahyre/instahyre-20261016T145646Z.log"
 }
