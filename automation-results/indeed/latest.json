@@ -1,9 +1,9 @@
 {
   "portal": "indeed",
   "source": "home-local",
-  "date": "2026-10-10",
+  "date": "2026-10-17",
   "startedAt": null,
-  "finishedAt": "2026-10-10T00:23:42.863Z",
+  "finishedAt": "2026-10-17T15:03:59.746Z",
   "host": "LAPY",
   "ok": false,
   "counts": {
@@ -27,5 +27,5 @@
   "blockerSummary": "indeed_cloudflare_private_worker_required",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/indeed/indeed-20261010T002244Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/indeed/indeed-20261017T150323Z.log"
 }
