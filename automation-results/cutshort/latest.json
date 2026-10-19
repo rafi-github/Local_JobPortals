@@ -1,9 +1,9 @@
 {
   "portal": "cutshort",
   "source": "home-local",
-  "date": "2026-10-16",
+  "date": "2026-10-19",
   "startedAt": null,
-  "finishedAt": "2026-10-16T14:19:19.441Z",
+  "finishedAt": "2026-10-19T08:54:26.168Z",
   "host": "LAPY",
   "ok": true,
   "counts": {
@@ -12,7 +12,7 @@
     "rejected": 0,
     "blocked": 0,
     "skipped": 1,
-    "seen": 3845
+    "seen": 3846
   },
   "applied": [],
   "external": [],
@@ -44,5 +44,5 @@
     "tailored_uploaded=0"
   ],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/cutshort/cutshort-20261016T141129Z.log"
+  "logPath": null
 }
