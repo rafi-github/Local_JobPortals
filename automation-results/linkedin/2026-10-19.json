@@ -1,0 +1,1140 @@
+{
+  "portal": "linkedin",
+  "source": "home-local",
+  "date": "2026-10-19",
+  "startedAt": null,
+  "finishedAt": "2026-10-19T08:33:41.775Z",
+  "host": "LAPY",
+  "ok": true,
+  "counts": {
+    "applied": 13,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 32,
+    "skipped": 491,
+    "seen": 496
+  },
+  "applied": [
+    {
+      "status": "submitted",
+      "company": "r3 Consultant",
+      "role": "Agentic AI Platform Architect & Product Lead",
+      "job_id": "4480931633",
+      "location": "Hyderabad, Telangana, India · 44 minutes ago · 10 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480931633&f_AL=true&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Talentgigs",
+      "role": "Technical Lead",
+      "job_id": "4479942988",
+      "location": "Hyderabad, Telangana, India · 1 hour ago · 7 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479942988&f_AL=true&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Teamified",
+      "role": "Principal Full Stack Engineer (Fully Remote- India)",
+      "job_id": "4480948027",
+      "location": "Principal Full Stack Engineer (Fully Remote- India)",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480948027&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Kandou AI",
+      "role": "Software Architect",
+      "job_id": "4472293294",
+      "location": "Greater Hyderabad Area · Reposted 2 hours ago · Over 100 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4472293294&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Mulya Technologies",
+      "role": "Customer Platform, SDK & Interoperability Architect",
+      "job_id": "4480862489",
+      "location": "Greater Hyderabad Area · 1 day ago · 9 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480862489&f_AL=true&f_TPR=r259200&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Mulya Technologies",
+      "role": "Customer Platform, SDK & Interoperability Architect",
+      "job_id": "4480872215",
+      "location": "Greater Hyderabad Area · 1 day ago · 11 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480872215&f_AL=true&f_TPR=r259200&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Backbase",
+      "role": "Solution Architect",
+      "job_id": "4477765972",
+      "location": "Hyderabad, Telangana, India · 1 day ago · 81 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4477765972&f_AL=true&f_TPR=r259200&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Trianz",
+      "role": "Senior Technical Lead - IDMC Admin",
+      "job_id": "4479952928",
+      "location": "Hyderabad, Telangana, India · 10 minutes ago · 0 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479952928&f_AL=true&f_TPR=r259200&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Mulya Technologies",
+      "role": "Customer Platform, SDK & Interoperability Architect",
+      "job_id": "4480874162",
+      "location": "Greater Hyderabad Area · 1 day ago · 6 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480874162&f_AL=true&f_TPR=r259200&keywords=Azure%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "iLabs Capital",
+      "role": "Associate Director of Sales",
+      "job_id": "4478260045",
+      "location": "Hyderabad, Telangana, India · 13 minutes ago · 1 applicant",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478260045&f_AL=true&f_TPR=r604800&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "Tytan Technology Inc.",
+      "role": "Senior Software Engineer",
+      "job_id": "4478244759",
+      "location": "Hyderabad, Telangana, India · 4 minutes ago · 7 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478244759&f_TPR=r604800&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "NLB Services",
+      "role": "Quantexa Technical Lead",
+      "job_id": "4479958944",
+      "location": "Hyderabad, Telangana, India · 11 minutes ago · 0 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479958944&f_TPR=r1209600&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    },
+    {
+      "status": "submitted",
+      "company": "NoBroker.com",
+      "role": "Business Development Manager",
+      "job_id": "4479958941",
+      "location": "Hyderabad, Telangana, India · 16 minutes ago · 3 applicants",
+      "reason": "Application submitted",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479958941&f_TPR=r1209600&keywords=Principal%20.NET&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "Easy Apply"
+    }
+  ],
+  "external": [],
+  "rejected": [],
+  "blocked": [
+    {
+      "status": "blocked",
+      "company": "SPADTEK SOLUTIONS",
+      "role": "Senior Backend Engineer – Cortex Platform",
+      "job_id": "4479961350",
+      "location": "Hyderabad, Telangana, India · Reposted 1 hour ago · 11 applicants",
+      "reason": "exceeded Easy Apply steps",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479961350&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "blocked",
+      "company": "Team Geek Solutions",
+      "role": "Technical Architect",
+      "job_id": "4479395085",
+      "location": "Hyderabad, Telangana, India · 2 days ago · 19 applicants",
+      "reason": "exceeded Easy Apply steps",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479395085&f_AL=true&f_TPR=r259200&keywords=Technical%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "blocked",
+      "company": "ESS ESS KAY ENGG. CO.(P) LTD.",
+      "role": "Sales and Marketing Manager _Architect Project and Site Electrical Goods i.e. Switches wire switchgears",
+      "job_id": "4479679433",
+      "location": "Hyderabad, Telangana, India · 1 day ago · 24 applicants",
+      "reason": "Easy Apply modal did not open",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479679433&f_AL=true&f_TPR=r259200&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "blocked",
+      "company": "profitvoice.in",
+      "role": "Multi Solution Architect – Adobe Stack",
+      "job_id": "4479666486",
+      "location": "Hyderabad, Telangana, India · 1 day ago · 8 applicants No response insights available yet",
+      "reason": "exceeded Easy Apply steps",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479666486&f_AL=true&f_TPR=r259200&keywords=Azure%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "blocked",
+      "company": "Scale-X Solutions",
+      "role": "PERMANENT DAYSHIFT, REMOTE : SALES DIRECTOR - India Based",
+      "job_id": "4461040695",
+      "location": "PERMANENT DAYSHIFT, REMOTE : SALES DIRECTOR - India Based",
+      "reason": "exceeded Easy Apply steps",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4461040695&f_AL=true&f_TPR=r259200&f_WT=2&keywords=Technical%20Lead&location=India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "blocked",
+      "company": "isolved",
+      "role": "Engineering Manager, Product - Suite Experience",
+      "job_id": "4471895110",
+      "location": "Hyderabad, Telangana, India · Reposted 2 days ago · Over 100 applicants",
+      "reason": "exceeded Easy Apply steps",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4471895110&f_TPR=r259200&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "blocked",
+      "company": "MyCareernet",
+      "role": "Lead Engineer Platform_104127",
+      "job_id": "4476084863",
+      "location": "Hyderabad, Telangana, India · Reposted 5 minutes ago · 60 applicants",
+      "reason": "exceeded Easy Apply steps",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4476084863&f_TPR=r259200&keywords=Principal%20.NET&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "blocked",
+      "company": "Cyara",
+      "role": "Senior Engineering Manager",
+      "job_id": "4480591792",
+      "location": "Hyderabad, Telangana, India · 2 days ago · 58 applicants",
+      "reason": "exceeded Easy Apply steps",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480591792&f_AL=true&f_TPR=r604800&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4448608798",
+      "location": "",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4448608798/",
+      "path": "https://www.linkedin.com/jobs/view/4448608798/"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4400708113",
+      "location": "",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4400708113/",
+      "path": "https://www.linkedin.com/jobs/view/4400708113/"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4405159441",
+      "location": "",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4405159441/",
+      "path": "https://www.linkedin.com/jobs/view/4405159441/"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4270943974",
+      "location": "",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4270943974/",
+      "path": "https://www.linkedin.com/jobs/view/4270943974/"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4442700522",
+      "location": "",
+      "reason": "did_not_leave_linkedin",
+      "url": "https://www.linkedin.com/jobs/view/4442700522/",
+      "path": "https://www.linkedin.com/feed/update/urn:li:activity:7517366711965192192/"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4438407299",
+      "location": "",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4438407299/",
+      "path": "https://www.linkedin.com/jobs/view/4438407299/"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4446911955",
+      "location": "",
+      "reason": "did_not_leave_linkedin",
+      "url": "https://www.linkedin.com/jobs/view/4446911955/",
+      "path": "https://www.linkedin.com/feed/update/urn:li:activity:7517140871847550976/"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4398091856",
+      "location": "",
+      "reason": "external_incomplete_or_timeout",
+      "url": "https://www.linkedin.com/jobs/view/4398091856/",
+      "path": "https://willspired.talentrecruit.com/career-page/apply/U2FsdGVkX18ZLvmzqaSEuCzTPRWYsPLHEWdkCIn7j9g%253d?share=linkedin"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4447521118",
+      "location": "",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4447521118/",
+      "path": "https://www.linkedin.com/jobs/view/4447521118/"
+    },
+    {
+      "status": "blocked",
+      "company": "",
+      "role": "",
+      "job_id": "4404747227",
+      "location": "",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/view/4404747227/",
+      "path": "https://www.linkedin.com/jobs/view/4404747227/"
+    },
+    {
+      "status": "blocked",
+      "company": "Wipro",
+      "role": "SOLUTION ARCHITECT L1",
+      "job_id": "4480919641",
+      "location": "Hyderabad, Telangana, India · 5 hours ago · 2 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480919641&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480919641/"
+    },
+    {
+      "status": "blocked",
+      "company": "Wipro",
+      "role": "DOMAIN ARCHITECT L2",
+      "job_id": "4480920574",
+      "location": "Hyderabad, Telangana, India · 5 hours ago · 0 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480920574&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480920574/"
+    },
+    {
+      "status": "blocked",
+      "company": "Wipro",
+      "role": "APPLICATION ARCHITECT L1",
+      "job_id": "4480918620",
+      "location": "Hyderabad, Telangana, India · 5 hours ago · 5 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480918620&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480918620/"
+    },
+    {
+      "status": "blocked",
+      "company": "Wipro",
+      "role": "SOLUTION ARCHITECT L1",
+      "job_id": "4480917654",
+      "location": "Hyderabad, Telangana, India · 5 hours ago · 3 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480917654&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480917654/"
+    },
+    {
+      "status": "blocked",
+      "company": "Wipro",
+      "role": "SOLUTION ARCHITECT L1",
+      "job_id": "4480927329",
+      "location": "Hyderabad, Telangana, India · 5 hours ago · 0 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480927329&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480927329/"
+    },
+    {
+      "status": "blocked",
+      "company": "Wipro",
+      "role": "INFRASTRUCTURE AND PLATFORM ARCHITECT L2",
+      "job_id": "4480912813",
+      "location": "Hyderabad, Telangana, India · 5 hours ago · 10 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480912813&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480912813/"
+    },
+    {
+      "status": "blocked",
+      "company": "NVIDIA",
+      "role": "CPU Verification Infrastructure Tools Architect",
+      "job_id": "4435280575",
+      "location": "Hyderabad, Telangana, India · Reposted 11 hours ago · Over 100 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4435280575&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4435280575/"
+    },
+    {
+      "status": "blocked",
+      "company": "Synchrony",
+      "role": "VP, eGRC Solution Architect (L12)",
+      "job_id": "4447527667",
+      "location": "Hyderabad, Telangana, India · Reposted 12 hours ago · Over 100 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4447527667&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4447527667/"
+    },
+    {
+      "status": "blocked",
+      "company": "LTM",
+      "role": "Senior Software Engineer",
+      "job_id": "4478257030",
+      "location": "Hyderabad, Telangana, India · 46 minutes ago · 14 people clicked apply",
+      "reason": "external_incomplete_or_timeout",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478257030&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://ltm.ripplehire.com/candidate/?token=S3y8szI7sbSMMJcfwjKr&lang=en&source=LINKEDIN&ref=LI02#detail/job/900690"
+    },
+    {
+      "status": "blocked",
+      "company": "Wipro",
+      "role": "SOLUTION ARCHITECT L1",
+      "job_id": "4480923549",
+      "location": "Hyderabad, Telangana, India · 5 hours ago · 3 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480923549&f_TPR=r86400&keywords=Azure%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480923549/"
+    },
+    {
+      "status": "blocked",
+      "company": "Wipro",
+      "role": "SOLUTION ARCHITECT L1",
+      "job_id": "4480930114",
+      "location": "Hyderabad, Telangana, India · 5 hours ago · 2 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480930114&f_TPR=r86400&keywords=Cloud%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480930114/"
+    },
+    {
+      "status": "blocked",
+      "company": "TidyHire",
+      "role": "Engineering Manager",
+      "job_id": "4480840296",
+      "location": "Hyderabad, Telangana, India · 1 day ago · 37 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480840296&f_TPR=r259200&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4480840296/"
+    },
+    {
+      "status": "blocked",
+      "company": "UST",
+      "role": "Architect I - Software Testing",
+      "job_id": "4460736149",
+      "location": "Hyderabad, Telangana, India · Reposted 1 day ago · Over 100 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4460736149&f_TPR=r604800&keywords=Technical%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4460736149/"
+    },
+    {
+      "status": "blocked",
+      "company": "Carrier",
+      "role": "Component Engineering Manager",
+      "job_id": "4479695161",
+      "location": "Hyderabad, Telangana, India · 1 day ago · 29 people clicked apply",
+      "reason": "did not leave LinkedIn",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479695161&f_TPR=r604800&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": "https://www.linkedin.com/jobs/view/4479695161/"
+    }
+  ],
+  "skipped": [
+    {
+      "status": "skipped",
+      "company": "SmartWinnr",
+      "role": "Presales Solutions Architect",
+      "job_id": "4478242697",
+      "location": "Hyderabad, Telangana, India · 6 minutes ago · 1 applicant Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: Presales",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478242697&f_AL=true&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "Agentic AI Platform Architect & Product Lead",
+      "job_id": "",
+      "location": "",
+      "reason": "already applied",
+      "url": "",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "Technical Lead",
+      "job_id": "",
+      "location": "",
+      "reason": "already applied",
+      "url": "",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Peak3",
+      "role": "Senior System Architect",
+      "job_id": "4479957285",
+      "location": "India · 1 hour ago · 12 applicants",
+      "reason": "location filter (view): India · 1 hour ago · 12 applicants",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479957285&f_AL=true&f_TPR=r86400&keywords=Solution%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "IH",
+      "role": "Sr Systems Engineer ( Data and Integrations)",
+      "job_id": "4478234859",
+      "location": "India · 1 hour ago · 22 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Sr Systems Engineer ( Data and Integrations)",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478234859&f_AL=true&f_TPR=r86400&keywords=Technical%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "DataLunix",
+      "role": "ServiceNow Technical Architect (CSM & HAM)",
+      "job_id": "4480935273",
+      "location": "India · 2 hours ago · 1 applicant Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: ServiceNow",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480935273&f_AL=true&f_TPR=r86400&keywords=Technical%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "crewlia",
+      "role": "Cloud Engineering Senior Specialist",
+      "job_id": "4478225797",
+      "location": "India · 11 hours ago · 59 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Cloud Engineering Senior Specialist",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478225797&f_AL=true&f_TPR=r86400&keywords=Technical%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "crewlia",
+      "role": "Cloud Engineering Specialist",
+      "job_id": "4478222881",
+      "location": "India · 11 hours ago · 77 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Cloud Engineering Specialist",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478222881&f_AL=true&f_TPR=r86400&keywords=Technical%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "TTEC Digital",
+      "role": "Technical Architect – NICE CXone",
+      "job_id": "4472427476",
+      "location": "Hyderabad, Telangana, India · Reposted 19 hours ago · 87 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: NICE CXone",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4472427476&f_AL=true&f_TPR=r86400&keywords=Technical%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Antal International",
+      "role": "AI - Software Engineering",
+      "job_id": "4478226082",
+      "location": "Hyderabad, Telangana, India · 19 hours ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: AI - Software Engineering",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478226082&f_AL=true&f_TPR=r86400&keywords=Technical%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "ValueMomentum",
+      "role": "Guidewire billingcenter",
+      "job_id": "4479962456",
+      "location": "Hyderabad, Telangana, India · 5 minutes ago · 0 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: Guidewire",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479962456&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Technocrats Domain Inc",
+      "role": "Senior Dell Boomi Developer",
+      "job_id": "4480932662",
+      "location": "India · 8 minutes ago · 0 applicants Promoted by hirer · Company review time is typically 1 week",
+      "reason": "title mismatch: Senior Dell Boomi Developer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480932662&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "CXO Inc",
+      "role": "Software Engineer",
+      "job_id": "4478238835",
+      "location": "Hyderabad, Telangana, India · 9 minutes ago · 75 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Software Engineer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478238835&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "RapidBrains",
+      "role": "Full Stack Engineer – Golang, Angular & AWS",
+      "job_id": "4479972024",
+      "location": "India · 26 minutes ago · 20 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Full Stack Engineer – Golang, Angular & AWS",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479972024&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "DevRabbit IT Solutions",
+      "role": "Technical Lead-Platform",
+      "job_id": "4479970079",
+      "location": "India · 33 minutes ago · 6 applicants",
+      "reason": "location filter (view): India · 33 minutes ago · 6 applicants",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479970079&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "foundit",
+      "role": "Service Now Developer",
+      "job_id": "4480948056",
+      "location": "Hyderabad, Telangana, India · 38 minutes ago · 14 applicants No response insights available yet",
+      "reason": "title mismatch: Service Now Developer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480948056&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "RiVirtual Inc",
+      "role": "Software Engineer",
+      "job_id": "4478242658",
+      "location": "Hyderabad, Telangana, India · 38 minutes ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Software Engineer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478242658&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "PeopleLogic",
+      "role": "Lead Senior AI Engineer",
+      "job_id": "4480927846",
+      "location": "Hyderabad, Telangana, India · 49 minutes ago · 12 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: pure AI/data without .NET",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480927846&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Maneva Consulting Pvt. Ltd.",
+      "role": "Agent Developer 5+ years experience",
+      "job_id": "4476552067",
+      "location": "Hyderabad, Telangana, India · Reposted 1 hour ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Agent Developer 5+ years experience",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4476552067&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "techolution",
+      "role": "Python Backend Developer – Distributed & Event-Driven Systems",
+      "job_id": "4479956409",
+      "location": "India · 1 hour ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "location filter: India · 1 hour ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479956409&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "InfoTech Consultancy",
+      "role": "Senior Full Stack Engineer",
+      "job_id": "4480936339",
+      "location": "Hyderabad, Telangana, India · 1 hour ago · 12 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Senior Full Stack Engineer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480936339&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "DataLunix",
+      "role": "ServiceNow SPM Developer",
+      "job_id": "4480926818",
+      "location": "India · 1 hour ago · 3 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: ServiceNow",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480926818&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "The Reliable Jobs",
+      "role": "full Stack AI Engineer",
+      "job_id": "4479929779",
+      "location": "India · 11 hours ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "location filter: India · 11 hours ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479929779&f_AL=true&f_TPR=r86400&keywords=Software%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Jobgether",
+      "role": "Engineering Manager, Automation Intelligence",
+      "job_id": "4479953639",
+      "location": "India · 6 minutes ago · 3 applicants",
+      "reason": "location filter (view): India · 6 minutes ago · 3 applicants",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479953639&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Blend",
+      "role": "Sr IT Delivery Manager",
+      "job_id": "4480943229",
+      "location": "Hyderabad, Telangana, India · 9 minutes ago · 6 applicants No response insights available yet",
+      "reason": "title mismatch: Sr IT Delivery Manager",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480943229&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "ValueMomentum",
+      "role": "Guidewire Technical Lead",
+      "job_id": "4479969185",
+      "location": "Hyderabad, Telangana, India · 11 minutes ago · 0 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: Guidewire",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479969185&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Streamliners Management Consulting",
+      "role": "Operations Consultant",
+      "job_id": "4479956640",
+      "location": "Hyderabad, Telangana, India · 12 minutes ago · 3 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Operations Consultant",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479956640&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Lorhan IT",
+      "role": "SAP FICO - Senior Level",
+      "job_id": "4468461598",
+      "location": "Hyderabad, Telangana, India · Reposted 19 minutes ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: SAP",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4468461598&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Teamware Solutions",
+      "role": "Oracle EDM Specialist",
+      "job_id": "4480931708",
+      "location": "India · 23 minutes ago · 0 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Oracle EDM Specialist",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480931708&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "The Go-To Guy!",
+      "role": "Multiple Position",
+      "job_id": "4478246445",
+      "location": "Hyderabad, Telangana, India · 24 minutes ago · 5 applicants Company review time is typically 1 week",
+      "reason": "title mismatch: Multiple Position",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478246445&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Altossa Projects LLP",
+      "role": "HEAD – SALES & BUSINESS DEVELOPMENT",
+      "job_id": "4478248381",
+      "location": "Hyderabad, Telangana, India · 29 minutes ago · 5 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: HEAD – SALES & BUSINESS DEVELOPMENT",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478248381&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "VySystems",
+      "role": "SAP ABAP BTP consultant",
+      "job_id": "4480941201",
+      "location": "Hyderabad, Telangana, India · 42 minutes ago · 2 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: SAP",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480941201&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Aptita",
+      "role": "Process Excellence Manager",
+      "job_id": "4479759743",
+      "location": "Hyderabad, Telangana, India · Reposted 43 minutes ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Process Excellence Manager",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479759743&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Gorantla Consultancy",
+      "role": "Life Insurance Agent",
+      "job_id": "4478237234",
+      "location": "Secunderābād, Telangana, India · 46 minutes ago · 2 applicants No response insights available yet",
+      "reason": "title mismatch: Life Insurance Agent",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478237234&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "AI Vidya",
+      "role": "Software Engineer",
+      "job_id": "4478257004",
+      "location": "Hyderabad, Telangana, India · 47 minutes ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Software Engineer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478257004&f_AL=true&f_TPR=r86400&keywords=Technical%20Lead&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "True Build Technologies Pvt Ltd",
+      "role": "Design and Execution Manager Solar Power Plants",
+      "job_id": "4478237703",
+      "location": "Hyderabad, Telangana, India · 2 hours ago · 10 applicants No response insights available yet",
+      "reason": "title mismatch: Design and Execution Manager Solar Power Plants",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478237703&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "crewlia",
+      "role": "VP of Cloud Engineering",
+      "job_id": "4478220999",
+      "location": "India · 12 hours ago · 51 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: VP of Cloud Engineering",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478220999&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "crewlia",
+      "role": "Director of Cloud Engineering",
+      "job_id": "4478222882",
+      "location": "India · 12 hours ago · 39 applicants",
+      "reason": "location filter (view): India · 12 hours ago · 39 applicants",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478222882&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "crewlia",
+      "role": "Cloud Engineering Manager",
+      "job_id": "4478242054",
+      "location": "India · 12 hours ago · 36 applicants",
+      "reason": "location filter (view): India · 12 hours ago · 36 applicants",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478242054&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Hired",
+      "role": "VP of Data Engineering",
+      "job_id": "4478235272",
+      "location": "India · 12 hours ago · 42 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: pure AI/data without .NET",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478235272&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Hired",
+      "role": "Director of Data Engineering",
+      "job_id": "4478240106",
+      "location": "India · 12 hours ago · 37 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: pure AI/data without .NET",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478240106&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Hired",
+      "role": "Data Engineering Manager",
+      "job_id": "4478231464",
+      "location": "India · 12 hours ago · 26 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: pure AI/data without .NET",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478231464&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Hired",
+      "role": "Head of Data Engineering",
+      "job_id": "4478224775",
+      "location": "India · 12 hours ago · 42 applicants Promoted by hirer · No response insights available yet",
+      "reason": "blacklist: title: pure AI/data without .NET",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478224775&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Hired",
+      "role": "Head of Cloud Engineering",
+      "job_id": "4478238118",
+      "location": "India · 13 hours ago · 41 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Head of Cloud Engineering",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4478238118&f_AL=true&f_TPR=r86400&keywords=Engineering%20Manager&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Jobgether",
+      "role": "Principle Systems Engineer",
+      "job_id": "4479968170",
+      "location": "India · 9 minutes ago · 6 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Principle Systems Engineer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479968170&f_AL=true&f_TPR=r86400&keywords=Principal%20.NET&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Lorhan IT",
+      "role": "Application Support Analyst",
+      "job_id": "4479971100",
+      "location": "Hyderabad, Telangana, India · 22 minutes ago · 14 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Application Support Analyst",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479971100&f_AL=true&f_TPR=r86400&keywords=Principal%20.NET&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Guardian Capital",
+      "role": "Senior Manager, B2B Sales",
+      "job_id": "4479341192",
+      "location": "Hyderabad, Telangana, India · Reposted 2 minutes ago · 9 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Senior Manager, B2B Sales",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479341192&f_AL=true&f_TPR=r86400&keywords=Staff%20.NET&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "Quess Corp Limited",
+      "role": "Looker ML Developer",
+      "job_id": "4479954702",
+      "location": "Hyderabad, Telangana, India · 14 minutes ago · 5 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Looker ML Developer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4479954702&f_AL=true&f_TPR=r86400&keywords=Staff%20.NET&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "HRM Counsel",
+      "role": "Software Engineer",
+      "job_id": "4480919045",
+      "location": "India · 59 minutes ago · Over 100 applicants Promoted by hirer · No response insights available yet",
+      "reason": "title mismatch: Software Engineer",
+      "url": "https://www.linkedin.com/jobs/search/?currentJobId=4480919045&f_AL=true&f_TPR=r86400&keywords=.NET%20Architect&location=Hyderabad%2C%20Telangana%2C%20India&sortBy=DD",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "Principal Full Stack Engineer (Fully Remote- India)",
+      "job_id": "",
+      "location": "",
+      "reason": "already applied",
+      "url": "",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4443293962",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4443293962/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4451327394",
+      "location": "",
+      "reason": "no external Apply button",
+      "url": "https://www.linkedin.com/jobs/view/4451327394/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4442580526",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4442580526/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4415350173",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4415350173/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4433879078",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4433879078/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4444948388",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4444948388/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4450205567",
+      "location": "",
+      "reason": "no external Apply button",
+      "url": "https://www.linkedin.com/jobs/view/4450205567/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4450682491",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4450682491/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4450035921",
+      "location": "",
+      "reason": "no external Apply button",
+      "url": "https://www.linkedin.com/jobs/view/4450035921/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "3963509343",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/3963509343/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4401736196",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4401736196/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4437577980",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4437577980/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4440898082",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4440898082/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4440227307",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4440227307/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4441511168",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4441511168/",
+      "path": ""
+    },
+    {
+      "status": "skipped",
+      "company": "",
+      "role": "",
+      "job_id": "4448938075",
+      "location": "",
+      "reason": "became Easy Apply",
+      "url": "https://www.linkedin.com/jobs/view/4448938075/",
+      "path": ""
+    }
+  ],
+  "seen": [],
+  "blockerSummary": "exceeded Easy Apply steps",
+  "notes": [],
+  "preflight": null,
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/linkedin/linkedin-20261019T050705Z.log"
+}
