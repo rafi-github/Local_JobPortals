@@ -1,48 +1,31 @@
 {
   "portal": "cutshort",
   "source": "home-local",
-  "date": "2026-10-19",
+  "date": "2026-10-21",
   "startedAt": null,
-  "finishedAt": "2026-10-19T08:54:26.168Z",
+  "finishedAt": "2026-10-21T05:52:12.906Z",
   "host": "LAPY",
-  "ok": true,
+  "ok": false,
   "counts": {
     "applied": 0,
     "external": 0,
     "rejected": 0,
-    "blocked": 0,
-    "skipped": 1,
-    "seen": 3846
+    "blocked": 1,
+    "skipped": 0,
+    "seen": 0
   },
   "applied": [],
   "external": [],
   "rejected": [],
-  "blocked": [],
-  "skipped": [
+  "blocked": [
     {
-      "id": "6acc593799bbbd3a45ce9998",
-      "title": "Chief Agentic Systems Architect",
-      "company": "HyrHub",
-      "reason": "already_applied"
+      "reason": "scripts_finished_without_same_day_report_exit_3"
     }
   ],
-  "seen": [
-    {
-      "id": "6acc593799bbbd3a45ce9998",
-      "title": "Chief Agentic Systems Architect",
-      "company": "HyrHub",
-      "tier": 1
-    }
-  ],
-  "blockerSummary": null,
-  "notes": [
-    "qualifying=1",
-    "q_answered=0",
-    "q_locked_empty=0",
-    "q_already_submitted=0",
-    "tailored_built=0",
-    "tailored_uploaded=0"
-  ],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "scripts_finished_without_same_day_report_exit_3",
+  "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/cutshort/cutshort-20261019T084612Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/cutshort/cutshort-scripts-20261021T055157Z.log"
 }
