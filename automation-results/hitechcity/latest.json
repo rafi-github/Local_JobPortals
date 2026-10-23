@@ -1,9 +1,9 @@
 {
   "portal": "hitechcity",
   "source": "home-local",
-  "date": "2026-10-10",
+  "date": "2026-10-23",
   "startedAt": null,
-  "finishedAt": "2026-10-10T00:24:11.089Z",
+  "finishedAt": "2026-10-23T05:45:47.400Z",
   "host": "LAPY",
   "ok": false,
   "counts": {
@@ -19,13 +19,13 @@
   "rejected": [],
   "blocked": [
     {
-      "reason": "cursor_agent_cli_missing"
+      "reason": "scripts_finished_without_same_day_report_exit_3"
     }
   ],
   "skipped": [],
   "seen": [],
-  "blockerSummary": "cursor_agent_cli_missing",
+  "blockerSummary": "scripts_finished_without_same_day_report_exit_3",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/hitechcity/hitechcity-20261010T002410Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/hitechcity/hitechcity-scripts-20261023T054501Z.log"
 }
