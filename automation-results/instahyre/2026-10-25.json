@@ -1,0 +1,31 @@
+{
+  "portal": "instahyre",
+  "source": "home-local",
+  "date": "2026-10-25",
+  "startedAt": null,
+  "finishedAt": "2026-10-25T08:40:03.617Z",
+  "host": "LAPY",
+  "ok": false,
+  "counts": {
+    "applied": 0,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 1,
+    "skipped": 0,
+    "seen": 0
+  },
+  "applied": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [
+    {
+      "reason": "scripts_finished_without_same_day_report_exit_0"
+    }
+  ],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "scripts_finished_without_same_day_report_exit_0",
+  "notes": [],
+  "preflight": null,
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/instahyre/instahyre-scripts-20261025T083725Z.log"
+}
