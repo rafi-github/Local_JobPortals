@@ -1,9 +1,9 @@
 {
   "portal": "linkedin",
   "source": "home-local",
-  "date": "2026-10-25",
+  "date": "2026-10-27",
   "startedAt": null,
-  "finishedAt": "2026-10-25T06:52:57.658Z",
+  "finishedAt": "2026-10-27T05:30:22.321Z",
   "host": "LAPY",
   "ok": false,
   "counts": {
@@ -27,5 +27,5 @@
   "blockerSummary": "scripts_finished_without_same_day_report_exit_3",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/linkedin/linkedin-scripts-20261025T065227Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/linkedin/linkedin-scripts-20261027T053006Z.log"
 }
