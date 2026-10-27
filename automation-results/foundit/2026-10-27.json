@@ -1,0 +1,31 @@
+{
+  "portal": "foundit",
+  "source": "home-local",
+  "date": "2026-10-27",
+  "startedAt": null,
+  "finishedAt": "2026-10-27T05:35:37.206Z",
+  "host": "LAPY",
+  "ok": false,
+  "counts": {
+    "applied": 0,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 1,
+    "skipped": 0,
+    "seen": 0
+  },
+  "applied": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [
+    {
+      "reason": "scripts_finished_without_same_day_report_exit_0"
+    }
+  ],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "scripts_finished_without_same_day_report_exit_0",
+  "notes": [],
+  "preflight": null,
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/foundit/foundit-scripts-20261027T053033Z.log"
+}
