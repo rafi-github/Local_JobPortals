@@ -1,9 +1,9 @@
 {
   "portal": "cutshort",
   "source": "home-local",
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "startedAt": null,
-  "finishedAt": "2026-10-28T05:31:01.206Z",
+  "finishedAt": "2026-10-29T06:04:52.597Z",
   "host": "LAPY",
   "ok": false,
   "counts": {
@@ -19,13 +19,13 @@
   "rejected": [],
   "blocked": [
     {
-      "reason": "scripts_finished_without_same_day_report_exit_3"
+      "reason": "scripts_finished_without_same_day_report_exit_0"
     }
   ],
   "skipped": [],
   "seen": [],
-  "blockerSummary": "scripts_finished_without_same_day_report_exit_3",
+  "blockerSummary": "scripts_finished_without_same_day_report_exit_0",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/cutshort/cutshort-scripts-20261028T053052Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/cutshort/cutshort-scripts-20261029T053610Z.log"
 }
