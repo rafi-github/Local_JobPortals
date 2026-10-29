@@ -1,9 +1,9 @@
 {
   "portal": "foundit",
   "source": "home-local",
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "startedAt": null,
-  "finishedAt": "2026-10-28T05:30:41.305Z",
+  "finishedAt": "2026-10-29T05:35:58.647Z",
   "host": "LAPY",
   "ok": false,
   "counts": {
@@ -19,13 +19,13 @@
   "rejected": [],
   "blocked": [
     {
-      "reason": "scripts_finished_without_same_day_report_exit_3"
+      "reason": "scripts_finished_without_same_day_report_exit_0"
     }
   ],
   "skipped": [],
   "seen": [],
-  "blockerSummary": "scripts_finished_without_same_day_report_exit_3",
+  "blockerSummary": "scripts_finished_without_same_day_report_exit_0",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/foundit/foundit-scripts-20261028T053032Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/foundit/foundit-scripts-20261029T053035Z.log"
 }
