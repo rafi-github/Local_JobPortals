@@ -1,9 +1,9 @@
 {
   "portal": "naukri",
   "source": "home-local",
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "startedAt": null,
-  "finishedAt": "2026-10-29T06:51:47.427Z",
+  "finishedAt": "2026-10-30T06:23:11.675Z",
   "host": "LAPY",
   "ok": false,
   "counts": {
@@ -27,5 +27,5 @@
   "blockerSummary": "scripts_finished_without_same_day_report_exit_0",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/naukri/naukri-scripts-20261029T060504Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/naukri/naukri-scripts-20261030T060032Z.log"
 }
