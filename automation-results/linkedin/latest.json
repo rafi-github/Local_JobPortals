@@ -1,9 +1,9 @@
 {
   "portal": "linkedin",
   "source": "home-local",
-  "date": "2026-11-02",
+  "date": "2026-11-03",
   "startedAt": null,
-  "finishedAt": "2026-11-02T05:34:15.981Z",
+  "finishedAt": "2026-11-03T05:34:58.662Z",
   "host": "LAPY",
   "ok": false,
   "counts": {
@@ -19,13 +19,13 @@
   "rejected": [],
   "blocked": [
     {
-      "reason": "scripts_finished_without_same_day_report_exit_3"
+      "reason": "scripts_finished_without_same_day_report_exit_4"
     }
   ],
   "skipped": [],
   "seen": [],
-  "blockerSummary": "scripts_finished_without_same_day_report_exit_3",
+  "blockerSummary": "scripts_finished_without_same_day_report_exit_4",
   "notes": [],
   "preflight": null,
-  "logPath": "C:/Users/USER/.cursor/portal-home-logs/linkedin/linkedin-scripts-20261102T053149Z.log"
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/linkedin/linkedin-scripts-20261103T053011Z.log"
 }
