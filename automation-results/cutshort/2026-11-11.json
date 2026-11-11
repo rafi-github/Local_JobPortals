@@ -1,0 +1,31 @@
+{
+  "portal": "cutshort",
+  "source": "home-local",
+  "date": "2026-11-11",
+  "startedAt": null,
+  "finishedAt": "2026-11-11T05:01:13.131Z",
+  "host": "LAPY",
+  "ok": false,
+  "counts": {
+    "applied": 0,
+    "external": 0,
+    "rejected": 0,
+    "blocked": 1,
+    "skipped": 0,
+    "seen": 0
+  },
+  "applied": [],
+  "external": [],
+  "rejected": [],
+  "blocked": [
+    {
+      "reason": "scripts_finished_without_same_day_report_exit_3"
+    }
+  ],
+  "skipped": [],
+  "seen": [],
+  "blockerSummary": "scripts_finished_without_same_day_report_exit_3",
+  "notes": [],
+  "preflight": null,
+  "logPath": "C:/Users/USER/.cursor/portal-home-logs/cutshort/cutshort-scripts-20261111T050102Z.log"
+}
