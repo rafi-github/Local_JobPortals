@@ -36,6 +36,8 @@ function proofLineForNote(matched, title) {
 
 const SEEKER_ID = "6a3e4526cc1fad8f39dccc0f";
 const CDP = process.env.CUTSHORT_CDP || "http://127.0.0.1:9222";
+const API_TIMEOUT_MS = Math.max(5000, Number(process.env.CUTSHORT_API_TIMEOUT_MS || 45000));
+const API_RETRIES = Math.max(1, Number(process.env.CUTSHORT_API_RETRIES || 3));
 const MAX_APPLIES = Number(process.env.CUTSHORT_MAX_APPLIES || process.env.HITECHCITY_CUTSHORT_MAX || 40);
 const OUT_DIR = process.env.CUTSHORT_OUT || "/tmp/cutshort-run";
 const TODAY = new Date().toISOString().slice(0, 10);
@@ -445,7 +447,7 @@ async function api(pageOrSession, method, urlPath, body) {
       await sleep(800);
     }
     return p.evaluate(
-      async ({ method, urlPath, body }) => {
+      async ({ method, urlPath, body, timeoutMs }) => {
         const cookies = document.cookie.split(";").map((s) => s.trim());
         const xsrf = cookies
           .find((c) => c.startsWith("XSRF-TOKEN="))
@@ -460,30 +462,55 @@ async function api(pageOrSession, method, urlPath, body) {
           "x-csrf-token": token,
         };
         if (body != null) headers["Content-Type"] = "application/json";
-        const res = await fetch(urlPath, {
-          method,
-          headers,
-          credentials: "include",
-          body: body != null ? JSON.stringify(body) : undefined,
-        });
-        const text = await res.text();
-        let json = null;
+        const controller = new AbortController();
+        const timer = setTimeout(() => controller.abort(), timeoutMs);
         try {
-          json = JSON.parse(text);
-        } catch {}
-        return { status: res.status, ok: res.ok, json, text: text.slice(0, 1500) };
+          const res = await fetch(urlPath, {
+            method,
+            headers,
+            credentials: "include",
+            body: body != null ? JSON.stringify(body) : undefined,
+            signal: controller.signal,
+          });
+          const text = await res.text();
+          let json = null;
+          try {
+            json = JSON.parse(text);
+          } catch {}
+          return { status: res.status, ok: res.ok, json, text: text.slice(0, 1500) };
+        } finally {
+          clearTimeout(timer);
+        }
       },
-      { method, urlPath, body }
+      { method, urlPath, body, timeoutMs: API_TIMEOUT_MS }
     );
   };
-  try {
-    return await run(page);
-  } catch (e) {
-    if (!session || !isBrowserClosedError(e)) throw e;
-    console.log("[cdp] api retry after closed page:", String(e.message || e).slice(0, 120));
-    page = await session.ensurePage();
-    return run(page);
+  let lastErr;
+  for (let attempt = 1; attempt <= API_RETRIES; attempt++) {
+    try {
+      return await run(page);
+    } catch (e) {
+      lastErr = e;
+      const msg = String(e?.message || e);
+      const timedOut = /AbortError|aborted|timed out/i.test(msg);
+      if (session && isBrowserClosedError(e)) {
+        console.log("[cdp] api retry after closed page:", msg.slice(0, 120));
+        page = await session.ensurePage();
+        continue;
+      }
+      if (timedOut && attempt < API_RETRIES) {
+        console.warn(`[api] timeout retry ${attempt}/${API_RETRIES}: ${urlPath}`);
+        await sleep(400 * attempt);
+        if (session) page = await session.ensurePage();
+        continue;
+      }
+      if (timedOut) {
+        throw new Error(`Cutshort API request timed out after ${API_TIMEOUT_MS} ms: ${urlPath}`);
+      }
+      throw e;
+    }
   }
+  throw lastErr;
 }
 
 function questionText(q) {
@@ -765,8 +792,15 @@ async function scan(pageOrSession) {
       try {
         res = await api(pageOrSession, "GET", `/findjobs/q?${qs}`);
       } catch (e) {
+        const msg = String(e?.message || e);
+        if (/timed out/i.test(msg)) {
+          console.warn(
+            `[scan:${label}] timeout page ${p} (${byId.size} jobs so far) — continuing apply pass`
+          );
+          break;
+        }
         if (!isBrowserClosedError(e)) throw e;
-        console.error(`[scan:${label}] aborted page ${p}:`, String(e.message || e).slice(0, 160));
+        console.error(`[scan:${label}] aborted page ${p}:`, msg.slice(0, 160));
         break;
       }
       const results = res.json?.results || [];
@@ -855,7 +889,8 @@ async function main() {
     const msg = String(e?.message || e);
     console.error("[scan] fatal:", msg.slice(0, 240));
     stats.q.error = `scan_aborted: ${msg.slice(0, 200)}`;
-    if (!isBrowserClosedError(e)) throw e;
+    const timedOut = /timed out/i.test(msg);
+    if (jobs.length === 0 && !isBrowserClosedError(e) && !timedOut) throw e;
   }
   stats.scanned = jobs.length;
   const qual = [];

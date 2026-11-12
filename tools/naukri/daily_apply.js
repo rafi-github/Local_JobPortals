@@ -29,6 +29,7 @@ const { companyAllowed, allowlistActive } = require("../hitechcity/campus_allowl
 const { artifactPaths, writeArtifactJson } = require("../artifact_path");
 const { completeExternalPage } = require("../ats/complete_page");
 const { isFalseApplyCta, isBrochureOrDeadEnd } = require("../ats/apply_cta");
+const { runPythonScript } = require("../resolve_python");
 
 const CDP = process.env.NAUKRI_CDP || "http://127.0.0.1:9222";
 const REPORT =
@@ -38,7 +39,7 @@ const REPORT =
 /** Rebuild upload copy from owner master before any Naukri path resolution. */
 function ensureUploadResumeFromMaster() {
   const script = path.join(__dirname, "..", "ensure_upload_resume.py");
-  const r = spawnSync("python3", [script], {
+  const r = runPythonScript(script, [], {
     cwd: path.join(__dirname, "..", ".."),
     encoding: "utf8",
     timeout: 60000,
@@ -288,6 +289,24 @@ const MIN_LISTED_MAX_CTC_LPA = Number(process.env.NAUKRI_MIN_LISTED_MAX_CTC || 3
 
 function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
+}
+
+async function safeEvaluate(page, fn, arg, retries = 4) {
+  for (let i = 0; i < retries; i++) {
+    try {
+      if (arg !== undefined) return await page.evaluate(fn, arg);
+      return await page.evaluate(fn);
+    } catch (e) {
+      const msg = String(e?.message || e);
+      if (/Execution context was destroyed|navigation|Target closed/i.test(msg) && i + 1 < retries) {
+        await sleep(600 + i * 400);
+        await page.waitForLoadState("domcontentloaded").catch(() => {});
+        continue;
+      }
+      throw e;
+    }
+  }
+  return undefined;
 }
 
 function parseMaxCtcLpa(text) {
@@ -2138,8 +2157,9 @@ async function main() {
           await sleep(2200);
           await dismiss(page);
 
-          const noJobs = await page.evaluate(() =>
-            /No jobs found/i.test(document.body.innerText || "")
+          const noJobs = await safeEvaluate(
+            page,
+            () => /No jobs found/i.test(document.body.innerText || "")
           );
           let cards = await collectCards(page);
           if (noJobs || !cards.length) continue;
@@ -2334,6 +2354,9 @@ async function main() {
         }
       }
     }
+  } catch (e) {
+    report.runError = String(e).slice(0, 400);
+    console.error(e);
   } finally {
     // Restore canonical CV on Naukri profile so recruiters don't keep the last JD variant.
     if (TAILOR_RESUME && TAILOR_PROFILE_UPLOAD && RESUME) {

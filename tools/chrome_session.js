@@ -6,6 +6,12 @@ const fs = require("fs");
 const os = require("os");
 const path = require("path");
 const { execFileSync } = require("child_process");
+const { resolvePython: resolvePythonShared } = require("./resolve_python");
+
+const LIVE_CHECK_TIMEOUT_MS = Math.max(
+  15000,
+  Number(process.env.CHROME_SESSION_LIVE_CHECK_TIMEOUT_MS || 90000)
+);
 
 const HOME = process.env.HOME || os.homedir();
 const IS_WIN =
@@ -128,20 +134,7 @@ function cookiesDbPath(profileRoot) {
 }
 
 function resolvePython() {
-  if (process.env.PYTHON_BIN) return process.env.PYTHON_BIN;
-  const candidates = IS_WIN
-    ? ["py", "python", "python3", "C:\\Python314\\python.exe", "C:\\Python313\\python.exe"]
-    : ["python3", "python"];
-  for (const bin of candidates) {
-    try {
-      const args = bin === "py" ? ["-3", "-c", "print(1)"] : ["-c", "print(1)"];
-      execFileSync(bin, args, { stdio: "ignore" });
-      return bin;
-    } catch {
-      /* try next */
-    }
-  }
-  return "python3";
+  return resolvePythonShared();
 }
 
 function cookieNames(profileRoot) {
@@ -318,7 +311,7 @@ function checkPortal(portal) {
       if (fs.existsSync(waiter)) {
         execFileSync(process.execPath, [waiter], {
           stdio: ["ignore", "pipe", "pipe"],
-          timeout: 45000,
+          timeout: LIVE_CHECK_TIMEOUT_MS,
           env: { ...process.env, NODE_PATH: path.join(__dirname, "node_modules") },
         });
         result.ok = true;

@@ -19,6 +19,11 @@ _root = Path(__file__).resolve().parents[2]
 if str(_root) not in sys.path:
     sys.path.insert(0, str(_root))
 try:
+    from tools.cdp_connect import connect_over_cdp
+except Exception:
+    from cdp_connect import connect_over_cdp  # type: ignore
+
+try:
     from tools.ats.complete import extract_hop_destination_from_url, extract_offsite_from_text
 except Exception:  # pragma: no cover
     def extract_hop_destination_from_url(url):
@@ -577,7 +582,7 @@ def main() -> None:
     results: list[ExtResult] = []
     with sync_playwright() as p:
         try:
-            browser = p.chromium.connect_over_cdp(CDP)
+            browser = connect_over_cdp(p.chromium, CDP)
         except Exception as e:
             results.append(
                 ExtResult(status="blocked", reason=f"CDP connect failed: {str(e)[:180]}")

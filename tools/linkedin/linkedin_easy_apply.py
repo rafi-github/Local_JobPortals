@@ -15,6 +15,17 @@ from urllib.parse import quote
 
 from playwright.sync_api import sync_playwright, Page, TimeoutError as PWTimeout
 
+import sys
+from pathlib import Path as _PathRoot
+
+_root_early = _PathRoot(__file__).resolve().parents[2]
+if str(_root_early) not in sys.path:
+    sys.path.insert(0, str(_root_early))
+try:
+    from tools.cdp_connect import connect_over_cdp
+except Exception:
+    from cdp_connect import connect_over_cdp  # type: ignore
+
 try:
     from tools.linkedin.filters import (
         TITLE_BLACKLIST,
@@ -2292,7 +2303,7 @@ def main() -> None:
     print(f"DEDUP seen ids={len(seen)} (seed={len(seed_seen)})", flush=True)
     with sync_playwright() as p:
         try:
-            browser = p.chromium.connect_over_cdp(CDP)
+            browser = connect_over_cdp(p.chromium, CDP)
         except Exception as e:
             results.append(
                 JobResult(status="blocked", reason=f"CDP connect failed: {str(e)[:180]}")
