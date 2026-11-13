@@ -51,16 +51,32 @@ function resolvePython() {
   }
   if (IS_WIN) {
     const la = windowsLocalAppData();
+    // pythoncore / py before older per-user installs and before the
+    // WindowsApps "python"/"python3" Store aliases.
+    const coreRoot = path.join(la, "Python");
+    try {
+      const cores = fs
+        .readdirSync(coreRoot)
+        .filter((name) => /^pythoncore-/i.test(name))
+        .sort()
+        .reverse();
+      for (const name of cores) {
+        candidates.push(path.join(coreRoot, name, "python.exe"));
+      }
+    } catch {
+      /* no pythoncore install */
+    }
     candidates.push(
+      "py",
       "C:\\Python314\\python.exe",
       "C:\\Python313\\python.exe",
       "C:\\Python312\\python.exe",
       path.join(la, "Programs", "Python", "Python314", "python.exe"),
       path.join(la, "Programs", "Python", "Python313", "python.exe"),
+      path.join(la, "Programs", "Python", "Python312", "python.exe"),
       "/c/Python314/python.exe",
       "/c/Python313/python.exe",
       "/c/Python312/python.exe",
-      "py",
       "python",
       "python3"
     );

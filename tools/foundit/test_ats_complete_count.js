@@ -12,6 +12,25 @@ if (!/external_ats_incomplete/.test(src)) throw new Error("external_ats_incomple
 if (!/Never treat LinkedIn redirect-without-submit as success/.test(src)) {
   throw new Error("linkedin no-easy-apply hard fail missing");
 }
+if (!/a\[aria-label\*='Apply on company website'\]/.test(src)) {
+  throw new Error("company-website apply anchor missing");
+}
+if (!/a\[aria-label\*='Easy Apply to this job'\]/.test(src)) {
+  throw new Error("easy-apply anchor missing");
+}
+if (/querySelector\("\[data-automation-id\]"\)/.test(src)) {
+  throw new Error("bare data-automation-id must not mark Workday");
+}
+if (!/recoveredFrom: "navigation"/.test(src)) {
+  throw new Error("navigation-destroyed ATS recovery missing");
+}
+const atsSrc = fs.readFileSync(path.join(__dirname, "../ats/complete_page.js"), "utf8");
+if (/querySelector\("\[data-automation-id\]"\)/.test(atsSrc)) {
+  throw new Error("complete_page still treats any data-automation-id as Workday");
+}
+if (!/isContextDestroyed/.test(atsSrc)) {
+  throw new Error("complete_page missing navigation-destroyed guard");
+}
 
 function atsFullyCompleted(status) {
   return /^(linkedin_easy_apply_ok|ats_submitted)$/i.test(String(status || ""));

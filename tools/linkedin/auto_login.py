@@ -151,7 +151,13 @@ def _cookies_has_li_at(ctx) -> bool:
 
 
 def _url_loginish(url: str) -> bool:
-    return bool(re.search(r"/login|authwall|/checkpoint|challenge|uas/login", (url or "").lower()))
+    # Path only. A feed query or post must not match the bare word "challenge".
+    return bool(
+        re.search(
+            r"/login|authwall|/checkpoint(?:/|$)|/challenge(?:/|$)|uas/login",
+            (url or "").lower(),
+        )
+    )
 
 
 def _close_stale_auth_tabs(ctx) -> None:
@@ -163,7 +169,7 @@ def _close_stale_auth_tabs(ctx) -> None:
         if len(list(ctx.pages or [])) <= 1:
             break
         u = p.url or ""
-        if re.search(r"checkpoint|challenge|accounts\.google\.com/gsi/select", u, re.I):
+        if re.search(r"/checkpoint|/challenge|accounts\.google\.com/gsi/select", u, re.I):
             try:
                 p.close()
             except Exception:
@@ -194,7 +200,7 @@ def _is_signed_in(ctx, page) -> bool:
 
 def _on_captcha(page) -> bool:
     url = (page.url or "").lower()
-    if "/checkpoint" in url or "challenge" in url:
+    if "/checkpoint" in url or "/challenge" in url:
         return True
     try:
         body = page.locator("body").inner_text()[:1500]
@@ -902,9 +908,6 @@ def _wait_signed_in(ctx, page, deadline: float, via: str, out: dict) -> int | No
 
 
 def main() -> int:
-    print(json.dumps({"ok": False, "reason": "interactive_login_required"}))
-    return 6
-
     out: dict = {"ok": False, "attempts": []}
     # Honor persisted restriction memory — do not hammer login while banned.
     try:

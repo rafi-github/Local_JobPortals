@@ -16,16 +16,29 @@ function sleep(ms) {
   return new Promise((r) => setTimeout(r, ms));
 }
 
+function isContextDestroyed(err) {
+  return /Execution context was destroyed|because of a navigation|Target page, context or browser has been closed|Target closed/i.test(
+    String(err && err.message ? err.message : err)
+  );
+}
+
+async function safeCount(locator) {
+  try {
+    return await locator.count();
+  } catch (e) {
+    if (isContextDestroyed(e)) return null;
+    throw e;
+  }
+}
+
 async function looksWorkday(page) {
   const url = page.url() || "";
   if (/community\.workday\.com\/maintenance|maintenance-page/i.test(url)) return false;
   if (/myworkdayjobs|myworkdaysite|workdayjobs/i.test(url)) return true;
+  // Do not treat any [data-automation-id] node as Workday. Phenom, SuccessFactors,
+  // and other ATS pages use that attribute and were mis-routed into the Workday walker.
   return page
-    .evaluate(
-      () =>
-        /Autofill with Resume|Apply Manually/i.test(document.body?.innerText || "") ||
-        !!document.querySelector("[data-automation-id]")
-    )
+    .evaluate(() => /Autofill with Resume|Apply Manually/i.test(document.body?.innerText || ""))
     .catch(() => false);
 }
 
@@ -158,7 +171,17 @@ async function completeExternalPage(page, resumePath, { maxMs = 6.5 * 60 * 1000 
     await preferGuestApply(page);
     if (resumePath) {
       const files = page.locator("input[type='file']");
-      const n = await files.count();
+      const n = await safeCount(files);
+      if (n == null) {
+        await page.waitForLoadState("domcontentloaded", { timeout: 15000 }).catch(() => {});
+        await sleep(800);
+        const settled = await page
+          .evaluate(() => (document.body?.innerText || "").slice(0, 2500))
+          .catch(() => "");
+        if (isSubmittedText(settled)) return { ok: true, url: page.url() };
+        noAdvance += 1;
+        continue;
+      }
       for (let i = 0; i < Math.min(n, 3); i++) {
         await files.nth(i).setInputFiles(resumePath).catch(() => {});
       }
@@ -193,4 +216,10 @@ async function completeExternalPage(page, resumePath, { maxMs = 6.5 * 60 * 1000 
   return { ok: false, reason: "external_incomplete_or_timeout", url: page.url() };
 }
 
-module.exports = { completeExternalPage, looksWorkday, pageFlags, preferGuestApply };
+module.exports = {
+  completeExternalPage,
+  looksWorkday,
+  pageFlags,
+  preferGuestApply,
+  isContextDestroyed,
+};

@@ -519,7 +519,7 @@ async function completeWorkdayApply(page, resumePath, { maxMs = 3.5 * 60 * 1000 
         stuckChooser
       ) &&
       !hasEmailField &&
-      !(await page.locator("input[type='file']").count())
+      !(await page.locator("input[type='file']").count().catch(() => 0))
     ) {
       return { ok: false, reason: "ats_login_wall", url: page.url() };
     }
@@ -537,9 +537,9 @@ async function completeWorkdayApply(page, resumePath, { maxMs = 3.5 * 60 * 1000 
     (/Create Account\/Sign In|current step 1 of/i.test(authText) ||
       /\/login/i.test(page.url()) ||
       (/Sign In/i.test(authText) &&
-        (await page.locator("[data-automation-id='email']").count()) > 0)) &&
-    (await page.locator("input[type='password']").count()) > 0 &&
-    !(await page.locator("input[type='file']").count())
+        (await page.locator("[data-automation-id='email']").count().catch(() => 0)) > 0)) &&
+    (await page.locator("input[type='password']").count().catch(() => 0)) > 0 &&
+    !(await page.locator("input[type='file']").count().catch(() => 0))
   ) {
     // one more create attempt if verify field present
     if (
@@ -560,7 +560,7 @@ async function completeWorkdayApply(page, resumePath, { maxMs = 3.5 * 60 * 1000 
     }
     const stillAuth =
       /\/login/i.test(page.url()) ||
-      ((await page.locator("input[type='password']").count()) > 0 &&
+      ((await page.locator("input[type='password']").count().catch(() => 0)) > 0 &&
         /Create Account\/Sign In|Don't have an account yet/i.test(stillAuthText));
     if (stillAuth) {
       return { ok: false, reason: "ats_login_wall", url: page.url() };
@@ -994,7 +994,7 @@ async function completeWorkdayApply(page, resumePath, { maxMs = 3.5 * 60 * 1000 
       const file = page.locator("input[type='file']").first();
       // Avoid re-uploading the same resume every loop (SS&C stacks duplicates).
       const alreadyUploaded = /successfully uploaded|Rafi_Resume\.docx/i.test(text);
-      if ((await file.count()) && !alreadyUploaded) {
+      if ((await file.count().catch(() => 0)) && !alreadyUploaded) {
         await file.setInputFiles(resumePath).catch(() => {});
         await sleep(1500);
       }

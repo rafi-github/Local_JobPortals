@@ -77,6 +77,23 @@ def test_google_vs_linkedin_password_routing():
     assert _mod.google_password_candidates({}) == []
 
 
+def test_feed_url_is_not_a_challenge_path():
+    feed = "https://www.linkedin.com/feed"
+    assert not _mod._url_loginish(feed)
+    assert not _mod._url_loginish(feed + "?trk=challenge")
+    assert _mod._url_loginish("https://www.linkedin.com/checkpoint/challenge/abc")
+    assert _mod._url_loginish("https://www.linkedin.com/login")
+
+
+def test_main_checks_existing_session_before_giving_up():
+    src = (Path(__file__).resolve().parent / "auto_login.py").read_text(encoding="utf-8")
+    main = src.split("def main() -> int:", 1)[1].split("\nif __name__", 1)[0]
+    head = main.split("already_signed_in", 1)[0]
+    assert "already_signed_in" in main
+    assert "interactive_login_required" not in head
+    assert "return 6" not in head
+
+
 def test_is_google_identifier_url():
     assert _mod.is_google_identifier_url(
         "https://accounts.google.com/v3/signin/identifier?continue=https://accounts.google.com/gsi/select"

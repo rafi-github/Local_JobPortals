@@ -23,6 +23,38 @@ function argValue(flag) {
 
 function safeUrl(value) { try { const u = new URL(value); return u.origin + u.pathname; } catch { return ""; } }
 
+/**
+ * Logged-in feed copy often contains the word "challenge". A security
+ * checkpoint is a /checkpoint or /challenge URL, or an interstitial when the
+ * page is not an authenticated feed/profile.
+ */
+function classifyLinkedInSession(url, body) {
+  const pathUrl = safeUrl(url) || String(url || "");
+  const text = String(body || "");
+  const top = text.slice(0, 1800);
+  const authenticatedView =
+    /\/feed|\/in\/|\/jobs/i.test(pathUrl) &&
+    /Home|My Network|Jobs|Messaging/i.test(text);
+  const urlChallenge = /\/checkpoint(?:\/|$)|\/challenge(?:\/|$)|security-verification/i.test(
+    pathUrl
+  );
+  const interstitial =
+    /let'?s do a quick security check|security verification|verify it'?s you|unusual activity from your|confirm your identity/i.test(
+      top
+    );
+  const onChallenge = urlChallenge || (interstitial && !authenticatedView);
+  const urlLogin = /\/login|authwall|\/uas\/login|\/checkpoint(?:\/|$)/i.test(pathUrl);
+  const loginWallCopy =
+    !authenticatedView &&
+    /sign in to linkedin|join now|new to linkedin|sign in to continue/i.test(top);
+  const loginish = urlLogin || loginWallCopy;
+  const ok = !loginish && !onChallenge && authenticatedView;
+  let reason = "linkedin_login_required";
+  if (ok) reason = "live_cdp_linkedin_ok";
+  else if (onChallenge) reason = "linkedin_security_challenge";
+  return { ok, url: pathUrl, onChallenge, reason };
+}
+
 async function main() {
   const waitSec = Number(argValue("--wait") || process.env.LINKEDIN_LOGIN_WAIT_SEC || "0");
   const openLogin = process.argv.includes("--open-login");
@@ -71,7 +103,7 @@ async function main() {
       /\/feed|\/jobs|\/in\//i.test(p.url() || "")
     );
     const challenge = li.find((p) =>
-      /checkpoint|challenge|security.?verif/i.test(p.url() || "")
+      /\/checkpoint|\/challenge|security-verification/i.test(p.url() || "")
     );
     // Prefer feed/jobs when a session exists; only stick to challenge when
     // there is no li_at yet (owner must finish CAPTCHA). Leftover challenge
@@ -94,11 +126,7 @@ async function main() {
     }
     url = page.url() || "";
     const body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
-    const onChallenge = /checkpoint|challenge|security.?verif/i.test(url + " " + body);
-    const loginish = /\/login|authwall|checkpoint|challenge/i.test(url) || /sign in|join now/i.test(body);
-    const authenticatedView = /\/feed|\/in\//i.test(url) && /Home|My Network|Jobs|Messaging/i.test(body);
-    const ok = !loginish && !onChallenge && authenticatedView;
-    return { ok, url: safeUrl(url), onChallenge, reason: ok ? "live_cdp_linkedin_ok" : onChallenge ? "linkedin_security_challenge" : "linkedin_login_required" };
+    return classifyLinkedInSession(url, body);
   }
 
   const deadline = Date.now() + Math.max(0, waitSec) * 1000;
@@ -142,7 +170,7 @@ async function main() {
   }
 
   const challenge =
-    last.onChallenge || /checkpoint|challenge|security.?verif/i.test(last.url || "");
+    last.onChallenge || /\/checkpoint(?:\/|$)|\/challenge(?:\/|$)|security-verification/i.test(last.url || "");
   console.log(
     JSON.stringify({
       ok: false,
@@ -153,7 +181,11 @@ async function main() {
   process.exit(5);
 }
 
-main().catch((err) => {
-  console.error(JSON.stringify({ ok: false, reason: "unexpected", error: String(err) }));
-  process.exit(1);
-});
+if (require.main === module) {
+  main().catch((err) => {
+    console.error(JSON.stringify({ ok: false, reason: "unexpected", error: String(err) }));
+    process.exit(1);
+  });
+}
+
+module.exports = { classifyLinkedInSession, safeUrl };

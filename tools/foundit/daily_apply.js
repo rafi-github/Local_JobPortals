@@ -24,7 +24,7 @@ const {
   FORBIDDEN_DRY_RUN,
 } = require("./resume");
 const { companyAllowed, allowlistActive } = require("../hitechcity/campus_allowlist");
-const { completeWorkdayApply } = require("../naukri/workday_apply");
+const { completeWorkdayApply, isSubmittedText } = require("../naukri/workday_apply");
 const { completeExternalPage } = require("../ats/complete_page");
 const { tailorResumeForJob } = require("../resume_tailor");
 const { updateFounditProfileResume } = require("./update_profile_resume");
@@ -349,6 +349,54 @@ function atsSubmitClicked(status) {
   return /linkedin_submit_clicked|ats_submit_clicked/i.test(String(status || ""));
 }
 
+const EASY_APPLY_SELECTORS = [
+  "a[aria-label*='Easy Apply to this job']",
+  "a[aria-label*='Easy Apply']",
+  "button[aria-label*='Easy Apply']",
+  "button.jobs-apply-button",
+  "a.jobs-apply-button",
+  "button:has-text('Easy Apply')",
+  "button:has-text('Continue applying')",
+];
+
+const COMPANY_APPLY_SELECTORS = [
+  "a[aria-label*='Apply on company website']",
+  "button[aria-label*='Apply on company website']",
+  "a[aria-label*='Apply to this job']",
+  "button[aria-label*='Apply to this job']",
+  "a.jobs-apply-button",
+  "button.jobs-apply-button",
+  "a:has-text('Apply')",
+  "button:has-text('Apply')",
+];
+
+/** 2026 LinkedIn job view uses <a aria-label>, not only button text. */
+async function firstVisibleApply(page, selectors, { easyOnly = false } = {}) {
+  for (const sel of selectors) {
+    const loc = page.locator(sel);
+    const n = await loc.count().catch(() => 0);
+    for (let i = 0; i < Math.min(n, 8); i++) {
+      const b = loc.nth(i);
+      if (!(await b.isVisible().catch(() => false))) continue;
+      const text = ((await b.innerText().catch(() => "")) || "").replace(/\s+/g, " ").trim();
+      const aria = ((await b.getAttribute("aria-label").catch(() => "")) || "").trim();
+      const label = `${text} ${aria}`.toLowerCase();
+      const easy = /easy apply|continue applying/.test(label);
+      if (easyOnly) {
+        if (!easy) continue;
+      } else if (easy || !/\bapply\b/.test(label)) {
+        continue;
+      }
+      return {
+        loc: b,
+        label,
+        href: ((await b.getAttribute("href").catch(() => "")) || "").trim(),
+      };
+    }
+  }
+  return null;
+}
+
 async function handleExternalAts(context, resumePath, job, report) {
   const url = job.redirectUrl;
   if (!url) return { status: "no_redirect" };
@@ -371,28 +419,26 @@ async function handleExternalAts(context, resumePath, job, report) {
     await sleep(2000);
 
     // LinkedIn: Easy Apply first; else company Apply → complete company ATS.
-    if (/linkedin\.com/i.test(url)) {
-      // Sign-in wall
-      if (/\/uas\/login|authwall/i.test(page.url()) ||
-          /sign in to continue|join linkedin/i.test(
-            await page.locator("body").innerText().catch(() => "").then((t) => t.slice(0, 500))
-          )) {
-        return { status: "linkedin_login_wall", url };
+    if (/linkedin\.com/i.test(url) || /linkedin\.com/i.test(page.url() || "")) {
+      const topText = await page.locator("body").innerText().catch(() => "");
+      const top = topText.slice(0, 700);
+      if (
+        /\/uas\/login|authwall|\/checkpoint|\/login/i.test(page.url()) ||
+        /sign in to continue|join linkedin|sign in to linkedin/i.test(top)
+      ) {
+        return { status: "linkedin_login_wall", url: page.url() };
       }
 
-      const easy = page
-        .locator(
-          "button.jobs-apply-button:has-text('Easy Apply'), button:has-text('Easy Apply'), button:has-text('Continue applying')"
-        )
-        .first();
-      if (await easy.isVisible({ timeout: 5000 }).catch(() => false)) {
+      const easyCtl = await firstVisibleApply(page, EASY_APPLY_SELECTORS, { easyOnly: true });
+      const easy = easyCtl && easyCtl.loc;
+      if (easy && (await easy.isVisible({ timeout: 5000 }).catch(() => false))) {
         await easy.click().catch(() => {});
         await sleep(1500);
         // Multi-step Easy Apply — advance until done or cap
         while (Date.now() - started < ATS_CAP_MS) {
           // Upload resume if file input present
           const fileInputs = page.locator('input[type="file"]');
-          const n = await fileInputs.count();
+          const n = await fileInputs.count().catch(() => 0);
           for (let i = 0; i < n; i++) {
             const input = fileInputs.nth(i);
             if (await input.isVisible().catch(() => false)) {
@@ -467,22 +513,31 @@ async function handleExternalAts(context, resumePath, job, report) {
         return { status: "linkedin_ats_cap_or_incomplete", url };
       }
 
-      // No Easy Apply — click company Apply and complete the external ATS.
-      const companyApply = page
-        .locator(
-          "button.jobs-apply-button:has-text('Apply'), button:has-text('Apply on company website'), a:has-text('Apply on company website'), button:has-text('Apply')"
-        )
-        .first();
-      if (await companyApply.isVisible({ timeout: 4000 }).catch(() => false)) {
+      // No Easy Apply — follow company-website Apply (2026 UI is an <a aria-label>).
+      const companyCtl = await firstVisibleApply(page, COMPANY_APPLY_SELECTORS, {
+        easyOnly: false,
+      });
+      if (companyCtl && (await companyCtl.loc.isVisible({ timeout: 4000 }).catch(() => false))) {
         const beforePages = new Set(context.pages());
-        await companyApply.click().catch(() => {});
+        await companyCtl.loc.click().catch(() => {});
         await sleep(2500);
+        await page.waitForLoadState("domcontentloaded").catch(() => {});
         let atsPage = page;
         for (const p of context.pages()) {
           if (!beforePages.has(p) && !/linkedin\.com/i.test(p.url() || "")) {
             atsPage = p;
             break;
           }
+        }
+        const href = companyCtl.href || "";
+        if (
+          atsPage === page &&
+          /linkedin\.com/i.test(page.url() || "") &&
+          href &&
+          !/linkedin\.com/i.test(href)
+        ) {
+          await page.goto(href, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
+          atsPage = page;
         }
         // LinkedIn sometimes navigates same tab off-site.
         if (/linkedin\.com/i.test(atsPage.url() || "") === false || atsPage !== page) {
@@ -516,11 +571,8 @@ async function handleExternalAts(context, resumePath, job, report) {
       page.url() + " " + url
     );
     const looksWorkdayUi = await page
-      .evaluate(
-        () =>
-          /Autofill with Resume|Apply Manually|data-automation-id/i.test(
-            document.body?.innerText || ""
-          ) || !!document.querySelector("[data-automation-id]")
+      .evaluate(() =>
+        /Autofill with Resume|Apply Manually/i.test(document.body?.innerText || "")
       )
       .catch(() => false);
     if (isWorkday || looksWorkdayUi) {
@@ -540,14 +592,32 @@ async function handleExternalAts(context, resumePath, job, report) {
       url: done.url || page.url(),
     };
   } catch (e) {
-    report.blocked.push({
-      jobId: job.jobId,
-      title: job.title,
-      reason: "ats_error",
-      error: String(e).slice(0, 300),
-      url,
-    });
-    return { status: "ats_error", url, error: String(e).slice(0, 200) };
+    const msg = String(e && e.message ? e.message : e);
+    // A click that navigates destroys the locator context. That is not an ATS
+    // failure by itself — settle and continue, and count a real confirmation.
+    if (/Execution context was destroyed|because of a navigation/i.test(msg)) {
+      await page.waitForLoadState("domcontentloaded", { timeout: 20000 }).catch(() => {});
+      await sleep(1200);
+      try {
+        const text = await page.evaluate(() => (document.body?.innerText || "").slice(0, 2500));
+        if (isSubmittedText(text)) {
+          return { status: "ats_submitted", url: page.url(), recoveredFrom: "navigation" };
+        }
+      } catch (_) {}
+      try {
+        const done = await completeExternalPage(page, resumePath, {
+          maxMs: Math.max(60_000, ATS_CAP_MS - (Date.now() - started)),
+        });
+        return {
+          status: done.ok ? "ats_submitted" : done.reason || "ats_incomplete_or_cap",
+          url: done.url || page.url(),
+          recoveredFrom: "navigation",
+        };
+      } catch (e2) {
+        return { status: "ats_error", url: page.url(), error: String(e2).slice(0, 200) };
+      }
+    }
+    return { status: "ats_error", url, error: msg.slice(0, 200) };
   } finally {
     await page.close().catch(() => {});
   }

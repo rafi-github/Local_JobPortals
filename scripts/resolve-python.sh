@@ -12,7 +12,9 @@ for cand in \
   /c/Python313/python.exe \
   /c/Python312/python.exe \
   "${localapp:+$localapp/Programs/Python/Python314/python.exe}" \
-  "${localapp:+$localapp/Programs/Python/Python313/python.exe}"; do
+  "${localapp:+$localapp/Programs/Python/Python313/python.exe}" \
+  "${localapp:+$localapp/Programs/Python/Python312/python.exe}" \
+  "${localapp:+$localapp/Python/pythoncore-3.15-64/python.exe}"; do
   if [[ -n "$cand" && -x "$cand" ]]; then
     echo "$cand"
     exit 0

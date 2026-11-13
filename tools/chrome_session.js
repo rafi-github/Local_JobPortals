@@ -342,7 +342,7 @@ function checkPortal(portal) {
         result.reason = String(liveJson.reason);
         if (liveJson.url) result.liveUrl = String(liveJson.url).slice(0, 240);
         if (liveJson.onChallenge) result.liveChallenge = true;
-      } else if (/checkpoint|challenge|security.?verif/i.test(blob)) {
+      } else if (/\/checkpoint\/|security verification|quick security check/i.test(blob)) {
         result.reason =
           portal === "linkedin" || portal === "hitechcity"
             ? "linkedin_security_challenge"
