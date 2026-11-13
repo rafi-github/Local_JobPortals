@@ -50,7 +50,67 @@ load_env_file "${HOME}/.job-apply-secrets.env"
 TO="${JOB_STATUS_EMAIL:-${EMAIL_TO:-rafi.success@gmail.com}}"
 SUBJECT="Job status — ${DATE}"
 
+# shellcheck source=scripts/lib/chrome-cdp-mode-home.sh
+source "$ROOT/scripts/lib/chrome-cdp-mode-home.sh"
+chrome_cdp_mode_home_default
+
 sent=0
+
+gmail_compose_send() {
+  local py=""
+  if [[ -n "${HYD_ROOT:-}" && -x "$HYD_ROOT/.venv/Scripts/python.exe" ]]; then
+    py="$HYD_ROOT/.venv/Scripts/python.exe"
+  elif [[ -n "${HYD_ROOT:-}" && -x "$HYD_ROOT/.venv/bin/python" ]]; then
+    py="$HYD_ROOT/.venv/bin/python"
+  else
+    PY="$(bash "$ROOT/scripts/resolve-python.sh")"
+    if [[ "$PY" == "py" ]]; then
+      py="py -3"
+    elif [[ -n "$PY" ]]; then
+      py="$PY"
+    elif command -v python3 >/dev/null 2>&1; then
+      py="python3"
+    elif command -v python >/dev/null 2>&1; then
+      py="python"
+    fi
+  fi
+  if [[ -z "$py" ]]; then
+    echo "WARNING: no Python with Playwright for Gmail compose"
+    return 1
+  fi
+  if ! curl -fsS "http://127.0.0.1:9222/json/version" >/dev/null 2>&1; then
+    echo "NOTE: launching system Chrome CDP for Gmail compose…"
+    set +e
+    bash "$ROOT/scripts/launch-chrome-cdp.sh" linkedin
+    set -e
+  fi
+  echo "Sending via Gmail compose ($py)"
+  set +e
+  if [[ "$py" == "py -3" ]]; then
+    py -3 "$ROOT/scripts/send_job_status_gmail_compose.py" \
+      --to "$TO" --subject "$SUBJECT" --body-file "$REPORT_MD"
+  else
+    "$py" "$ROOT/scripts/send_job_status_gmail_compose.py" \
+      --to "$TO" --subject "$SUBJECT" --body-file "$REPORT_MD"
+  fi
+  local mail_rc=$?
+  set -e
+  return "$mail_rc"
+}
+
+prefer_gmail=0
+if is_windows_home_shell && [[ "${JOB_STATUS_EMAIL_VIA_GMAIL:-1}" == "1" ]]; then
+  prefer_gmail=1
+fi
+
+if [[ "$prefer_gmail" -eq 1 ]]; then
+  set +e
+  gmail_compose_send
+  mail_rc=$?
+  set -e
+  [[ "$mail_rc" -eq 0 ]] && sent=1
+fi
+
 if [[ -n "${RESEND_API_KEY:-}" ]]; then
   echo "Sending via Resend to $TO"
   set +e
@@ -63,37 +123,37 @@ if [[ -n "${RESEND_API_KEY:-}" ]]; then
   if [[ "$mail_rc" -eq 0 ]]; then
     sent=1
   else
-    echo "WARNING: send-job-status-email.mjs exit $mail_rc — trying Gmail compose"
+    echo "WARNING: Resend send failed with exit $mail_rc"
   fi
 else
-  echo "RESEND_API_KEY unset — trying Gmail compose in Chrome CDP"
+  echo "RESEND_API_KEY is not configured"
+fi
+
+if [[ "$sent" -eq 0 && -n "${SMTP_HOST:-}" && -n "${SMTP_USER:-}" && -n "${SMTP_PASSWORD:-}" ]]; then
+  echo "Sending via configured SMTP service (credentials hidden)"
+  set +e
+  PY="$(bash "$ROOT/scripts/resolve-python.sh")"
+  if [[ "$PY" == "py" ]]; then
+    py -3 "$ROOT/scripts/send-job-status-smtp.py" --to "$TO" --subject "$SUBJECT" --body-file "$REPORT_MD"
+  else
+    "$PY" "$ROOT/scripts/send-job-status-smtp.py" --to "$TO" --subject "$SUBJECT" --body-file "$REPORT_MD"
+  fi
+  mail_rc=$?
+  set -e
+  [[ "$mail_rc" -eq 0 ]] && sent=1
 fi
 
 if [[ "$sent" -eq 0 ]]; then
-  PY=""
-  if [[ -n "${HYD_ROOT:-}" && -x "$HYD_ROOT/.venv/Scripts/python.exe" ]]; then
-    PY="$HYD_ROOT/.venv/Scripts/python.exe"
-  elif [[ -n "${HYD_ROOT:-}" && -x "$HYD_ROOT/.venv/bin/python" ]]; then
-    PY="$HYD_ROOT/.venv/bin/python"
-  elif command -v python3 >/dev/null 2>&1; then
-    PY="python3"
-  elif command -v python >/dev/null 2>&1; then
-    PY="python"
+  gmail_fb="${JOB_STATUS_GMAIL_FALLBACK:-0}"
+  if is_windows_home_shell && [[ "$gmail_fb" == "0" ]]; then
+    gmail_fb=1
   fi
-  if [[ -z "$PY" ]]; then
-    echo "WARNING: no Python with Playwright for Gmail compose fallback"
-  else
-    echo "Sending via Gmail compose ($PY)"
+  if [[ "$gmail_fb" == "1" && "$prefer_gmail" -eq 0 ]]; then
     set +e
-    "$PY" "$ROOT/scripts/send_job_status_gmail_compose.py" \
-      --to "$TO" \
-      --subject "$SUBJECT" \
-      --body-file "$REPORT_MD"
+    gmail_compose_send
     mail_rc=$?
     set -e
-    if [[ "$mail_rc" -eq 0 ]]; then
-      sent=1
-    fi
+    [[ "$mail_rc" -eq 0 ]] && sent=1
   fi
 fi
 

@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
-# One-time headed login into a home CDP profile (Windows Chrome ABE workaround).
-# Cookie sync from Desktop Default cannot decrypt v20 App-Bound cookies in a
-# different --user-data-dir. Sign in once here; later daily runs reuse the profile.
+# One-time interactive sign-in to a persistent isolated portal profile.
 #
 # Usage:
 #   bash scripts/home-headed-login.sh naukri
@@ -34,6 +32,11 @@ LOGIN_URL="$(
 )"
 
 export CHROME_HEADLESS=0
+# shellcheck source=scripts/lib/chrome-cdp-mode-home.sh
+source "$ROOT/scripts/lib/chrome-cdp-mode-home.sh"
+chrome_cdp_mode_home_default
+# Non-Windows cloud/Linux: isolated per-portal profiles unless overridden.
+[[ -z "${CHROME_CDP_MODE:-}" ]] && export CHROME_CDP_MODE=isolated
 # Launch may probe live login; do not abort here — this script waits for the owner next.
 export CDP_REQUIRE_LIVE_LOGIN=0
 export PYTHON_BIN="${PYTHON_BIN:-}"
@@ -71,7 +74,7 @@ if [[ "$PORTAL" == "linkedin" || "$PORTAL" == "hitechcity" ]] && [[ -f "$ROOT/to
   rc=$?
   set -e
   if [[ "$rc" -eq 0 ]]; then
-    echo "OK: LinkedIn CDP session has li_at (also used by hitechcity). Future home dailies can reuse this profile."
+    echo "OK: LinkedIn page shows an authenticated session; no session data was read or copied."
     exit 0
   fi
   echo "WARN: LinkedIn still not logged in (exit $rc). Stay on the Chrome window and retry." >&2
@@ -111,7 +114,7 @@ if [[ "$PORTAL" == "foundit" && -f "$ROOT/tools/foundit/wait_for_cdp_login.js" ]
   rc=$?
   set -e
   if [[ "$rc" -eq 0 ]]; then
-    echo "OK: Foundit CDP session has MSSOAT. Future home dailies can reuse this profile."
+    echo "OK: Foundit page shows an authenticated session; no session data was read or copied."
     exit 0
   fi
   echo "WARN: Foundit still not logged in (exit $rc). Stay on the Chrome window and retry." >&2
@@ -124,7 +127,7 @@ if [[ "$PORTAL" == "naukri" && -f "$ROOT/tools/naukri/wait_for_cdp_login.js" ]];
   rc=$?
   set -e
   if [[ "$rc" -eq 0 ]]; then
-    echo "OK: Naukri CDP session has nauk_rt/nauk_at. Future home dailies can reuse this profile."
+    echo "OK: Naukri page shows an authenticated session; no session data was read or copied."
     exit 0
   fi
   echo "WARN: Naukri still not logged in (exit $rc). Stay on the Chrome window and retry." >&2

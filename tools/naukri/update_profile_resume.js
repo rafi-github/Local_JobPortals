@@ -26,6 +26,7 @@ const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
 const { hasAuth } = require("../chrome_session");
+const { runPythonScript } = require("../resolve_python");
 const { writeArtifactJson } = require("../artifact_path");
 const {
   findResume,
@@ -55,7 +56,7 @@ function ensureUploadResumeFromMaster() {
   if (!fs.existsSync(script)) {
     return { ok: false, reason: "ensure_upload_resume_missing" };
   }
-  const r = spawnSync("python3", [script], {
+  const r = runPythonScript(script, [], {
     cwd: ROOT,
     encoding: "utf8",
     timeout: 60000,
@@ -86,7 +87,7 @@ function resolveResumePath() {
     if (fs.statSync(resume).size > NAUKRI_RESUME_MAX_BYTES) {
       try {
         const script = path.join(__dirname, "..", "compress_resume_docx.py");
-        const r = spawnSync("python3", [script, resume], { encoding: "utf8" });
+        const r = runPythonScript(script, [resume], { encoding: "utf8" });
         if (r.status !== 0) {
           console.error("compress_resume_docx failed:", r.stderr || r.stdout);
         }

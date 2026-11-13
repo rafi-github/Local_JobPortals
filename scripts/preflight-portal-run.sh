@@ -19,11 +19,13 @@ if [[ -f tools/package.json ]]; then
     (cd tools && npm ci --no-fund --no-audit 2>/dev/null || npm install --no-fund --no-audit)
   fi
 fi
-bash scripts/sync-chrome-sessions.sh
+# Authentication is checked through the portal's live CDP session. Never copy
+# the user's normal Chrome cookie database into automation profiles.
 PY="$(bash scripts/resolve-python.sh)"
 if [[ "$PY" == "py" ]]; then
   py -3 tools/resume_paths.py
 else
   "$PY" tools/resume_paths.py
 fi
+bash scripts/launch-chrome-cdp.sh "$portal"
 node tools/chrome_session.js check "$portal"

@@ -717,12 +717,12 @@ async function main() {
 
 async function maybeApply(page, c, report) {
   if (DRY_RUN) {
-    report.applied.push({
+    report.skipped.push({
       id: c.id,
       title: c.title,
       company: c.company,
       location: c.location,
-      path: "dry_run",
+      reason: "dry_run_no_submission",
       score: c.score,
     });
     return;

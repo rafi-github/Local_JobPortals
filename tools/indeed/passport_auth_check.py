@@ -130,6 +130,8 @@ def status_from_plaintext(
 
 
 def check_passport(profile_root: str | Path) -> dict:
+    return {"ok": False, "reason": "cookie_database_inspection_disabled"}
+
     root = Path(profile_root)
     db = root / "Default" / "Cookies"
     if not db.exists():

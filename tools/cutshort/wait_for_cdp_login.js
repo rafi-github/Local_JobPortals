@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
  * Live CDP check / wait for Cutshort session on headed Chrome at :9222.
- * SQLite cookie-name checks are insufficient on Windows App-Bound Encryption —
- * Chrome may keep a stale cutshort_authentication name while the server
+ *  * Chrome may keep a stale cutshort_authentication name while the server
  * rejects the session (redirect to /?redirect_url=…).
  *
  * Usage:
@@ -16,7 +15,6 @@ const path = require("path");
 
 const CDP = process.env.CUTSHORT_CDP || "http://127.0.0.1:9222";
 const ROOT = path.resolve(__dirname, "../..");
-const AUTH_COOKIE = "cutshort_authentication";
 const DASH = "https://cutshort.io/profile/candidate-dashboard";
 const LOGIN = "https://cutshort.io/login";
 
@@ -40,6 +38,8 @@ function isLoggedOut(url, bodyText) {
   }
   return false;
 }
+
+function safeUrl(value) { try { const u = new URL(value); return u.origin + u.pathname; } catch { return ""; } }
 
 async function main() {
   const waitSec = Number(argValue("--wait") || process.env.CUTSHORT_LOGIN_WAIT_SEC || "0");
@@ -84,47 +84,21 @@ async function main() {
   const page = ctx.pages()[0] || (await ctx.newPage());
 
   async function probe() {
-    const cookies = await ctx.cookies("https://cutshort.io");
-    const hasAuthCookie = cookies.some((c) => c.name === AUTH_COOKIE);
-    let url = page.url() || "";
-    let body = "";
-
-    if (openLogin || !hasAuthCookie) {
-      await page
-        .goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 })
-        .catch(() => {});
-      url = page.url() || "";
-    }
-
-    await page
-      .goto(DASH, { waitUntil: "domcontentloaded", timeout: 60000 })
-      .catch(() => {});
-    // Stale sessions often land on /profile/... briefly before redirecting home.
+    if (openLogin) await page.goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
+    await page.goto(DASH, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
     for (let i = 0; i < 6; i++) {
       await page.waitForTimeout(1000).catch(() => {});
-      url = page.url() || "";
+      const url = page.url() || "";
       if (/[?&]redirect_url=/.test(url) || /\/login/i.test(url)) break;
     }
     await page.waitForTimeout(1500).catch(() => {});
-    url = page.url() || "";
-    body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
-
+    const url = page.url() || "";
+    const body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
     const loggedOut = isLoggedOut(url, body);
     const onDash = /\/profile\/candidate-dashboard/i.test(url);
-    // Require real dashboard chrome — marketing home also says "Find jobs".
-    const dashSignals =
-      /Matches for you|Recommended jobs|Your profile|Edit profile|Applications|Awaiting response/i.test(
-        body
-      );
-    const ok = hasAuthCookie && !loggedOut && onDash && dashSignals;
-    return {
-      ok,
-      hasAuthCookie,
-      onDash,
-      dashSignals,
-      url,
-      preview: String(body || "").slice(0, 160),
-    };
+    const dashSignals = /Matches for you|Recommended jobs|Your profile|Edit profile|Applications|Awaiting response/i.test(body);
+    const ok = !loggedOut && onDash && dashSignals;
+    return { ok, onDash, dashSignals, url };
   }
 
   const deadline = Date.now() + Math.max(0, waitSec) * 1000;
@@ -146,9 +120,7 @@ async function main() {
       last = await probe();
       console.error(
         JSON.stringify({
-          waiting: true,
-          hasAuthCookie: last.hasAuthCookie,
-          url: last.url,
+          waiting: true,          url: last.url,
           secsLeft: Math.max(0, Math.round((deadline - Date.now()) / 1000)),
         })
       );
@@ -167,12 +139,8 @@ async function main() {
   console.log(
     JSON.stringify({
       ok: false,
-      reason: "cutshort_login_required",
-      hasAuthCookie: last.hasAuthCookie,
-      url: last.url,
-      hint: "bash scripts/home-headed-login.sh cutshort",
-      note: "Windows ABE: SQLite cutshort_authentication name alone is not proof of a live session.",
-    })
+      reason: "cutshort_login_required",      url: last.url,
+      hint: "bash scripts/home-headed-login.sh cutshort",    })
   );
   process.exit(5);
 }

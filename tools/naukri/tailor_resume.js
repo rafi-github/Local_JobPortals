@@ -10,25 +10,13 @@ const path = require("path");
 const crypto = require("crypto");
 const { spawnSync } = require("child_process");
 const { findResume } = require("./resume_and_filters");
+const { resolvePython, spawnPythonArgs } = require("../resolve_python");
 
 const PY = path.join(__dirname, "tailor_resume.py");
 const OUT_ROOT =
   process.env.NAUKRI_TAILORED_DIR ||
   path.join("/tmp", "naukri-tailored");
 
-function resolvePython() {
-  for (const cand of [
-    process.env.PYTHON,
-    process.env.PYTHON3,
-    "python3",
-    "python",
-  ]) {
-    if (!cand) continue;
-    const r = spawnSync(cand, ["--version"], { encoding: "utf8" });
-    if (r.status === 0) return cand;
-  }
-  return "python3";
-}
 
 /**
  * @param {{ role: string, company?: string, jdText?: string, base?: string }} opts
@@ -76,24 +64,21 @@ function tailorResumeForJob(opts = {}) {
   const jdFile = path.join(outDir, "jd.txt");
   fs.writeFileSync(jdFile, jdText || role, "utf8");
 
-  const py = resolvePython();
-  const r = spawnSync(
-    py,
-    [
-      PY,
-      "--role",
-      role || "Solutions Architect",
-      "--company",
-      company,
-      "--jd-file",
-      jdFile,
-      "--base",
-      base,
-      "--out",
-      outPath,
-    ],
-    { encoding: "utf8", timeout: 60000 }
-  );
+  const pyBin = resolvePython();
+  const { cmd, args } = spawnPythonArgs(pyBin, [
+    PY,
+    "--role",
+    role || "Solutions Architect",
+    "--company",
+    company,
+    "--jd-file",
+    jdFile,
+    "--base",
+    base,
+    "--out",
+    outPath,
+  ]);
+  const r = spawnSync(cmd, args, { encoding: "utf8", timeout: 60000 });
 
   if (r.status !== 0 || !fs.existsSync(outPath)) {
     return {

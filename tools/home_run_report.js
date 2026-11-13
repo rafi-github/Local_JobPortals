@@ -56,10 +56,13 @@ function normalize(raw = {}, opts = {}) {
 
   const countsIn = raw.counts && typeof raw.counts === "object" ? raw.counts : {};
   const counts = {
-    applied: Number(countsIn.applied ?? applied.length) || 0,
-    external:
-      Number(countsIn.external ?? countsIn.externalCompleted ?? external.length) ||
-      0,
+    // Never trust a bare counter: each reported application needs a concrete
+    // portal-confirmed result entry in the source report.
+    applied: Math.min(Number(countsIn.applied ?? applied.length) || 0, applied.length),
+    external: Math.min(
+      Number(countsIn.external ?? countsIn.externalCompleted ?? external.length) || 0,
+      external.length,
+    ),
     rejected: Number(countsIn.rejected ?? rejected.length) || 0,
     blocked: Number(countsIn.blocked ?? blocked.length) || 0,
     skipped: Number(countsIn.skipped ?? skipped.length) || 0,

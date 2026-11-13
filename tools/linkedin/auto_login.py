@@ -902,6 +902,9 @@ def _wait_signed_in(ctx, page, deadline: float, via: str, out: dict) -> int | No
 
 
 def main() -> int:
+    print(json.dumps({"ok": False, "reason": "interactive_login_required"}))
+    return 6
+
     out: dict = {"ok": False, "attempts": []}
     # Honor persisted restriction memory — do not hammer login while banned.
     try:

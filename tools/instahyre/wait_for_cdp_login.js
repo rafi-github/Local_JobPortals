@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
  * Live CDP check / wait for Instahyre session on headed Chrome at :9222.
- * SQLite cookie-name checks are insufficient on Windows App-Bound Encryption —
- * Chrome may keep a stale sessionid name while /login/ still loads.
+ *  * Login state is verified from the visible portal page.
  *
  * Usage:
  *   node tools/instahyre/wait_for_cdp_login.js            # one-shot probe
@@ -15,7 +14,6 @@ const path = require("path");
 
 const CDP = process.env.INSTAHYRE_CDP || "http://127.0.0.1:9222";
 const ROOT = path.resolve(__dirname, "../..");
-const AUTH_COOKIE = "sessionid";
 const OPS = "https://www.instahyre.com/candidate/opportunities/";
 const LOGIN = "https://www.instahyre.com/login/";
 
@@ -35,6 +33,8 @@ function isLoggedOut(url, bodyText) {
   }
   return false;
 }
+
+function safeUrl(value) { try { const u = new URL(value); return u.origin + u.pathname; } catch { return ""; } }
 
 async function main() {
   const waitSec = Number(argValue("--wait") || process.env.INSTAHYRE_LOGIN_WAIT_SEC || "0");
@@ -81,45 +81,20 @@ async function main() {
   const page = await ctx.newPage();
 
   async function probe() {
-    const cookies = await ctx.cookies("https://www.instahyre.com");
-    const sessionCookie = cookies.find((c) => c.name === AUTH_COOKIE);
-    const hasAuthCookie = Boolean(sessionCookie && String(sessionCookie.value || "").length > 0);
-    let url = page.url() || "";
-    let body = "";
-
-    if (openLogin || !hasAuthCookie) {
-      await page
-        .goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 })
-        .catch(() => {});
-      url = page.url() || "";
-    }
-
+    if (openLogin) await page.goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
     await page.goto(OPS, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
-    // Stale sessions often bounce to /login/ after a brief opportunities flash.
     for (let i = 0; i < 6; i++) {
       await page.waitForTimeout(1000).catch(() => {});
-      url = page.url() || "";
-      if (/\/login\/?/i.test(url)) break;
+      if (/\/login\/?/i.test(page.url() || "")) break;
     }
     await page.waitForTimeout(1500).catch(() => {});
-    url = page.url() || "";
-    body = await page
-      .evaluate(() => (document.body && document.body.innerText) || "")
-      .catch(() => "");
-
+    const url = page.url() || "";
+    const body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
     const loggedOut = isLoggedOut(url, body);
     const onOps = /\/candidate\/opportunities/i.test(url);
     const opsSignals = /opportunities|interested|matching|undecided|express interest/i.test(body);
-    const ok = hasAuthCookie && !loggedOut && onOps && opsSignals;
-    return {
-      ok,
-      hasAuthCookie,
-      sessionLen: sessionCookie ? String(sessionCookie.value || "").length : 0,
-      onOps,
-      opsSignals,
-      url,
-      preview: String(body || "").slice(0, 160),
-    };
+    const ok = !loggedOut && onOps && opsSignals;
+    return { ok, onOps, opsSignals, url };
   }
 
   const deadline = Date.now() + Math.max(0, waitSec) * 1000;
@@ -141,10 +116,7 @@ async function main() {
       last = await probe();
       console.error(
         JSON.stringify({
-          waiting: true,
-          hasAuthCookie: last.hasAuthCookie,
-          sessionLen: last.sessionLen,
-          url: last.url,
+          waiting: true,          url: last.url,
           secsLeft: Math.max(0, Math.round((deadline - Date.now()) / 1000)),
         })
       );
@@ -163,13 +135,8 @@ async function main() {
   console.log(
     JSON.stringify({
       ok: false,
-      reason: "instahyre_login_required",
-      hasAuthCookie: last.hasAuthCookie,
-      sessionLen: last.sessionLen,
-      url: last.url,
-      hint: "bash scripts/home-headed-login.sh instahyre",
-      note: "Windows ABE: SQLite sessionid name alone is not proof of a live session.",
-    })
+      reason: "instahyre_login_required",      url: last.url,
+      hint: "bash scripts/home-headed-login.sh instahyre",    })
   );
   process.exit(5);
 }

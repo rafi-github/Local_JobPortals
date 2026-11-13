@@ -97,6 +97,7 @@ const totals = {
   blocked: sum(rows, "blocked"),
   skipped: sum(rows, "skipped"),
 };
+const reportedPortals = rows.filter((r) => r.data !== null).length;
 
 const lines = [];
 lines.push(`# Job status — ${date}`);
@@ -107,7 +108,7 @@ lines.push(
 );
 lines.push("");
 lines.push(
-  `**Totals today:** applied ${totals.applied} · external ${totals.external} · ` +
+  `**Totals today (fresh reports from ${reportedPortals}/${PORTALS.length} portals):** applied ${totals.applied} · external ${totals.external} · ` +
     `rejected ${totals.rejected} · blocked ${totals.blocked} · skipped ${totals.skipped}.`,
 );
 lines.push("");

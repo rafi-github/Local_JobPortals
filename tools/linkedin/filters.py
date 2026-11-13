@@ -56,6 +56,12 @@ JD_HARD_BLACKLIST = re.compile(
     re.I,
 )
 
+DOCTORATE_REQUIRED = re.compile(
+    r"\bonly\b[^.\n]{0,50}\b(?:ph\.?d|doctorate)\b|"
+    r"\b(?:ph\.?d|doctorate)\b[^.\n]{0,50}\b(?:required|mandatory|must[- ]have|must have|only)\b",
+    re.I,
+)
+
 BLACKLIST = TITLE_BLACKLIST  # alias
 
 TITLE_OK = re.compile(
@@ -169,6 +175,8 @@ def skip_reason(role: str, company: str = "", jd: str = "") -> str | None:
     """Return skip reason or None. Title blacklist first; JD only for hard mandatory stacks."""
     title = role or ""
     company = company or ""
+    if DOCTORATE_REQUIRED.search(title) or DOCTORATE_REQUIRED.search(jd or ""):
+        return "degree: PhD/doctorate required"
     if re.search(
         r"\b(ai/?\s*ml architect|ai architect|ai engineer|ml engineer|genai|"
         r"ai technical (lead|architect)|data scientist|data engineer(?:ing)?)\b",

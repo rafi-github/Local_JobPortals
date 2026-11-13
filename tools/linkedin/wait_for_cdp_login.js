@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
- * Live CDP check / wait for LinkedIn li_at on the headed Chrome at :9222.
- * SQLite cookie-name checks are insufficient on Windows App-Bound Encryption —
- * Chrome may drop undecryptable/stale li_at on profile load.
+ * Live CDP check / wait for a signed-in LinkedIn page at :9222.
+ *  * Authentication is checked only from the visible page.
  *
  * Usage:
  *   node tools/linkedin/wait_for_cdp_login.js            # one-shot probe
@@ -21,6 +20,8 @@ function argValue(flag) {
   if (i === -1 || i + 1 >= process.argv.length) return null;
   return process.argv[i + 1];
 }
+
+function safeUrl(value) { try { const u = new URL(value); return u.origin + u.pathname; } catch { return ""; } }
 
 async function main() {
   const waitSec = Number(argValue("--wait") || process.env.LINKEDIN_LOGIN_WAIT_SEC || "0");
@@ -85,46 +86,19 @@ async function main() {
   let page = pickLinkedInPage() || (await ctx.newPage());
 
   async function probe() {
-    const cookies = await ctx.cookies("https://www.linkedin.com");
-    const has_li_at = cookies.some((c) => c.name === "li_at");
-    page = pickLinkedInPage(!has_li_at) || page;
     let url = page.url() || "";
-    const onChallenge = /checkpoint|challenge/i.test(url);
-    // Never navigate away from Security Verification / CAPTCHA — owner must finish it
-    // when there is no session yet.
-    if (!has_li_at && !onChallenge && (openLogin || !/linkedin\.com/i.test(url))) {
-      await page
-        .goto("https://www.linkedin.com/login", {
-          waitUntil: "domcontentloaded",
-          timeout: 60000,
-        })
-        .catch(() => {});
-      url = page.url() || "";
+    if (openLogin || !/linkedin\.com/i.test(url)) {
+      await page.goto("https://www.linkedin.com/login", { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
+    } else {
+      await page.goto("https://www.linkedin.com/feed/", { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
     }
-    if (has_li_at) {
-      // Close stale challenge/GSI tabs so they don't confuse later probes.
-      for (const p of ctx.pages() || []) {
-        const u = p.url() || "";
-        if (/checkpoint|challenge|accounts\.google\.com\/gsi\/select/i.test(u)) {
-          await p.close().catch(() => {});
-        }
-      }
-      page = pickLinkedInPage(false) || page || (await ctx.newPage());
-      await page
-        .goto("https://www.linkedin.com/feed/", {
-          waitUntil: "domcontentloaded",
-          timeout: 60000,
-        })
-        .catch(() => {});
-      url = page.url() || "";
-    }
-    const loginish = /\/login|authwall|checkpoint|challenge/i.test(url);
-    return {
-      ok: has_li_at && !loginish,
-      has_li_at,
-      url,
-      onChallenge: /checkpoint|challenge/i.test(url),
-    };
+    url = page.url() || "";
+    const body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
+    const onChallenge = /checkpoint|challenge|security.?verif/i.test(url + " " + body);
+    const loginish = /\/login|authwall|checkpoint|challenge/i.test(url) || /sign in|join now/i.test(body);
+    const authenticatedView = /\/feed|\/in\//i.test(url) && /Home|My Network|Jobs|Messaging/i.test(body);
+    const ok = !loginish && !onChallenge && authenticatedView;
+    return { ok, url: safeUrl(url), onChallenge, reason: ok ? "live_cdp_linkedin_ok" : onChallenge ? "linkedin_security_challenge" : "linkedin_login_required" };
   }
 
   const deadline = Date.now() + Math.max(0, waitSec) * 1000;
@@ -151,9 +125,7 @@ async function main() {
       last = await probe();
       console.error(
         JSON.stringify({
-          waiting: true,
-          has_li_at: last.has_li_at,
-          url: last.url,
+          waiting: true,          url: last.url,
           secsLeft: Math.max(0, Math.round((deadline - Date.now()) / 1000)),
         })
       );
@@ -174,13 +146,9 @@ async function main() {
   console.log(
     JSON.stringify({
       ok: false,
-      reason: challenge ? "linkedin_security_challenge" : "linkedin_login_required",
-      has_li_at: last.has_li_at,
-      onChallenge: !!challenge,
+      reason: challenge ? "linkedin_security_challenge" : "linkedin_login_required",      onChallenge: !!challenge,
       url: last.url,
-      hint: "bash scripts/home-headed-login.sh linkedin",
-      note: "Windows ABE: Desktop Chrome cookies cannot be copied into CDP profiles. SQLite li_at name alone is not proof of a live session.",
-    })
+      hint: "bash scripts/home-headed-login.sh linkedin",    })
   );
   process.exit(5);
 }

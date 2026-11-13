@@ -17,13 +17,9 @@ esac
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-# Windows home: reuse Default Chrome (ABE). Export for child tools.
-if [[ -z "${CHROME_CDP_MODE:-}" ]]; then
-  case "$(uname -s 2>/dev/null)" in
-    MINGW*|MSYS*|CYGWIN*) export CHROME_CDP_MODE=system ;;
-  esac
-  [[ "${OS:-}" == "Windows_NT" ]] && export CHROME_CDP_MODE=system
-fi
+# shellcheck source=scripts/lib/chrome-cdp-mode-home.sh
+source "$ROOT/scripts/lib/chrome-cdp-mode-home.sh"
+chrome_cdp_mode_home_default
 # Indeed on Windows home: skip WARP (corp/Zscaler may still CF-block — see preflight).
 if [[ "$PORTAL" == "indeed" && -z "${INDEED_SKIP_WARP:-}" && "${CHROME_CDP_MODE:-}" == "system" ]]; then
   export INDEED_SKIP_WARP=1

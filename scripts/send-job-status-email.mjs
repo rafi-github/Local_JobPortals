@@ -12,7 +12,6 @@
  * Env:
  *   RESEND_API_KEY (required)
  *   RESEND_FROM_EMAIL (optional; defaults to Resend's onboarding sender)
- *   RESEND_INSECURE_TLS=1 (optional; skip TLS verify — corp SSL inspection)
  */
 import { readFileSync } from "node:fs";
 
@@ -30,15 +29,6 @@ function argValue(flag) {
   const i = process.argv.indexOf(flag);
   if (i === -1 || i + 1 >= process.argv.length) return null;
   return process.argv[i + 1];
-}
-
-function isTlsIssuerError(err) {
-  const code = err?.cause?.code || err?.code || "";
-  const msg = String(err?.cause?.message || err?.message || "");
-  return (
-    code === "UNABLE_TO_GET_ISSUER_CERT_LOCALLY" ||
-    msg.includes("unable to get local issuer certificate")
-  );
 }
 
 async function postResend(apiKey, from, to, subject, text) {
@@ -76,34 +66,10 @@ if (!apiKey) {
 
 const text = bodyInline ?? readFileSync(bodyFile, "utf8");
 
-if (process.env.RESEND_INSECURE_TLS === "1") {
-  process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-  console.warn(
-    "RESEND_INSECURE_TLS=1 — TLS certificate verification disabled for Resend",
-  );
-}
+const res = await postResend(apiKey, from, to, subject, text);
 
-let res;
-try {
-  res = await postResend(apiKey, from, to, subject, text);
-} catch (err) {
-  if (
-    isTlsIssuerError(err) &&
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED !== "0"
-  ) {
-    console.warn(
-      "Resend TLS issuer missing (corp SSL inspection?) — retrying with NODE_TLS_REJECT_UNAUTHORIZED=0",
-    );
-    process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
-    res = await postResend(apiKey, from, to, subject, text);
-  } else {
-    throw err;
-  }
-}
-
-const payload = await res.json().catch(() => ({}));
 if (!res.ok) {
-  console.error("Resend API error:", res.status, payload);
+  console.error("Resend API request failed with HTTP status", res.status);
   process.exit(1);
 }
 
