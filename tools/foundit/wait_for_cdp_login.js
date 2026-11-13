@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
  * Live CDP check / wait for Foundit session on headed Chrome at :9222.
- * SQLite cookie-name checks are insufficient on Windows App-Bound Encryption —
- * and unauthenticated Foundit often lands on /rio/sign-out ("Logged out Successfully").
+ *  * and unauthenticated Foundit often lands on /rio/sign-out ("Logged out Successfully").
  *
  * Usage:
  *   node tools/foundit/wait_for_cdp_login.js            # one-shot probe
@@ -15,7 +14,6 @@ const path = require("path");
 
 const CDP = process.env.FOUNDIT_CDP || "http://127.0.0.1:9222";
 const ROOT = path.resolve(__dirname, "../..");
-const AUTH_COOKIE = "MSSOAT";
 const DASH = "https://www.foundit.in/seeker/dashboard";
 const PROFILE = "https://www.foundit.in/profile";
 const LOGIN = "https://www.foundit.in/rio/login";
@@ -36,6 +34,8 @@ function isLoggedOut(url, bodyText) {
   }
   return false;
 }
+
+function safeUrl(value) { try { const u = new URL(value); return u.origin + u.pathname; } catch { return ""; } }
 
 async function main() {
   const waitSec = Number(argValue("--wait") || process.env.FOUNDIT_LOGIN_WAIT_SEC || "0");
@@ -80,48 +80,26 @@ async function main() {
   const page = ctx.pages()[0] || (await ctx.newPage());
 
   async function probe() {
-    const cookies = await ctx.cookies("https://www.foundit.in");
-    const authCookie = cookies.find((c) => c.name === AUTH_COOKIE);
-    const hasAuthCookie = Boolean(authCookie && String(authCookie.value || "").length > 0);
-    let url = page.url() || "";
-    let body = "";
-
-    if (openLogin || !hasAuthCookie) {
-      await page.goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
-      url = page.url() || "";
-    }
-
+    if (openLogin) await page.goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
     await page.goto(DASH, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
     for (let i = 0; i < 6; i++) {
       await page.waitForTimeout(1000).catch(() => {});
-      url = page.url() || "";
-      if (/\/rio\/(login|sign-out)/i.test(url)) break;
-      if (/seeker\/dashboard|\/profile/i.test(url) && hasAuthCookie) break;
+      const current = page.url() || "";
+      if (/\/rio\/(login|sign-out)/i.test(current) || /seeker\/dashboard|\/profile/i.test(current)) break;
     }
-    // Profile page is a second signal when dashboard stays empty.
-    if (/\/rio\/(login|sign-out)/i.test(url) || !hasAuthCookie) {
+    let url = page.url() || "";
+    let body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
+    if (/\/rio\/(login|sign-out)/i.test(url)) {
       await page.goto(PROFILE, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
       await page.waitForTimeout(1500).catch(() => {});
+      url = page.url() || "";
+      body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
     }
-    url = page.url() || "";
-    body = await page
-      .evaluate(() => (document.body && document.body.innerText) || "")
-      .catch(() => "");
-
     const loggedOut = isLoggedOut(url, body);
-    const hiRafi = /Hi,?\s*Rafi|Rafi Ahmed|Mohammed Abdul/i.test(body);
-    const onApp =
-      /seeker\/dashboard|\/profile|\/seeker\//i.test(url) && !/\/rio\//i.test(url);
-    const ok = hasAuthCookie && !loggedOut && (hiRafi || onApp);
-    return {
-      ok,
-      hasAuthCookie,
-      mssoatLen: authCookie ? String(authCookie.value || "").length : 0,
-      hiRafi,
-      onApp,
-      url,
-      preview: String(body || "").slice(0, 160).replace(/\s+/g, " "),
-    };
+    const accountView = /seeker\/dashboard|\/profile|\/seeker\//i.test(url) && !/\/rio\//i.test(url);
+    const accountSignals = /Hi,?\s*Rafi|Rafi Ahmed|My Applications|dashboard/i.test(body);
+    const ok = !loggedOut && accountView && accountSignals;
+    return { ok, accountView, url: safeUrl(url), reason: ok ? "live_cdp_foundit_ok" : "foundit_login_required" };
   }
 
   const deadline = Date.now() + Math.max(0, waitSec) * 1000;
@@ -134,7 +112,7 @@ async function main() {
   if (waitSec > 0) {
     console.error(
       "Foundit CDP login required — sign in in the headed Chrome window " +
-        "(system Chrome Default on Windows home, or ~/.cursor/chrome-cdp-profiles/foundit). " +
+        "(isolated Foundit profile). " +
         `Waiting up to ${waitSec}s…`
     );
     console.error("Or: bash scripts/home-headed-login.sh foundit");
@@ -143,10 +121,7 @@ async function main() {
       last = await probe();
       console.error(
         JSON.stringify({
-          waiting: true,
-          hasAuthCookie: last.hasAuthCookie,
-          mssoatLen: last.mssoatLen,
-          url: last.url,
+          waiting: true,          url: last.url,
           secsLeft: Math.max(0, Math.round((deadline - Date.now()) / 1000)),
         })
       );
@@ -165,14 +140,8 @@ async function main() {
   console.log(
     JSON.stringify({
       ok: false,
-      reason: "foundit_login_required",
-      hasAuthCookie: last.hasAuthCookie,
-      mssoatLen: last.mssoatLen,
-      url: last.url,
-      preview: last.preview,
-      hint: "bash scripts/home-headed-login.sh foundit",
-      note: "Windows ABE: SQLite MSSOAT name alone is not proof of a live session; live CDP must show dashboard/Hi Rafi.",
-    })
+      reason: "foundit_login_required",      url: last.url,
+      hint: "bash scripts/home-headed-login.sh foundit",    })
   );
   process.exit(5);
 }

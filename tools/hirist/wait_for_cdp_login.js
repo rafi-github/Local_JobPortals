@@ -16,8 +16,6 @@ const ROOT = path.resolve(__dirname, "../..");
 const HOME = "https://www.hirist.tech/";
 const LOGIN = "https://www.hirist.tech/login";
 const APPLIED = "https://www.hirist.tech/applied-jobs";
-const AUTH_COOKIE_RE =
-  /^(hirist_seeker_enc|token|access_token|auth_token|hjuid|userToken|JSID)$/i;
 
 function argValue(flag) {
   const i = process.argv.indexOf(flag);
@@ -39,6 +37,8 @@ function isLoggedOut(url, bodyText) {
   }
   return false;
 }
+
+function safeUrl(value) { try { const u = new URL(value); return u.origin + u.pathname; } catch { return ""; } }
 
 async function main() {
   const waitSec = Number(argValue("--wait") || process.env.HIRIST_LOGIN_WAIT_SEC || "0");
@@ -83,44 +83,20 @@ async function main() {
   const page = await ctx.newPage();
 
   async function probe() {
-    const cookies = await ctx.cookies("https://www.hirist.tech");
-    const authCookies = cookies.filter((c) => AUTH_COOKIE_RE.test(c.name) && c.value);
-    const hasAuthCookie = authCookies.length > 0;
-    let url = page.url() || "";
-    let body = "";
-
-    if (openLogin || !hasAuthCookie) {
-      await page.goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
-      url = page.url() || "";
-    }
-
+    if (openLogin) await page.goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
     await page.goto(APPLIED, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
     for (let i = 0; i < 6; i++) {
       await page.waitForTimeout(1000).catch(() => {});
-      url = page.url() || "";
-      if (/\/login\/?/i.test(url)) break;
-      if (/applied-jobs|myprofile|jobfeed/i.test(url)) break;
+      const url = page.url() || "";
+      if (/\/login\/?/i.test(url) || /applied-jobs|myprofile|jobfeed/i.test(url)) break;
     }
     await page.waitForTimeout(1200).catch(() => {});
-    url = page.url() || "";
-    body = await page
-      .evaluate(() => (document.body && document.body.innerText) || "")
-      .catch(() => "");
-
+    const url = page.url() || "";
+    const body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
     const loggedOut = isLoggedOut(url, body);
-    const onAuthed =
-      /applied-jobs|myprofile|jobfeed|saved-jobs/i.test(url) ||
-      /\b(applied jobs|my profile|saved jobs|job feed)\b/i.test(body);
-    const ok = !loggedOut && (hasAuthCookie || onAuthed);
-    return {
-      ok,
-      hasAuthCookie,
-      authCookieNames: authCookies.map((c) => c.name),
-      onAuthed,
-      url,
-      preview: String(body || "").slice(0, 160),
-      home: HOME,
-    };
+    const onAuthed = /applied-jobs|myprofile|jobfeed|saved-jobs/i.test(url) || /\b(applied jobs|my profile|saved jobs|job feed)\b/i.test(body);
+    const ok = !loggedOut && onAuthed;
+    return { ok, onAuthed, url: safeUrl(url), home: HOME };
   }
 
   const deadline = Date.now() + Math.max(0, waitSec) * 1000;
@@ -142,9 +118,7 @@ async function main() {
       last = await probe();
       console.error(
         JSON.stringify({
-          waiting: true,
-          hasAuthCookie: last.hasAuthCookie,
-          url: last.url,
+          waiting: true,          url: last.url,
           secsLeft: Math.max(0, Math.round((deadline - Date.now()) / 1000)),
         })
       );
@@ -163,10 +137,7 @@ async function main() {
   console.log(
     JSON.stringify({
       ok: false,
-      reason: "hirist_login_required",
-      hasAuthCookie: last.hasAuthCookie,
-      authCookieNames: last.authCookieNames,
-      url: last.url,
+      reason: "hirist_login_required",      url: last.url,
       hint: "bash scripts/home-headed-login.sh hirist",
     })
   );

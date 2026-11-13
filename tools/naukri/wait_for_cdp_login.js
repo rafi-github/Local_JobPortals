@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /**
  * Live CDP check / wait for Naukri session on headed Chrome at :9222.
- * SQLite cookie-name checks are insufficient on Windows App-Bound Encryption —
- * and while system Chrome is open the Cookies DB is locked (preflight exit 3).
+ *  * and while system Chrome is open the Cookies DB is locked (preflight exit 3).
  *
  * Usage:
  *   node tools/naukri/wait_for_cdp_login.js            # one-shot probe
@@ -15,7 +14,6 @@ const path = require("path");
 
 const CDP = process.env.NAUKRI_CDP || "http://127.0.0.1:9222";
 const ROOT = path.resolve(__dirname, "../..");
-const AUTH_COOKIES = ["nauk_rt", "nauk_at"];
 const HOME = "https://www.naukri.com/mnjuser/homepage";
 const PROFILE = "https://www.naukri.com/mnjuser/profile";
 const LOGIN = "https://www.naukri.com/nlogin/login";
@@ -36,6 +34,8 @@ function isLoggedOut(url, bodyText) {
   }
   return false;
 }
+
+function safeUrl(value) { try { const u = new URL(value); return u.origin + u.pathname; } catch { return ""; } }
 
 async function main() {
   const waitSec = Number(argValue("--wait") || process.env.NAUKRI_LOGIN_WAIT_SEC || "0");
@@ -80,53 +80,21 @@ async function main() {
   const page = await ctx.newPage();
 
   async function probe() {
-    const cookies = await ctx.cookies("https://www.naukri.com");
-    const hasAuthCookie = cookies.some((c) => AUTH_COOKIES.includes(c.name));
-    let url = page.url() || "";
-    let body = "";
-
-    if (openLogin && !hasAuthCookie) {
-      await page
-        .goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 })
-        .catch(() => {});
-      url = page.url() || "";
-    }
-
-    await page
-      .goto(HOME, { waitUntil: "domcontentloaded", timeout: 90000 })
-      .catch(() => {});
+    if (openLogin) await page.goto(LOGIN, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
+    await page.goto(HOME, { waitUntil: "domcontentloaded", timeout: 90000 }).catch(() => {});
     await page.waitForTimeout(2500);
-    url = page.url() || "";
-    body = await page
-      .evaluate(() => (document.body && document.body.innerText) || "")
-      .catch(() => "");
-
+    let url = page.url() || "";
+    let body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
     if (isLoggedOut(url, body)) {
-      await page
-        .goto(PROFILE, { waitUntil: "domcontentloaded", timeout: 60000 })
-        .catch(() => {});
+      await page.goto(PROFILE, { waitUntil: "domcontentloaded", timeout: 60000 }).catch(() => {});
       await page.waitForTimeout(1500);
       url = page.url() || "";
-      body = await page
-        .evaluate(() => (document.body && document.body.innerText) || "")
-        .catch(() => "");
+      body = await page.evaluate(() => (document.body && document.body.innerText) || "").catch(() => "");
     }
-
-    const cookies2 = await ctx.cookies("https://www.naukri.com");
-    const hasAuth = cookies2.some((c) => AUTH_COOKIES.includes(c.name));
     const loggedOut = isLoggedOut(url, body);
-    const ok = hasAuth && !loggedOut;
-    return {
-      ok,
-      hasAuthCookie: hasAuth,
-      url,
-      preview: String(body).replace(/\s+/g, " ").slice(0, 220),
-      reason: ok
-        ? "live_cdp_naukri_ok"
-        : loggedOut
-          ? "naukri_login_wall"
-          : "naukri_auth_cookie_missing",
-    };
+    const accountView = /mnjuser\/(homepage|profile)/i.test(url) && /Hi,?\s*Rafi|Recommended jobs|Update profile|mnjuser/i.test(body + " " + url);
+    const ok = !loggedOut && accountView;
+    return { ok, url: safeUrl(url), reason: ok ? "live_cdp_naukri_ok" : "naukri_login_required" };
   }
 
   const deadline = Date.now() + Math.max(0, waitSec) * 1000;

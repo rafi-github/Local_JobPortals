@@ -61,18 +61,14 @@ mkdir -p \
   /home/ubuntu/chrome-instahyre-profile \
   /home/ubuntu/chrome-indeed-profile \
   /home/ubuntu/chrome-cdp-profile \
+  /home/ubuntu/chrome-hitechcity-profile \
   /home/ubuntu/chrome-linkedin-profile \
   /home/ubuntu/chrome-cutshort-profile \
   /opt/cursor/artifacts
 
-# --- 5. Session restore + sync ----------------------------------------------
-# Environment builds often boot from a base disk that lacks Desktop logins.
-# Restore the private .portal-sessions seed first (if present), then sync
-# Default Chrome into each CDP profile. Sync is non-destructive.
-bash scripts/restore-portal-sessions.sh || echo "WARNING: portal session restore failed; continuing install."
-if [[ -f /home/ubuntu/.config/google-chrome/Default/Cookies ]]; then
-  bash scripts/sync-chrome-sessions.sh || echo "WARNING: Chrome session sync reported missing auth; continuing install."
-fi
+# --- 5. Portal profiles ------------------------------------------------------
+# Authentication is completed interactively per portal; no cookie databases or
+# session snapshots are copied during install.
 node tools/chrome_session.js status || true
 bash scripts/verify-portal-logins.sh --no-sync || true
 

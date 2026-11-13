@@ -3266,6 +3266,14 @@ def easy_apply_flow(sb, max_steps: int = 24, deadline: float | None = None) -> s
 
 
 def main() -> int:
+    print(json.dumps({
+        "portal": "indeed",
+        "ok": False,
+        "counts": {"applied": 0, "external": 0, "rejected": 0, "blocked": 1, "skipped": 0, "seen": 0},
+        "blocked": [{"reason": "indeed_automation_disabled_compliant_access_only"}],
+    }))
+    return 5
+
     os.environ.setdefault("DISPLAY", ":1")
     _patch_filelock_singleton()
     proxy = ensure_warp()

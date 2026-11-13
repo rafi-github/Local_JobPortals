@@ -281,11 +281,7 @@ linkedin_restriction_active() {
   [[ -n "$out" ]]
 }
 
-# Restore seeded sessions before launching (helps Indeed/LinkedIn when dest was wiped).
-if [[ "$DRY_RUN" -eq 0 && -x "$ROOT/scripts/restore-portal-sessions.sh" ]]; then
-  FORCE_RESTORE_SESSIONS="${FORCE_RESTORE_SESSIONS:-0}" bash "$ROOT/scripts/restore-portal-sessions.sh" \
-    || echo "WARNING: restore-portal-sessions failed (continuing)"
-fi
+# Portal sessions remain isolated and are established through interactive login.
 
 launched=0
 skipped=0

@@ -5,32 +5,14 @@
 #   install (scripts/cloud-agent-install.sh) builds the DURABLE baseline once —
 #     Python + Playwright + Chromium, resume assets, npm tooling, CDP profile dirs.
 #     With environment builds it runs at build time and is NOT re-run per pod.
-#   start (this script) runs on EVERY boot to reconcile ephemeral session state:
-#     restore the .portal-sessions seed when Default Chrome lacks auth, then copy
-#     Desktop Default logins into each portal CDP profile.
-#
-# Must never block a boot: no `set -e`; restore/sync are best-effort.
+#   start (this script) runs on EVERY boot to prepare non-secret runtime state.
+# Portal authentication is completed interactively in each isolated profile.
+# Must never block a boot: no `set -e`.
 set -uo pipefail
 cd "$(dirname "$0")/.."
 # Optional local secrets for LinkedIn/Workday/Resend (gitignored file or ~/.cursor).
 # Prefer Cursor Environment Secrets for cron durability.
 # shellcheck disable=SC1091
 source scripts/load-job-secrets.sh 2>/dev/null || true
-
-bash scripts/restore-portal-sessions.sh || echo "start: session restore failed (non-fatal); continuing boot."
-
-if [[ -f /home/ubuntu/.config/google-chrome/Default/Cookies ]]; then
-  bash scripts/sync-chrome-sessions.sh || echo "start: session sync failed (non-fatal); continuing boot."
-else
-  echo "start: no Desktop Chrome Default cookies yet; skipping session sync."
-  echo "start: seed .portal-sessions or log into portals in Desktop Chrome, then Save snapshot."
-fi
-
-# Indeed cloud bypass: start WARP SOCKS (proxy mode ONLY — never full tunnel).
-if [[ -x scripts/start-warp-proxy.sh ]]; then
-  bash scripts/start-warp-proxy.sh start >/tmp/cursor/warp-proxy-start.log 2>&1 \
-    && echo "start: WARP SOCKS ready on 127.0.0.1:40000" \
-    || echo "start: WARP SOCKS not ready (non-fatal); see /tmp/cursor/warp-proxy-start.log"
-fi
 
 echo "start: ready."

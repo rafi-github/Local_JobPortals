@@ -37,6 +37,8 @@ COPY_PATHS = [
 
 
 def prepare(src: Path, dst: Path) -> dict:
+    return {"ok": False, "reason": "cookie_profile_copy_disabled_compliant_access_only"}
+
     if dst.exists():
         shutil.rmtree(dst)
     (dst / "Default").mkdir(parents=True)

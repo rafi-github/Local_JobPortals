@@ -22,16 +22,42 @@ Campus-focused daily: **Hitech City / Knowledge City** (`automation-prompts/08-h
 
 Issue log: [`automation-prompts/ISSUES_AND_FIXES.md`](automation-prompts/ISSUES_AND_FIXES.md).
 
-## Portal login (required for daily cron)
+## Portal login (required before running a portal)
 
-If automations stop at Sign-in pages, the saved environment snapshot is missing auth cookies.
+Each portal keeps a separate persistent Chrome profile. On Windows, sign in once
+interactively to each portal; credentials and cookies are never copied from your
+regular Chrome profile. Close any other CDP-enabled Chrome using port 9222 first.
 
 ```bash
-bash scripts/open-portal-login-tabs.sh          # Desktop Chrome tabs
-bash scripts/verify-portal-logins.sh --strict   # must show all 6 OK
+bash scripts/home-headed-login.sh linkedin
+bash scripts/home-headed-login.sh naukri
+bash scripts/home-headed-login.sh foundit
+bash scripts/home-headed-login.sh cutshort
+bash scripts/home-headed-login.sh instahyre
+bash scripts/home-headed-login.sh indeed
+bash scripts/home-headed-login.sh hirist
+bash scripts/home-headed-login.sh hitechcity
 ```
 
-Then **Save / Update snapshot** on the environment dashboard. Details: [`automation-prompts/ENV_READINESS.md`](automation-prompts/ENV_READINESS.md).
+Complete each sign-in, including MFA, in the visible Chrome window. The profiles
+are stored under `%LOCALAPPDATA%\Codex\Chrome CDP Profiles`. If a portal asks
+you to sign in again, repeat its command. Do not use the cookie sync or session
+snapshot scripts; these are intentionally disabled.
+
+## Indeed access
+
+Indeed automation stops when it returns a 403 or security challenge and skips
+applications without proxy rotation or challenge automation. Automated Indeed
+applications are disabled until an officially supported access method is
+available. Use Indeed manually through its official site in the meantime.
+
+## Email notifications
+
+Set `RESEND_API_KEY` and (if needed) `RESEND_FROM_EMAIL` in the local secrets
+file for Resend. Alternatively configure `SMTP_HOST`, `SMTP_PORT` (default
+587), `SMTP_USER`, `SMTP_PASSWORD`, and optionally `SMTP_FROM`. Secrets stay in
+your local environment. Gmail browser sending is disabled unless explicitly
+enabled with `JOB_STATUS_GMAIL_FALLBACK=1`.
 
 ## Daily automation readiness
 

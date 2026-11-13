@@ -492,6 +492,9 @@ def run_browser_round(
 
 
 def main() -> int:
+    print(json.dumps({"ok": False, "reason": "indeed_challenge_bypass_disabled_compliant_access_only"}))
+    return 5
+
     ap = argparse.ArgumentParser()
     ap.add_argument("--url", default=DEFAULT_URL)
     ap.add_argument("--proxy", default=DEFAULT_PROXY)
