@@ -95,10 +95,21 @@ function spawnPythonArgs(py, scriptArgs) {
   return { cmd: py, args: scriptArgs };
 }
 
+/** cp1252 stdout under Git Bash aborts print() of non-ASCII status text. */
+function applyPythonUtf8Env(env) {
+  const next = env || process.env;
+  if (!next.PYTHONIOENCODING) next.PYTHONIOENCODING = "utf-8:replace";
+  if (!next.PYTHONUTF8) next.PYTHONUTF8 = "1";
+  return next;
+}
+
+applyPythonUtf8Env(process.env);
+
 function runPythonScript(script, scriptArgs = [], opts = {}) {
   const py = resolvePython();
   const { cmd, args } = spawnPythonArgs(py, [script, ...scriptArgs]);
-  return spawnSync(cmd, args, opts);
+  const env = applyPythonUtf8Env({ ...(opts.env || process.env) });
+  return spawnSync(cmd, args, { ...opts, env });
 }
 
 module.exports = { resolvePython, runPythonScript, spawnPythonArgs, probe, IS_WIN };

@@ -27,6 +27,12 @@ except Exception:
     from cdp_connect import connect_over_cdp  # type: ignore
 
 try:
+    from tools.win_stdio import configure_windows_stdio
+    configure_windows_stdio()
+except Exception:
+    pass
+
+try:
     from tools.linkedin.filters import (
         TITLE_BLACKLIST,
         JD_HARD_BLACKLIST,

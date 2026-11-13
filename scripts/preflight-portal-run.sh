@@ -4,6 +4,8 @@ set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
+# shellcheck source=scripts/lib/python-utf8.sh
+source "$ROOT/scripts/lib/python-utf8.sh"
 
 portal="${1:-}"
 if [[ -z "$portal" ]]; then

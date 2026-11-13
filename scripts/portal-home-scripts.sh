@@ -16,6 +16,8 @@ esac
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
+# shellcheck source=scripts/lib/python-utf8.sh
+source "$ROOT/scripts/lib/python-utf8.sh"
 # shellcheck source=scripts/lib/chrome-cdp-mode-home.sh
 source "$ROOT/scripts/lib/chrome-cdp-mode-home.sh"
 chrome_cdp_mode_home_default

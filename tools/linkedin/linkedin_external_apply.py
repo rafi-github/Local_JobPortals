@@ -24,6 +24,12 @@ except Exception:
     from cdp_connect import connect_over_cdp  # type: ignore
 
 try:
+    from tools.win_stdio import configure_windows_stdio
+    configure_windows_stdio()
+except Exception:
+    pass
+
+try:
     from tools.ats.complete import extract_hop_destination_from_url, extract_offsite_from_text
 except Exception:  # pragma: no cover
     def extract_hop_destination_from_url(url):

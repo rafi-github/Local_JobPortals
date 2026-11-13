@@ -8,13 +8,13 @@ Home-local **scripts** run on `LAPY` (no Cursor agent). Targets: Expected CTC 65
 
 | Portal | Applied | External | Rejected | Blocked | Skipped | Seen | OK | Blocker |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- | --- |
-| LinkedIn | 0 | 0 | 0 | 1 | 0 | 0 | no | linkedin_interactive_login_required |
-| Foundit | 0 | 0 | 0 | 1 | 0 | 0 | no | foundit_interactive_login_required |
-| Cutshort | 0 | 0 | 0 | 1 | 0 | 0 | no | cutshort_interactive_login_required |
-| Naukri | 0 | 0 | 0 | 1 | 0 | 0 | no | naukri_interactive_login_required |
-| Instahyre | 0 | 0 | 0 | 1 | 0 | 0 | no | instahyre_interactive_login_required |
+| LinkedIn | 0 | 0 | 0 | 1 | 0 | 0 | no | scripts_finished_without_same_day_report_exit_1 |
+| Foundit | 0 | 0 | 0 | 1 | 0 | 0 | no | scripts_finished_without_same_day_report_exit_1 |
+| Cutshort | 0 | 0 | 0 | 1 | 0 | 0 | no | scripts_finished_without_same_day_report_exit_1 |
+| Naukri | 0 | 0 | 0 | 1 | 0 | 0 | no | scripts_finished_without_same_day_report_exit_1 |
+| Instahyre | 0 | 0 | 0 | 1 | 0 | 0 | no | scripts_finished_without_same_day_report_exit_1 |
 | Indeed | 0 | 0 | 0 | 0 | 0 | 0 | — | no same-day JSON |
-| Hirist | 0 | 0 | 0 | 1 | 0 | 0 | no | hirist_interactive_login_required |
-| Hitech City / Knowledge City | 0 | 0 | 0 | 1 | 0 | 0 | no | hitechcity_interactive_login_required |
+| Hirist | 0 | 0 | 0 | 1 | 0 | 0 | no | scripts_finished_without_same_day_report_exit_1 |
+| Hitech City / Knowledge City | 0 | 0 | 0 | 1 | 0 | 0 | no | scripts_finished_without_same_day_report_exit_1 |
 
 AUTO_FIX / agent recovery was **not** run. For code-fixable blockers, run `bash scripts/portal-home-daily.sh <portal>` or fix manually.

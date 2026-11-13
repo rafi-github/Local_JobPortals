@@ -5,6 +5,8 @@
 set -euo pipefail
 
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+# shellcheck source=scripts/lib/python-utf8.sh
+source "$ROOT/scripts/lib/python-utf8.sh"
 OWNER_SRC="$ROOT/resumes/Mohammed_Abdul_Rafi_Ahmed_Resume.docx"
 SRC="$ROOT/resumes/Rafi_Resume.docx"
 

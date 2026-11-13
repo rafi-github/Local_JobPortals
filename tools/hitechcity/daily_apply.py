@@ -23,6 +23,9 @@ from pathlib import Path
 _root = Path(__file__).resolve().parents[2]
 if str(_root) not in sys.path:
     sys.path.insert(0, str(_root))
+from tools.win_stdio import configure_windows_stdio
+
+configure_windows_stdio()
 
 
 def _owner_asleep_bootstrap() -> bool:
@@ -79,17 +82,6 @@ from tools.ats.email_otp import reset_gmail_login_flag
 
 OUT_DEFAULT_CLOUD = Path("/opt/cursor/artifacts/hitechcity-daily.json")
 OUT_DEFAULT_LOCAL = _root / "artifacts" / "hitechcity-daily.json"
-
-
-def configure_windows_stdio() -> None:
-    """Avoid UnicodeEncodeError on Windows cp1252 consoles (job titles with ā etc.)."""
-    if sys.platform != "win32":
-        return
-    for stream in (sys.stdout, sys.stderr):
-        try:
-            stream.reconfigure(encoding="utf-8", errors="replace")
-        except Exception:
-            pass
 
 
 def default_report_path() -> Path:

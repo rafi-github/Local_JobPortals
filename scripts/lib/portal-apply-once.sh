@@ -5,6 +5,8 @@
 portal_apply_once() {
   local portal="$1"
   local py rc=0
+  # shellcheck source=scripts/lib/python-utf8.sh
+  source "$ROOT/scripts/lib/python-utf8.sh"
   py="$(bash "$ROOT/scripts/resolve-python.sh")"
 
   case "$portal" in

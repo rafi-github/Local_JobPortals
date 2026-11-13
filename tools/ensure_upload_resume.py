@@ -24,6 +24,9 @@ ALIAS = ROOT / "resumes" / "Rafi_Resume_Architect.docx"
 FINGERPRINT = ROOT / "resumes" / ".upload-resume-fingerprint.json"
 
 sys.path.insert(0, str(ROOT / "tools"))
+from win_stdio import configure_windows_stdio  # noqa: E402
+
+configure_windows_stdio()
 from compress_resume_docx import compress_docx  # noqa: E402
 
 
@@ -52,14 +55,14 @@ def ensure_upload_resume() -> dict:
     }
     if info["textSha256"] != info["uploadTextSha256"]:
         raise RuntimeError(
-            "upload copy text diverged from master after compress — aborting"
+            "upload copy text diverged from master after compress - aborting"
         )
     try:
         FINGERPRINT.write_text(json.dumps(info, indent=2) + "\n", encoding="utf-8")
     except OSError:
         pass
     print(
-        f"ensure_upload_resume: master={info['ownerBytes']}B → "
+        f"ensure_upload_resume: master={info['ownerBytes']}B -> "
         f"upload={info['uploadBytes']}B sha={info['textSha256'][:16]}"
     )
     return info
